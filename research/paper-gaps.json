@@ -1,0 +1,441 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-09",
+  "repository": "aburan28/efd",
+  "baseline_commit": "6f1af53ac644ac293dab3ab58b0fdc0d0a12ebb6",
+  "scope": "Prioritized primary-source discoveries, not an exhaustive bibliography or an assertion that every paper contains wholly new formulas.",
+  "verification": "Full-text/abstract review and repository overlap audit only; candidates are not executable imports or independently benchmarked results.",
+  "papers": [
+    {
+      "id": "ffs2024",
+      "title": "Faster Complete Addition Laws for Montgomery Curves",
+      "authors": [
+        "Reza Rezaeian Farashahi",
+        "Mojtaba Fadavi",
+        "Soheila Sabbaghian"
+      ],
+      "year": 2024,
+      "url": "https://ches.iacr.org/2024/papers-issue-4/4_111.pdf",
+      "access_checked": "full_text",
+      "formula_locations": [
+        "Section 4, Theorem 2, equations (33)-(34): linear extended-coordinate maps",
+        "Section 5, equations (40)-(45); Table 3 and Appendix: completeness conditions and curve examples"
+      ],
+      "repository_gap": "montgom has only xz; no extended Montgomery representation or cited 2024 formulas.",
+      "applicability": {
+        "curve25519": "Direct candidate; paper Appendix lists Curve25519 for the conditional 8M+1D law (44).",
+        "p256": "Not a base-field Montgomery conversion."
+      },
+      "priority": "high",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "Published in TCHES 2024(4), pp. 737-762, DOI 10.46586/tches.v2024.i4.737-762. Costs are paper-reported; not benchmarked here.",
+        "This includes new scaled Edwards variants; overlap with HWCD08 must be checked by identity, not just operation count."
+      ]
+    },
+    {
+      "id": "hamburg2020",
+      "title": "Faster Montgomery and double-add ladders for short Weierstrass curves",
+      "authors": [
+        "Mike Hamburg"
+      ],
+      "year": 2020,
+      "url": "https://www.shiftleft.org/papers/ladder/ladder-tches.pdf",
+      "access_checked": "full_text",
+      "formula_locations": [
+        "Figures 3-5: two Montgomery ladder states and a Joye ladder state",
+        "Sections 2.4 and 3: setup, finish, exceptional cases and completeness"
+      ],
+      "repository_gap": "No Hamburg source or corresponding coupled ladder states in native shortw formula files.",
+      "applicability": {
+        "p256": "Direct short-Weierstrass candidate; no rational 2-torsion required.",
+        "curve25519": "Can compare via shortw, but native Montgomery arithmetic is a separate baseline."
+      },
+      "priority": "high",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "8M+3S+7A per bit is paper-reported for a ladder step, not a full scalar multiplication or a universal winner.",
+        "Author code: https://github.com/bitwiseshiftleft/ladder_formulas",
+        "The word Montgomery describes the ladder algorithm here; it does not imply a Montgomery curve model."
+      ]
+    },
+    {
+      "id": "hisil-pala2026",
+      "title": "LadderPrime: Exception-Free, Twist-Insensitive, and Constant-Time Ladder for Prime-Order Elliptic Curves",
+      "authors": [
+        "Huseyin Hisil",
+        "Nuri Furkan Pala"
+      ],
+      "year": 2026,
+      "url": "https://dergipark.org.tr/en/download/article-file/5622508",
+      "access_checked": "full_text",
+      "formula_locations": [
+        "Theorems 1-4: generic XZ doubling and additive/multiplicative differential formulas",
+        "Algorithm 1: LadderPrime; Appendix: verification script"
+      ],
+      "repository_gap": "No source or algorithm matching this paper; existing shortw/xz has older differential formulas.",
+      "applicability": {
+        "p256": "Generic short-Weierstrass/Kummer-line candidate, subject to exact theorem and algorithm hypotheses.",
+        "curve25519": "Generic framework includes Montgomery equations."
+      },
+      "priority": "high",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "Published March 19, 2026, DOI 10.55859/ijiss.1867564.",
+        "Standalone differential formulas retain input restrictions. Whole-algorithm exception handling must be audited; do not label an individual formula complete based on the title."
+      ]
+    },
+    {
+      "id": "goundar2011",
+      "title": "Scalar Multiplication on Weierstrass Elliptic Curves from Co-Z Arithmetic",
+      "authors": [
+        "Raveen R. Goundar",
+        "Marc Joye",
+        "Atsuko Miyaji",
+        "Matthieu Rivain",
+        "Alexandre Venelli"
+      ],
+      "year": 2011,
+      "url": "https://www.matthieurivain.com/files/jcen11b.pdf",
+      "access_checked": "full_text",
+      "formula_locations": [
+        "Algorithm 1: ZADDU",
+        "Algorithm 8: ZADDC (conjugate addition)",
+        "Section 4.4: DBLU/TPLU",
+        "Section 5 and appendices: fused and XY-only states"
+      ],
+      "repository_gap": "Meloni 2007 zadd is present in jacobian, jacobian-0, jacobian-3; the joint update/conjugate operation interfaces and cited 2011 source are absent.",
+      "applicability": {
+        "p256": "Direct co-Z Jacobian arithmetic candidate.",
+        "curve25519": "Available on a shortw model, with conversion costs."
+      },
+      "priority": "high",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "Co-Z is a shared-denominator state invariant, not a new curve equation. Tests must verify both outputs and preservation of the shared denominator."
+      ]
+    },
+    {
+      "id": "chung2015",
+      "title": "Fast, uniform, and compact scalar multiplication for elliptic curves and genus 2 Jacobians with applications to signature schemes",
+      "authors": [
+        "Ping Ngai Chung",
+        "Craig Costello",
+        "Benjamin Smith"
+      ],
+      "year": 2015,
+      "url": "https://arxiv.org/abs/1510.03174",
+      "access_checked": "full_text",
+      "formula_locations": [
+        "Algorithms 1-3: project/pseudomultiply/recover and two-dimensional chain",
+        "Sections 5.1-5.3: elliptic Montgomery, Edwards, Weierstrass recovery"
+      ],
+      "repository_gap": "No native recovery operation. Many underlying xADD/xDBL formulas are already in EFD, so do not count all of this paper as new formulas.",
+      "applicability": {
+        "p256": "Weierstrass recovery, Section 5.3.",
+        "curve25519": "Montgomery recovery, Section 5.1."
+      },
+      "priority": "high",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "Recovery requires a signed anchor and neighboring quotient point, with torsion and denominator conditions. A lone quotient coordinate is not invertible."
+      ]
+    },
+    {
+      "id": "renes-smith2017",
+      "title": "qDSA: Small and Secure Digital Signatures with Curve-based Diffie-Hellman Key Pairs",
+      "authors": [
+        "Joost Renes",
+        "Benjamin Smith"
+      ],
+      "year": 2017,
+      "url": "https://joostrenes.nl/publications/qdsa-eprint.pdf",
+      "access_checked": "full_text",
+      "formula_locations": [
+        "Section 3.2, Proposition 3, equations (2)-(5): biquadratic relation",
+        "Algorithm 2: Check/BValues"
+      ],
+      "repository_gap": "No quotient relation-check operation in native formula types; the new relation-profile tool is related algebra, not a qDSA implementation.",
+      "applicability": {
+        "curve25519": "Direct Montgomery biquadratic relation candidate.",
+        "p256": "Use an appropriate generic Weierstrass analogue, not this specialized Montgomery formula."
+      },
+      "priority": "high",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "Useful to catalog as an unordered sum/difference relation, not full-point addition.",
+        "Relevant to polynomial relation experiments; no index-calculus complexity claim follows."
+      ]
+    },
+    {
+      "id": "hosseini-farashahi",
+      "title": "Differential Addition on Twisted Edwards Curves",
+      "authors": [
+        "Seyed Gholamhossein Hosseini",
+        "Reza Rezaeian Farashahi"
+      ],
+      "year": "2017 conference / 2026 arXiv",
+      "url": "https://arxiv.org/abs/2606.20831",
+      "access_checked": "full_text",
+      "formula_locations": [
+        "Section 4: w-coordinate differential addition/doubling families",
+        "Section 4: recovery algorithms and character-dependent specializations"
+      ],
+      "repository_gap": "No twisted quotient coordinate family or cited differential source. Edwards yz/yzsquared already exist, but under c=1 and square-d constraints.",
+      "applicability": {
+        "curve25519": "General w=d*x^2*y^2 route is a candidate; degree/sign/cofactor ambiguity must be retained. Check roots for each alternate w.",
+        "p256": "No direct base-field twisted Edwards model."
+      },
+      "priority": "high",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "Related ACISP 2017 DOI: https://doi.org/10.1007/978-3-319-59870-3_21 . Do not count the 2026 deposit as an independent new scheme without version comparison.",
+        "Not every invariant w is degree two; the w=d*x^2*y^2 family identifies extra torsion cosets."
+      ]
+    },
+    {
+      "id": "cheng2019",
+      "title": "Differences among Summation Polynomials over Various Forms of Elliptic Curves",
+      "authors": [
+        "Chen-Mou Cheng",
+        "Kenta Kodera",
+        "Atsuko Miyaji"
+      ],
+      "year": 2019,
+      "url": "https://www.jstage.jst.go.jp/article/transfun/E102.A/9/E102.A_1061/_article",
+      "access_checked": "abstract_only_restricted_full_text",
+      "formula_locations": [
+        "Publisher abstract confirms Hessian/Montgomery/(twisted) Edwards/Weierstrass comparison; exact formula and experiment sections not accessible."
+      ],
+      "repository_gap": "No cited paper or model-specific summation-polynomial catalog. Existing f3 profile covers one relation transported between three presentations.",
+      "applicability": {
+        "curve25519": "Directly relevant research question; concrete applicability needs full-text review.",
+        "p256": "Same; field regime and factor-base choices must be checked."
+      },
+      "priority": "high",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "DOI 10.1587/transfun.E102.A.1061. Abstract reports empirical differences. No specific prime-field degree, solver cost or 256-bit speedup verified here."
+      ]
+    },
+    {
+      "id": "bianco-gorla2015",
+      "title": "Compression for trace zero points on twisted Edwards curves",
+      "authors": [
+        "Giulia Bianco",
+        "Elisa Gorla"
+      ],
+      "year": "2015 preprint / 2016 journal",
+      "url": "https://arxiv.org/pdf/1507.08555",
+      "access_checked": "full_text",
+      "formula_locations": [
+        "Definition 9: explicit Edwards f3 and resultant recursion",
+        "Theorem 10: summation-polynomial properties",
+        "Remark 14: symmetry/support and compression comparisons"
+      ],
+      "repository_gap": "No literature-provenance entry or symbolic resultant-recursion family; existing relation_profile supplies a related three-variable polynomial only.",
+      "applicability": {
+        "curve25519": "The f3 identity is usable on its Edwards model. Trace-zero compression experiments are extension-field results.",
+        "p256": "No direct Edwards model over the base field."
+      },
+      "priority": "high",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "The paper studies trace-zero subgroups over extensions; its measured compression costs do not establish prime-field relation-collection costs."
+      ]
+    },
+    {
+      "id": "hisil-renes2019",
+      "title": "On Kummer Lines With Full Rational 2-torsion and Their Usage in Cryptography",
+      "authors": [
+        "Huseyin Hisil",
+        "Joost Renes"
+      ],
+      "year": "2018 preprint / 2019 journal",
+      "url": "https://joostrenes.nl/publications/kummerlines.pdf",
+      "access_checked": "full_text",
+      "formula_locations": [
+        "Propositions 3.1-3.2 and Theorem 3.4: maps among Kummer/Montgomery/Edwards presentations"
+      ],
+      "repository_gap": "edwards yz/yzsquared already capture some older theta-based formulas. Explicit six-model map network and translation by 2-torsion are not represented.",
+      "applicability": {
+        "curve25519": "Full rational 2-torsion assumption fails for Curve25519 itself; alternative examples are different curves.",
+        "p256": "No rational 2-torsion; also excluded."
+      },
+      "priority": "medium",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "The (159,5) Kummer example over the same prime is not a coordinate rewrite of Curve25519."
+      ]
+    },
+    {
+      "id": "kohel-geometry",
+      "title": "The geometry of efficient arithmetic on elliptic curves",
+      "authors": [
+        "David Kohel"
+      ],
+      "year": "2015 publication / 2016 arXiv",
+      "url": "https://arxiv.org/pdf/1601.03665",
+      "access_checked": "full_text",
+      "formula_locations": [
+        "Section 2: projective embeddings and addition-law spaces",
+        "Section 6, Theorem 6.11: rational-2-torsion models and doubling"
+      ],
+      "repository_gap": "No explicit projective-embedding search framework or corresponding model catalog. Some classical model families overlap EFD.",
+      "applicability": {
+        "curve25519": "Rational-2-torsion families are candidates; test exact parameter conditions.",
+        "p256": "General embedding framework applies; specialized torsion speed claims do not."
+      },
+      "priority": "medium",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "Degree-4 models are intersections of quadrics; higher-degree embeddings offer additional relations and variables. This is a systematic search space, not a finite list of unrelated names."
+      ]
+    },
+    {
+      "id": "kohel-mu4",
+      "title": "Twisted mu4-normal form for elliptic curves",
+      "authors": [
+        "David Kohel"
+      ],
+      "year": "2017 publication / 2020 arXiv",
+      "url": "https://arxiv.org/abs/2012.10799",
+      "access_checked": "primary_abstract_and_author_pdf_search_excerpt",
+      "formula_locations": [
+        "Odd-characteristic linear isomorphism to twisted Edwards; binary-field addition/doubling sections"
+      ],
+      "repository_gap": "No mu4-normal or twisted mu4 coordinate files.",
+      "applicability": {
+        "curve25519": "Odd-characteristic Edwards-related embedding candidate; check full conditions.",
+        "p256": "Do not infer an Edwards conversion from binary-field coverage."
+      },
+      "priority": "medium",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "Primary author paper: https://www.i2m.univ-amu.fr/perso/david.kohel/pub/ec_mu4_twist.pdf",
+        "Reported 9M+2S and 2M+5S+2m bounds are for binary fields, not for P-256."
+      ]
+    },
+    {
+      "id": "huff2010",
+      "title": "Huff's Model for Elliptic Curves",
+      "authors": [
+        "Marc Joye",
+        "Mehdi Tibouchi",
+        "Damien Vergnaud"
+      ],
+      "year": 2010,
+      "url": "https://eprint.iacr.org/2010/383",
+      "access_checked": "primary_abstract",
+      "formula_locations": [
+        "Addition/doubling formulas and model maps; exact equation numbers need PDF review."
+      ],
+      "repository_gap": "No Huff model exported; not among the ten large-characteristic EFD shapes in this audit.",
+      "applicability": {
+        "curve25519": "Standard Huff requires Z/4 x Z/2; Curve25519 lacks full rational 2-torsion.",
+        "p256": "Excluded over base field by rational 2-torsion requirement."
+      },
+      "priority": "medium",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "Include as a family in a general atlas, not as a presumed transformation for the target curves."
+      ]
+    },
+    {
+      "id": "general-huff2010",
+      "title": "Elliptic curves in Huff's model",
+      "authors": [
+        "Hongfeng Wu",
+        "Rongquan Feng"
+      ],
+      "year": 2010,
+      "url": "https://eprint.iacr.org/2010/390",
+      "access_checked": "primary_abstract",
+      "formula_locations": [
+        "General Huff equation x*(a*y^2-1)=y*(b*x^2-1); projective addition/doubling."
+      ],
+      "repository_gap": "No general Huff model exported.",
+      "applicability": {
+        "curve25519": "Full rational 2-torsion requirement fails.",
+        "p256": "Full rational 2-torsion requirement fails."
+      },
+      "priority": "medium",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "Primary abstract supplies the full-rational-2-torsion correspondence; verify exact maps and exceptional sets before importing."
+      ]
+    },
+    {
+      "id": "hone2020",
+      "title": "Efficient ECM factorization in parallel with the Lyness map",
+      "authors": [
+        "Andrew N. W. Hone"
+      ],
+      "year": 2020,
+      "url": "https://arxiv.org/pdf/2002.03811",
+      "access_checked": "full_text",
+      "formula_locations": [
+        "Section 2, equations (8)-(11): Lyness curve and Weierstrass mapping",
+        "Sections 3-4: P1 x P1 arithmetic and parallel evaluation"
+      ],
+      "repository_gap": "No Lyness/QRT biquadratic model or product-projective coordinates.",
+      "applicability": {
+        "curve25519": "Candidate only after explicit parameter-map and good-reduction checks.",
+        "p256": "Potential model-search direction; no conversion for the specific finite-field curve established here."
+      },
+      "priority": "medium",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "Fixed-point translation is not arbitrary addition. The paper studies ECM and curves over Q; quoted small-constant and four-processor costs cannot be compared directly to generic curve arithmetic."
+      ]
+    },
+    {
+      "id": "moody2011",
+      "title": "Division Polynomials for Jacobi Quartic Curves",
+      "authors": [
+        "Dustin Moody"
+      ],
+      "year": 2011,
+      "url": "https://www.nist.gov/publications/division-polynomials-jacobi-quartic-curves",
+      "access_checked": "primary_abstract_and_indexed_pdf",
+      "formula_locations": [
+        "Division-polynomial recurrences; exact numbered equations require full PDF review."
+      ],
+      "repository_gap": "Jacobi quartic family omitted by the export; general multiplication recurrences extend beyond the upstream operation list.",
+      "applicability": {
+        "curve25519": "Requires an explicit base-field Jacobi-quartic model and parameter checks.",
+        "p256": "Standard rational-2-torsion quartic family is obstructed over base field."
+      },
+      "priority": "medium",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "Primary NIST record also mentions extensions to Jacobi intersections and Huff curves."
+      ]
+    },
+    {
+      "id": "amadori2018",
+      "title": "On the discrete logarithm problem for prime-field elliptic curves",
+      "authors": [
+        "A. G. Amadori",
+        "Federico Pintore",
+        "Massimiliano Sala"
+      ],
+      "year": 2018,
+      "url": "https://pure.tue.nl/ws/files/91158650/609.pdf",
+      "access_checked": "full_text_via_web_pdf",
+      "formula_locations": [
+        "Prime-field point decomposition and modified index-calculus construction"
+      ],
+      "repository_gap": "No prime-field relation-generation experiment implementation in this export.",
+      "applicability": {
+        "curve25519": "Research baseline, not a new coordinate formula.",
+        "p256": "Research baseline, not a new coordinate formula."
+      },
+      "priority": "medium",
+      "implementation_status": "candidate_not_imported",
+      "notes": [
+        "Published FFA 51 (2018), 168-182, DOI 10.1016/j.ffa.2018.01.009. Separate relation generation from group-operation speed."
+      ]
+    }
+  ]
+}

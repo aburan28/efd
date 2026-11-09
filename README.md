@@ -153,3 +153,16 @@ python tools/curve_map.py --curve p256 --json
 python -m unittest discover -s tests -v
 python tools/relation_profile.py --curve curve25519
 ```
+
+## Literature and coverage audit
+
+The [research survey](docs/research-formula-gaps.md) identifies 17 paper candidates
+and distinguishes missing model families, joint arithmetic states, quotient
+relations and field restrictions. A reproducible [upstream inventory](research/upstream-efd-inventory.json)
+finds 200 absent EFD formula paths (194 in omitted families and six older
+Weierstrass entries requiring review). These are discovery records, not verified
+formula imports.
+
+```bash
+python tools/audit_upstream_efd.py --output research/upstream-efd-inventory.json
+```
