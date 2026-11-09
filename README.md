@@ -132,3 +132,24 @@ The base formula file has the following values:
 
 The three operand file has a simple format with one intermediate value computation per line.
 For input and output coordinate indices, see the notation in the list of types of formulas above.
+
+## Curve transformation atlas
+
+The [transformation atlas](docs/curve-transformations.md) adds a machine-readable
+[catalog](transformations/catalog.json) of conditional model maps, coordinate
+representations, and Curve25519/P-256/secp256k1 cases. It distinguishes full-point
+coordinates, quotients, isogenies and field extensions, and includes a reproducible
+prime-field summation-relation comparison.
+
+[Additional formulas](docs/additional-formulas.md) include RFC 7748 Montgomery
+doubling/ladder variants, x-only short-Weierstrass tripling, and a separately
+cataloged rational 2-isogeny with its dual. New native formulas have both metadata
+and three-operand code files.
+
+```bash
+python tools/curve_map.py --curve curve25519
+python tools/curve_map.py --curve p256 --json
+# SymPy is required for verification and relation profiling:
+python -m unittest discover -s tests -v
+python tools/relation_profile.py --curve curve25519
+```

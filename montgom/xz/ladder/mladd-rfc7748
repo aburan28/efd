@@ -1,0 +1,22 @@
+source RFC 7748, section 5, Montgomery ladder; a24=(a-2)/4 convention, https://www.rfc-editor.org/rfc/rfc7748#section-5
+parameter a24
+assume a24 = (a-2)/4
+assume Z1 = 1
+compute A = X2+Z2
+compute AA = A^2
+compute B = X2-Z2
+compute BB = B^2
+compute E = AA-BB
+compute C = X3+Z3
+compute D = X3-Z3
+compute DA = D*A
+compute CB = C*B
+compute t0 = DA+CB
+compute X5 = t0^2
+compute t2 = DA-CB
+compute t3 = t2^2
+compute Z5 = X1*t3
+compute X4 = AA*BB
+compute t4 = a24*E
+compute t5 = AA+t4
+compute Z4 = E*t5

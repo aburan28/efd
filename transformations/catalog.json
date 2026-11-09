@@ -1,0 +1,656 @@
+{
+  "schema_version": 1,
+  "scope": "Curated transformation atlas for the four models already exported in this repository; not an exhaustive classification of genus-one models.",
+  "conventions": {
+    "field": "F_p, p > 3 unless a field extension is explicitly selected",
+    "expressions": "Python-style ** powers; exact rational arithmetic, never floating point. Parse only trusted catalog expressions.",
+    "symbols": "Forward and target_parameters use SOURCE parameters a,b,c,d and source x,y. Inverse uses TARGET x,y but the ORIGINAL source parameters and auxiliary r,s,t. All substitutions are simultaneous.",
+    "auxiliaries": "r,s,t are field elements chosen to satisfy requires, not free parameters.",
+    "exceptions": "Rational formulas apply only on the stated open affine charts; birational maps extend to smooth projective completions.",
+    "eligibility": "recommended_coordinates are candidates for benchmarking, not measured winners. base_field_models refers only to the four catalog model families."
+  },
+  "sources": {
+    "efd": {
+      "url": "https://www.hyperelliptic.org/EFD/",
+      "scope": "Model equations and coordinate representations; local files remain canonical."
+    },
+    "rfc7748": {
+      "url": "https://www.rfc-editor.org/rfc/rfc7748#section-4.1",
+      "scope": "Curve25519 parameters and normalized Edwards map. Section 5: a24-minus-two doubling and ladder."
+    },
+    "sec2": {
+      "url": "https://www.secg.org/sec2-v2.pdf",
+      "scope": "Sections 2.4.1 and 2.4.2: secp256k1 and secp256r1 parameters."
+    },
+    "twisted": {
+      "url": "https://eprint.iacr.org/2008/013",
+      "scope": "Bernstein et al., Twisted Edwards Curves; Montgomery equivalence."
+    },
+    "semaev": {
+      "url": "https://eprint.iacr.org/2004/031",
+      "scope": "Summation polynomials; bibliographic reference, PDF unavailable during this session."
+    }
+  },
+  "models": {
+    "shortw": {
+      "path": "shortw/coordinates",
+      "nonsingular": "4*a**3+27*b**2 != 0"
+    },
+    "montgom": {
+      "path": "montgom/coordinates",
+      "nonsingular": "b != 0 and a**2 != 4"
+    },
+    "twisted": {
+      "path": "twisted/coordinates",
+      "nonsingular": "a*d*(a-d) != 0"
+    },
+    "edwards": {
+      "path": "edwards/coordinates",
+      "nonsingular": "c*d*(1-d*c**4) != 0"
+    }
+  },
+  "coordinates": [
+    {
+      "id": "edwards/inverted",
+      "path": "edwards/inverted/variables",
+      "model": "edwards",
+      "kind": "full_point",
+      "affine_chart": "X*Y*Z != 0 for reversible affine conversion; special points require separate charts",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "edwards/projective",
+      "path": "edwards/projective/variables",
+      "model": "edwards",
+      "kind": "full_point",
+      "affine_chart": "Z != 0",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "edwards/yz",
+      "path": "edwards/yz/variables",
+      "model": "edwards",
+      "kind": "quotient",
+      "affine_chart": "Z != 0; x sign lost; squared YZ also loses y sign",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "edwards/yzsquared",
+      "path": "edwards/yzsquared/variables",
+      "model": "edwards",
+      "kind": "quotient",
+      "affine_chart": "Z != 0; x sign lost; squared YZ also loses y sign",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "montgom/xz",
+      "path": "montgom/xz/variables",
+      "model": "montgom",
+      "kind": "quotient_by_negation",
+      "affine_chart": "Z != 0; inverse requires a square-root choice, and may land on the quadratic twist",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "shortw/jacobian",
+      "path": "shortw/jacobian/variables",
+      "model": "shortw",
+      "kind": "full_point",
+      "affine_chart": "Z != 0",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "shortw/jacobian-0",
+      "path": "shortw/jacobian-0/variables",
+      "model": "shortw",
+      "kind": "full_point",
+      "affine_chart": "Z != 0",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "shortw/jacobian-3",
+      "path": "shortw/jacobian-3/variables",
+      "model": "shortw",
+      "kind": "full_point",
+      "affine_chart": "Z != 0",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "shortw/modified",
+      "path": "shortw/modified/variables",
+      "model": "shortw",
+      "kind": "full_point",
+      "affine_chart": "Z != 0",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "shortw/projective",
+      "path": "shortw/projective/variables",
+      "model": "shortw",
+      "kind": "full_point",
+      "affine_chart": "Z != 0",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "shortw/projective-1",
+      "path": "shortw/projective-1/variables",
+      "model": "shortw",
+      "kind": "full_point",
+      "affine_chart": "Z != 0",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "shortw/projective-3",
+      "path": "shortw/projective-3/variables",
+      "model": "shortw",
+      "kind": "full_point",
+      "affine_chart": "Z != 0",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "shortw/w12-0",
+      "path": "shortw/w12-0/variables",
+      "model": "shortw",
+      "kind": "full_point",
+      "affine_chart": "Z != 0",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "shortw/xyzz",
+      "path": "shortw/xyzz/variables",
+      "model": "shortw",
+      "kind": "full_point",
+      "affine_chart": "Z != 0",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "shortw/xyzz-3",
+      "path": "shortw/xyzz-3/variables",
+      "model": "shortw",
+      "kind": "full_point",
+      "affine_chart": "Z != 0",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "shortw/xz",
+      "path": "shortw/xz/variables",
+      "model": "shortw",
+      "kind": "quotient_by_negation",
+      "affine_chart": "Z != 0; inverse requires a square-root choice, and may land on the quadratic twist",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "twisted/extended",
+      "path": "twisted/extended/variables",
+      "model": "twisted",
+      "kind": "full_point",
+      "affine_chart": "Z != 0",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "twisted/extended-1",
+      "path": "twisted/extended-1/variables",
+      "model": "twisted",
+      "kind": "full_point",
+      "affine_chart": "Z != 0",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "twisted/inverted",
+      "path": "twisted/inverted/variables",
+      "model": "twisted",
+      "kind": "full_point",
+      "affine_chart": "X*Y*Z != 0 for reversible affine conversion; special points require separate charts",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "twisted/projective",
+      "path": "twisted/projective/variables",
+      "model": "twisted",
+      "kind": "full_point",
+      "affine_chart": "Z != 0",
+      "sources": [
+        "efd"
+      ]
+    }
+  ],
+  "transformations": [
+    {
+      "id": "montgomery-to-shortw",
+      "source": "montgom",
+      "target": "shortw",
+      "kind": "birational_isomorphism",
+      "target_parameters": {
+        "a": "(1-a**2/3)/b**2",
+        "b": "(2*a**3/27-a/3)/b**3"
+      },
+      "forward": {
+        "x": "(x+a/3)/b",
+        "y": "y/b"
+      },
+      "inverse": {
+        "x": "b*x-a/3",
+        "y": "b*y"
+      },
+      "requires": [
+        "characteristic > 3",
+        "b != 0"
+      ],
+      "source_substitutions": {},
+      "affine_exceptions": [
+        "No finite chart poles; infinity maps to infinity."
+      ],
+      "sources": [
+        "efd"
+      ],
+      "verification": "symbolic curve identity and inverse on the open chart; see tests/test_transformations.py"
+    },
+    {
+      "id": "shortw-to-montgomery",
+      "source": "shortw",
+      "target": "montgom",
+      "kind": "birational_isomorphism",
+      "target_parameters": {
+        "a": "3*r/s",
+        "b": "1/s"
+      },
+      "forward": {
+        "x": "(x-r)/s",
+        "y": "y/s"
+      },
+      "inverse": {
+        "x": "s*x+r",
+        "y": "s*y"
+      },
+      "requires": [
+        "characteristic > 3",
+        "r**3+a*r+b == 0",
+        "s**2 == 3*r**2+a",
+        "s != 0",
+        "r and s must lie in the stated field"
+      ],
+      "source_substitutions": {
+        "a": "s**2-3*r**2",
+        "b": "2*r**3-r*s**2"
+      },
+      "affine_exceptions": [
+        "No finite chart poles; infinity maps to infinity. A rational root r alone is insufficient: 3*r**2+a must be a square."
+      ],
+      "sources": [
+        "efd",
+        "twisted"
+      ],
+      "verification": "symbolic curve identity and inverse on the open chart; see tests/test_transformations.py"
+    },
+    {
+      "id": "montgomery-to-twisted",
+      "source": "montgom",
+      "target": "twisted",
+      "kind": "birational_isomorphism",
+      "target_parameters": {
+        "a": "(a+2)/b",
+        "d": "(a-2)/b"
+      },
+      "forward": {
+        "x": "x/y",
+        "y": "(x-1)/(x+1)"
+      },
+      "inverse": {
+        "x": "(1+y)/(1-y)",
+        "y": "(1+y)/(x*(1-y))"
+      },
+      "requires": [
+        "characteristic > 3",
+        "b != 0",
+        "a**2 != 4"
+      ],
+      "source_substitutions": {},
+      "affine_exceptions": [
+        "Forward excludes y=0 or x=-1; inverse excludes x=0 or y=1. On smooth completions: O -> (0,1), (0,0) -> (0,-1). Other missing points require projective charts."
+      ],
+      "sources": [
+        "twisted"
+      ],
+      "verification": "symbolic curve identity and inverse on the open chart; see tests/test_transformations.py"
+    },
+    {
+      "id": "montgomery-to-minus-one-twisted",
+      "source": "montgom",
+      "target": "twisted",
+      "kind": "birational_isomorphism",
+      "target_parameters": {
+        "a": "-1",
+        "d": "(a-2)/(b*s**2)"
+      },
+      "forward": {
+        "x": "s*x/y",
+        "y": "(x-1)/(x+1)"
+      },
+      "inverse": {
+        "x": "(1+y)/(1-y)",
+        "y": "s*(1+y)/(x*(1-y))"
+      },
+      "requires": [
+        "characteristic > 3",
+        "s**2 == -(a+2)/b",
+        "s != 0",
+        "s in the base field, otherwise an extension is needed"
+      ],
+      "source_substitutions": {
+        "a": "-b*s**2-2"
+      },
+      "affine_exceptions": [
+        "Same affine exceptions and completion values as montgomery-to-twisted. Fix a choice of s; changing its sign negates the Edwards x coordinate."
+      ],
+      "sources": [
+        "rfc7748"
+      ],
+      "verification": "symbolic curve identity and inverse on the open chart; see tests/test_transformations.py"
+    },
+    {
+      "id": "twisted-to-minus-one",
+      "source": "twisted",
+      "target": "twisted",
+      "kind": "birational_isomorphism",
+      "target_parameters": {
+        "a": "-1",
+        "d": "d/s**2"
+      },
+      "forward": {
+        "x": "s*x",
+        "y": "y"
+      },
+      "inverse": {
+        "x": "x/s",
+        "y": "y"
+      },
+      "requires": [
+        "characteristic > 3",
+        "s**2 == -a",
+        "s != 0",
+        "s in the stated field"
+      ],
+      "source_substitutions": {
+        "a": "-s**2"
+      },
+      "affine_exceptions": [
+        "No finite chart poles."
+      ],
+      "sources": [
+        "twisted"
+      ],
+      "verification": "symbolic curve identity and inverse on the open chart; see tests/test_transformations.py"
+    },
+    {
+      "id": "twisted-to-edwards",
+      "source": "twisted",
+      "target": "edwards",
+      "kind": "birational_isomorphism",
+      "target_parameters": {
+        "c": "1",
+        "d": "d/s**2"
+      },
+      "forward": {
+        "x": "s*x",
+        "y": "y"
+      },
+      "inverse": {
+        "x": "x/s",
+        "y": "y"
+      },
+      "requires": [
+        "characteristic > 3",
+        "s**2 == a",
+        "s != 0",
+        "s in the stated field"
+      ],
+      "source_substitutions": {
+        "a": "s**2"
+      },
+      "affine_exceptions": [
+        "No finite chart poles. This target uses the repository Edwards convention with c=1."
+      ],
+      "sources": [
+        "twisted"
+      ],
+      "verification": "symbolic curve identity and inverse on the open chart; see tests/test_transformations.py"
+    },
+    {
+      "id": "edwards-to-twisted",
+      "source": "edwards",
+      "target": "twisted",
+      "kind": "birational_isomorphism",
+      "target_parameters": {
+        "a": "1",
+        "d": "d*c**4"
+      },
+      "forward": {
+        "x": "x/c",
+        "y": "y/c"
+      },
+      "inverse": {
+        "x": "c*x",
+        "y": "c*y"
+      },
+      "requires": [
+        "characteristic > 3",
+        "c != 0"
+      ],
+      "source_substitutions": {},
+      "affine_exceptions": [
+        "No finite chart poles; (0,c) -> (0,1)."
+      ],
+      "sources": [
+        "efd"
+      ],
+      "verification": "symbolic curve identity and inverse on the open chart; see tests/test_transformations.py"
+    },
+    {
+      "id": "shortw-scaling",
+      "source": "shortw",
+      "target": "shortw",
+      "kind": "birational_isomorphism",
+      "target_parameters": {
+        "a": "a/t**4",
+        "b": "b/t**6"
+      },
+      "forward": {
+        "x": "x/t**2",
+        "y": "y/t**3"
+      },
+      "inverse": {
+        "x": "t**2*x",
+        "y": "t**3*y"
+      },
+      "requires": [
+        "characteristic > 3",
+        "t != 0",
+        "t in the stated field"
+      ],
+      "source_substitutions": {},
+      "affine_exceptions": [
+        "No finite chart poles; infinity maps to infinity. Cannot generally force a=0 or a=-3: the latter requires t**4=-a/3."
+      ],
+      "sources": [
+        "efd"
+      ],
+      "verification": "symbolic curve identity and inverse on the open chart; see tests/test_transformations.py"
+    }
+  ],
+  "curves": [
+    {
+      "id": "curve25519",
+      "model": "montgom",
+      "p": "57896044618658097711785492504343953926634992332820282019728792003956564819949",
+      "parameters": {
+        "a": "486662",
+        "b": "1"
+      },
+      "subgroup_order": "7237005577332262213973186563042994240857116359379907606001950938285454250989",
+      "cofactor": 8,
+      "base_point": {
+        "x": "9",
+        "y": "14781619447589544791020593568409986887264606134616475288964881837755586237401"
+      },
+      "recommended_coordinates": [
+        "montgom/xz",
+        "twisted/extended-1"
+      ],
+      "base_field_models": [
+        "montgom",
+        "shortw",
+        "twisted",
+        "edwards"
+      ],
+      "conditions": [
+        "twisted/extended-1 requires montgomery-to-minus-one-twisted, with s**2=-486664; s exists in F_p.",
+        "edwards25519 has a=-1 and d=-121665/121666 mod p.",
+        "Edwards c=1 (untwisted) also exists because -1 is square in F_p.",
+        "XZ is a quotient, not an invertible full-point representation."
+      ],
+      "sources": [
+        "rfc7748"
+      ]
+    },
+    {
+      "id": "p256",
+      "aliases": [
+        "secp256r1",
+        "prime256v1"
+      ],
+      "model": "shortw",
+      "p": "115792089210356248762697446949407573530086143415290314195533631308867097853951",
+      "parameters": {
+        "a": "-3",
+        "b": "41058363725152142129326129780047268409114441015993725554835256314039467401291"
+      },
+      "subgroup_order": "115792089210356248762697446949407573529996955224135760342422259061068512044369",
+      "cofactor": 1,
+      "base_point": {
+        "x": "48439561293906451759052585252797914202762949526041747995844080717082404635286",
+        "y": "36134250956749795798585127919587881956611106672985015071877198253568414405109"
+      },
+      "recommended_coordinates": [
+        "shortw/jacobian-3",
+        "shortw/xyzz-3",
+        "shortw/projective-3"
+      ],
+      "base_field_models": [
+        "shortw"
+      ],
+      "conditions": [
+        "Full group has odd prime order: no rational point of order 2, hence no base-field Montgomery or nonsingular twisted/untwisted Edwards model.",
+        "Extensions may admit additional models; they do not create a prime-field factor-base decomposition."
+      ],
+      "sources": [
+        "sec2"
+      ]
+    },
+    {
+      "id": "secp256k1",
+      "model": "shortw",
+      "p": "115792089237316195423570985008687907853269984665640564039457584007908834671663",
+      "parameters": {
+        "a": "0",
+        "b": "7"
+      },
+      "subgroup_order": "115792089237316195423570985008687907852837564279074904382605163141518161494337",
+      "cofactor": 1,
+      "base_point": {
+        "x": "55066263022277343669578718895168534326250603453777594175500187360389116729240",
+        "y": "32670510020758816978083085130507043184471273380659243275938904335757337482424"
+      },
+      "recommended_coordinates": [
+        "shortw/jacobian-0",
+        "shortw/xyzz",
+        "shortw/projective"
+      ],
+      "base_field_models": [
+        "shortw"
+      ],
+      "conditions": [
+        "Odd prime group order rules out base-field Montgomery and Edwards models.",
+        "The a=0 specialization is distinct from P-256 a=-3."
+      ],
+      "sources": [
+        "sec2"
+      ]
+    }
+  ],
+  "related_operations": [
+    {
+      "kind": "isogeny",
+      "invertible": false,
+      "note": "Not a coordinate change. On an order-l subgroup, transport an ECDLP only when the map is nonzero/injective there (in particular l coprime to degree). Kernel and dual map matter; same-field isogenous curves have equal point counts, so an odd-order isogeny class cannot acquire rational 2-torsion."
+    },
+    {
+      "kind": "quadratic_twist",
+      "invertible": false,
+      "note": "Generally not F_p-isomorphic. For nonsquare D, y^2=x^3+D^2*a*x+D^3*b becomes isomorphic over F_p(sqrt(D)); the twist is a different base-field group."
+    },
+    {
+      "kind": "field_extension",
+      "invertible": false,
+      "note": "Model availability can change; track extension degree, source subgroup and extra variables. No prime-field speedup follows automatically."
+    }
+  ],
+  "additional_formula_files": [
+    {
+      "path": "montgom/xz/doubling/dbl-rfc7748",
+      "kind": "doubling",
+      "verification": "tests/test_additional_formulas.py"
+    },
+    {
+      "path": "montgom/xz/ladder/ladd-rfc7748",
+      "kind": "ladder",
+      "verification": "tests/test_additional_formulas.py"
+    },
+    {
+      "path": "montgom/xz/ladder/mladd-rfc7748",
+      "kind": "ladder",
+      "verification": "tests/test_additional_formulas.py"
+    },
+    {
+      "path": "shortw/xz/tripling/tpl-division",
+      "kind": "tripling",
+      "verification": "tests/test_additional_formulas.py"
+    }
+  ]
+}

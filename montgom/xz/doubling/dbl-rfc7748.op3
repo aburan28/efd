@@ -1,0 +1,9 @@
+A = X1+Z1
+AA = A^2
+B = X1-Z1
+BB = B^2
+E = AA-BB
+X3 = AA*BB
+t0 = a24*E
+t1 = AA+t0
+Z3 = E*t1
