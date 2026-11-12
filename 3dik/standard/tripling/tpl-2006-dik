@@ -1,0 +1,17 @@
+source 2006 Doche--Icart--Kohel "Efficient scalar multiplication by isogeny decompositions", page 198, middle display
+parameter b
+assume b = 4*a-9
+parameter c
+assume c = -3*a
+compute A = (X1+3*ZZ1)^2
+compute B = a*ZZ1*A
+compute Xt = Y1^2+B
+compute Yt = Y1*(Y1^2-3*B)
+compute Zt = X1*Z1
+compute C = Zt^2
+compute D = (b*C-Xt)^2
+compute E = c*C*D
+compute X3 = (Yt^2+E)
+compute Y3 = Yt*(X3-4*E)
+compute Z3 = 3*Xt*Zt
+compute ZZ3 = Z3^2

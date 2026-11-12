@@ -1,0 +1,13 @@
+source 2005 Doche--Lange
+assume Z2 = 1
+compute O1 = Z1^2
+compute B = X2*O1
+compute D = Y2*O1*Z1
+compute E = X1+B
+compute F = Y1+D
+compute Z3 = E*Z1
+compute H = F*X2+Z3*Y2
+compute I = F+Z3
+compute G = Z3^2
+compute X3 = a2*G+F*I+E*E^2
+compute Y3 = I*X3+G*H

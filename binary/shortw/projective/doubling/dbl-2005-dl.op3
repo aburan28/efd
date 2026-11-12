@@ -1,0 +1,17 @@
+A = X1^2
+efdtmp0 = Y1*Z1
+B = A+efdtmp0
+C = X1*Z1
+D = C^2
+efdtmp1 = B^2
+efdtmp2 = B*C
+efdtmp3 = efdtmp1+efdtmp2
+efdtmp4 = a2*D
+E = efdtmp3+efdtmp4
+X3 = C*E
+efdtmp5 = B+C
+efdtmp6 = efdtmp5*E
+efdtmp7 = A^2
+efdtmp8 = efdtmp7*C
+Y3 = efdtmp6+efdtmp8
+Z3 = C*D

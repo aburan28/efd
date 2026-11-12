@@ -1,0 +1,7 @@
+name projective coordinates with d1=d2
+assume d1 = d2
+variable X
+variable Y
+variable Z
+satisfying x = X/Z
+satisfying y = Y/Z

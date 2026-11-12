@@ -1,0 +1,21 @@
+source 2008 Bernstein-–Lange-–Rezaeian Farashahi
+parameter d1d1
+assume d1d1 = d1^2
+appliesto xyz-1
+compute A = X1*X2
+compute B = Y1*Y2
+compute C = Z1*Z2
+compute D = d1*C
+compute E = C^2
+compute F = D^2
+compute G = (X1+Z1)*(X2+Z2)
+compute H = (Y1+Z1)*(Y2+Z2)
+compute I = A+G
+compute J = B+H
+compute K = (X1+Y1)*(X2+Y2)
+compute L = d1*K
+compute U = C*(F+L*(K+I+J+C))
+compute V = U+D*F+L*(d1*E+G*H+A*B)
+compute X3 = V+D*(A+D)*(G+D)
+compute Y3 = V+D*(B+D)*(H+D)
+compute Z3 = U

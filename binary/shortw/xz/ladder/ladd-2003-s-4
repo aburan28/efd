@@ -1,0 +1,11 @@
+source 2003 Stam "On Montgomery-like representations for elliptic curves over GF(2^k)", Section 3.2, plus a1 = 1, plus b8 = a6, plus a6 = roota6^4, plus common-subexpression elimination
+parameter sqrta6
+assume a6 = sqrta6^2
+parameter roota6
+assume sqrta6 = roota6^2
+compute A = X2*X3
+compute B = Z2*Z3
+compute X4 = ((X2+roota6*Z2)^2)^2
+compute Z4 = (X2*Z2)^2
+compute X5 = Z1*(A+sqrta6*B)^2
+compute Z5 = X1*((X2+Z2)*(X3+Z3)-A-B)^2

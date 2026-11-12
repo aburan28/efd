@@ -1,0 +1,19 @@
+source 2007 Hisil--Carter--Dawson
+parameter b
+assume b = a^2-1
+compute UU = XX1^2
+compute WW = ZZ1^2
+compute RR = R1^2
+compute A = 4*(UU-WW)
+compute AA = A^2
+compute B = 2*(UU+WW)+a*RR
+compute BB = B^2
+compute AB = (A+B)^2-AA-BB
+compute C = b*RR^2
+compute Q = 2*(BB-C)
+compute X3 = X1*(AB-Q)
+compute Z3 = Z1*(AB+Q)
+compute Y3 = Y1*(Q^2-4*AA*C)
+compute XX3 = X3^2
+compute ZZ3 = Z3^2
+compute R3 = (X3+Z3)^2-XX3-ZZ3

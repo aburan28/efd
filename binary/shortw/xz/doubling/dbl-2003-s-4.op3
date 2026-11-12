@@ -1,0 +1,6 @@
+efdtmp0 = roota6*Z1
+efdtmp1 = X1+efdtmp0
+efdtmp2 = efdtmp1^2
+X3 = efdtmp2^2
+efdtmp3 = X1*Z1
+Z3 = efdtmp3^2

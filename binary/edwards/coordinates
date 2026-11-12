@@ -1,0 +1,22 @@
+name binary Edwards curves
+parameter d1
+parameter d2
+coordinate x
+coordinate y
+satisfying d1*(x+y)+d2*(x^2+y^2) == (x+x^2)*(y+y^2)
+addition x = (d1*(x1+x2)+d2*(x1+y1)*(x2+y2)+(x1+x1^2)*(x2*(y1+y2+1)+y1*y2))/(d1+(x1+x1^2)*(x2+y2))
+addition y = (d1*(y1+y2)+d2*(x1+y1)*(x2+y2)+(y1+y1^2)*(y2*(x1+x2+1)+x1*x2))/(d1+(y1+y1^2)*(x2+y2))
+doubling x = (d1*(x1+x1)+d2*(x1+y1)*(x1+y1)+(x1+x1^2)*(x1*(y1+y1+1)+y1*y1))/(d1+(x1+x1^2)*(x1+y1))
+doubling y = (d1*(y1+y1)+d2*(x1+y1)*(x1+y1)+(y1+y1^2)*(y1*(x1+x1+1)+x1*x1))/(d1+(y1+y1^2)*(x1+y1))
+negation x = y1
+negation y = x1
+toweierstrass u = d1*(d1^2+d1+d2)*(x+y)/(x*y+d1*(x+y))
+toweierstrass v = d1*(d1^2+d1+d2)*(x/(x*y+d1*(x+y))+d1+1)
+a0 = 1
+a1 = 1
+a2 = d1^2+d2
+a3 = 0
+a4 = 0
+a6 = d1^4*(d1^4+d1^2+d2^2)
+fromweierstrass x = d1*(u+d1^2+d1+d2)/(u+v+(d1^2+d1)*(d1^2+d1+d2))
+fromweierstrass y = d1*(u+d1^2+d1+d2)/(v+(d1^2+d1)*(d1^2+d1+d2))

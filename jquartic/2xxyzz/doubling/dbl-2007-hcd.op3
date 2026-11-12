@@ -1,0 +1,14 @@
+B = XX1-ZZ1
+T1 = XX1+ZZ1
+C = Y1*T1
+efdtmp0 = X1+Z1
+efdtmp1 = efdtmp0^2
+efdtmp2 = Y1*efdtmp1
+X3 = C-efdtmp2
+Z3 = T1*B
+XX3 = X3^2
+ZZ3 = Z3^2
+T3 = XX3+ZZ3
+efdtmp3 = C^2
+efdtmp4 = 2*efdtmp3
+Y3 = efdtmp4-T3

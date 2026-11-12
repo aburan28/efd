@@ -1,0 +1,16 @@
+A = X1^2
+B = A^2
+C = Y1^2
+D = C^2
+E = A+C
+efdtmp0 = d1+E
+efdtmp1 = efdtmp0+B
+efdtmp2 = efdtmp1+D
+F = 1/efdtmp2
+efdtmp3 = d1*E
+efdtmp4 = efdtmp3+A
+efdtmp5 = efdtmp4+B
+X3 = efdtmp5*F
+efdtmp6 = X3+1
+efdtmp7 = d1*F
+Y3 = efdtmp6+efdtmp7

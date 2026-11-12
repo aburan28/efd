@@ -1,0 +1,15 @@
+source 2015 Bernstein--Chuengsatiansup--Kohel--Lange
+parameter minustwo
+assume minustwo = -2
+compute R = Y1+Z1
+compute S = Y1-Z1
+compute T = R^2
+compute U = S^2
+compute V = T+3*U
+compute W = 3*T+U
+compute C = R*V
+compute D = S*W
+compute E = 3*C-d*X1*(W-V)
+compute X3 = minustwo*X1*D
+compute Y3 = (D+E)*Z1
+compute Z3 = (D-E)*Y1

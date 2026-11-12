@@ -1,0 +1,11 @@
+C = X1^2
+Z3 = C
+efdtmp0 = C^2
+X3 = efdtmp0+a6
+efdtmp1 = Y1^2
+efdtmp2 = a2*Z3
+efdtmp3 = efdtmp1+efdtmp2
+efdtmp4 = efdtmp3+a6
+efdtmp5 = efdtmp4*X3
+efdtmp6 = a6*Z3
+Y3 = efdtmp5+efdtmp6

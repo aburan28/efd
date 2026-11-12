@@ -1,0 +1,291 @@
+{
+  "scope": "Native paper-derived entries, with explicit operation contracts. Source counts do not imply mathematical novelty.",
+  "formulas": [
+    {
+      "path": "montgom/extended/addition/add-2024-ffs",
+      "source": "2024 Farashahi--Fadavi--Sabbaghian, Faster Complete Addition Laws for Montgomery Curves, Theorems 2-3; transfer of general extended Edwards addition via linear maps (33)-(34), https://ches.iacr.org/2024/papers-issue-4/4_111.pdf",
+      "contract": {
+        "inputs": [
+          "P1",
+          "P2"
+        ],
+        "outputs": {
+          "P3": "P1+P2"
+        },
+        "conditions": [
+          "characteristic != 2",
+          "b != 0",
+          "a^2 != 4"
+        ],
+        "completeness": "Complete on rational points when ta is square and td is nonsquare; general formula is otherwise conditional."
+      },
+      "verification": "finite_field_checked",
+      "verification_test": "tests/test_paper_imports.py",
+      "metadata_sha256": "672e5066b6cbba03feca0f2f3626e8b22a761f18efa24cb688d5be070ade79a4",
+      "op3_sha256": "75839fbc7d2b26939beb6d227f6bf138632723601955657e028a60e4be3d8fb3"
+    },
+    {
+      "path": "shortw/jacobian/conjugate/coz-2011-gjmrv",
+      "source": "2011 Goundar--Joye--Miyaji--Rivain--Venelli, Scalar Multiplication on Weierstrass Elliptic Curves from Co-Z Arithmetic, Algorithm 8 (ZADDC), https://www.matthieurivain.com/files/jcen11b.pdf",
+      "contract": {
+        "inputs": [
+          "P1",
+          "P2"
+        ],
+        "outputs": {
+          "P3": "P1+P2",
+          "P4": "P1-P2"
+        },
+        "conditions": [
+          "Z1=Z2",
+          "Z1 != 0",
+          "X1 != X2"
+        ],
+        "shared_output": "Z3=Z4"
+      },
+      "verification": "finite_field_checked",
+      "verification_test": "tests/test_paper_imports.py",
+      "metadata_sha256": "fbdbdaec13fdcac92c345d6b8bb3339451f99e6f69ebf84de1586f0b593bef4a",
+      "op3_sha256": "aca42aecd7a800c68d2f056e0712945424ca4fd6ef13c169769ea681c27c0b21"
+    },
+    {
+      "path": "shortw/jacobian/updateadd/coz-2011-gjmrv",
+      "source": "2011 Goundar--Joye--Miyaji--Rivain--Venelli, Scalar Multiplication on Weierstrass Elliptic Curves from Co-Z Arithmetic, Algorithm 1 (ZADDU), https://www.matthieurivain.com/files/jcen11b.pdf",
+      "contract": {
+        "inputs": [
+          "P1",
+          "P2"
+        ],
+        "outputs": {
+          "P3": "P1+P2",
+          "P4": "P1, rescaled"
+        },
+        "conditions": [
+          "Z1=Z2",
+          "Z1 != 0",
+          "X1 != X2"
+        ],
+        "shared_output": "Z3=Z4"
+      },
+      "verification": "finite_field_checked",
+      "verification_test": "tests/test_paper_imports.py",
+      "metadata_sha256": "6e21e046309f1968b6707a48cc63e95aa8f2df98eaa3751218a1c03d1f953825",
+      "op3_sha256": "eacae329cfdff181ef66426c0dc27a014a29add3582cac3be0c389e0deb972b4"
+    },
+    {
+      "path": "shortw/projective/recovery/rec-2015-ccs",
+      "source": "2015 Chung--Costello--Smith, Fast, uniform, and compact scalar multiplication, Section 5.3, Brier--Joye recovery formula, https://arxiv.org/abs/1510.03174",
+      "contract": {
+        "inputs": [
+          "P1 full affine anchor",
+          "XZ(P2)",
+          "XZ(P1+P2) as P3"
+        ],
+        "outputs": {
+          "P4": "P2 full point"
+        },
+        "conditions": [
+          "Z1=1",
+          "Y1*Z2*Z3 != 0"
+        ]
+      },
+      "verification": "finite_field_checked",
+      "verification_test": "tests/test_paper_imports.py",
+      "metadata_sha256": "613109174fc8f62c82b4ccf3a792928bc2eb400f02184b612f996250c31e4774",
+      "op3_sha256": "54c3cee6fa22362b08dc89afa1096d81bdc8e59ed587cfecb450420246a44ce2"
+    },
+    {
+      "path": "montgom/projective/recovery/rec-2015-ccs",
+      "source": "2015 Chung--Costello--Smith, Fast, uniform, and compact scalar multiplication, Section 5.1, Okeya--Sakurai recovery; homogenized chord identity, https://arxiv.org/abs/1510.03174",
+      "contract": {
+        "inputs": [
+          "P1 full affine anchor",
+          "XZ(P2)",
+          "XZ(P1+P2) as P3"
+        ],
+        "outputs": {
+          "P4": "P2 full point"
+        },
+        "conditions": [
+          "Z1=1",
+          "b*Y1*Z2*Z3 != 0"
+        ]
+      },
+      "verification": "finite_field_checked",
+      "verification_test": "tests/test_paper_imports.py",
+      "metadata_sha256": "70a53dc8f87bc7d19a8b88fbc1ecd1c2ea1b6b341df121da898e455c4ac828b7",
+      "op3_sha256": "7cf05b3b04394a353240ba10f4ec28b31196a4634f3d35282d9471a3133cf757"
+    },
+    {
+      "path": "montgom/xz/relation/check-2017-rs",
+      "source": "2017 Renes--Smith, qDSA, Section 3.2 Proposition 3 equations (2)-(5), https://joostrenes.nl/publications/qdsa-eprint.pdf",
+      "contract": {
+        "inputs": [
+          "XZ(P1)",
+          "XZ(P2)",
+          "XZ(P3)"
+        ],
+        "outputs": {
+          "R": "zero iff P3 is an unordered sum/difference quotient, on the stated curve"
+        },
+        "conditions": [
+          "All inputs lift to points of the same curve",
+          "Nonzero projective representatives"
+        ],
+        "kind": "relation_residual"
+      },
+      "verification": "finite_field_checked",
+      "verification_test": "tests/test_paper_imports.py",
+      "metadata_sha256": "375f2385d5b3452e1a9d96e61dc0d46a50d0d0114599dc7c78ea10d429abf208",
+      "op3_sha256": "dd8f5004853d4c0827a31211204eb9ad97c08f72835638a73ad5051c289374a8"
+    },
+    {
+      "path": "shortw/xz/relation/check-2004-semaev",
+      "source": "2004 Semaev, Summation polynomials and the discrete logarithm problem on elliptic curves, https://eprint.iacr.org/2004/031; homogeneous f3 relation",
+      "contract": {
+        "inputs": [
+          "XZ(P1)",
+          "XZ(P2)",
+          "XZ(P3)"
+        ],
+        "outputs": {
+          "R": "homogeneous f3 residual"
+        },
+        "conditions": [
+          "Nonzero projective representatives",
+          "Affine interpretation requires Z1*Z2*Z3 != 0; check rational lifts and signs"
+        ],
+        "kind": "relation_residual"
+      },
+      "verification": "finite_field_checked",
+      "verification_test": "tests/test_paper_imports.py",
+      "metadata_sha256": "70189c874b119df0c482b1d7649648a3fb5fd3a95263a9c4e393298927b1a134",
+      "op3_sha256": "df18d0f2bead609d54aaaebd4262cb54a21e7052c16f93622aca0029c1c7c116"
+    },
+    {
+      "path": "twisted/yz/relation/check-2015-bg",
+      "source": "2015 Bianco--Gorla, Compression for trace zero points on twisted Edwards curves, Definition 9; homogenized d*f3, https://arxiv.org/pdf/1507.08555",
+      "contract": {
+        "inputs": [
+          "YZ(P1)",
+          "YZ(P2)",
+          "YZ(P3)"
+        ],
+        "outputs": {
+          "R": "homogeneous Edwards summation residual"
+        },
+        "conditions": [
+          "a*d*(a-d) != 0",
+          "Affine relation excludes points at infinity; verify lifts and signs"
+        ],
+        "kind": "relation_residual"
+      },
+      "verification": "finite_field_checked",
+      "verification_test": "tests/test_paper_imports.py",
+      "metadata_sha256": "6721f807ea9cd240ef756558d74feece03f3404b2502f4e212d0bdaa534a4fb0",
+      "op3_sha256": "053a1fe9c64aedc0ff90871108f7ba83c6a011f3807b539343c06e7320eda2d4"
+    },
+    {
+      "path": "twisted/w/doubling/dbl-2017-fh",
+      "source": "2017 Farashahi--Hosseini, Differential Addition on Twisted Edwards Curves, Section 4, invariant w=d*x^2*y^2; arXiv deposit 2026, https://arxiv.org/pdf/2606.20831",
+      "contract": {
+        "inputs": [
+          "w(P1)"
+        ],
+        "outputs": {
+          "W3:Z3": "w(2P1)"
+        },
+        "conditions": [
+          "w=d*x^2*y^2",
+          "Z1 != 0",
+          "w(P1)^2 != 1"
+        ],
+        "fiber": "Identifies additional torsion cosets; not an invertible point representation."
+      },
+      "verification": "finite_field_checked",
+      "verification_test": "tests/test_paper_imports.py",
+      "metadata_sha256": "6467b5836546d43b3b3a0f82464e32f10f00e2ea53eab592ddbaaf8c491fb2f1",
+      "op3_sha256": "75b8248bc6611cce195ef62d8dbd238dc395a5b6a843ec78f66efbd649da20bc"
+    },
+    {
+      "path": "twisted/w/diffadd/dadd-2017-fh",
+      "source": "2017 Farashahi--Hosseini, Differential Addition on Twisted Edwards Curves, Section 4, invariant w=d*x^2*y^2; arXiv deposit 2026, https://arxiv.org/pdf/2606.20831",
+      "contract": {
+        "inputs": [
+          "w(P3-P2) as P1",
+          "w(P2)",
+          "w(P3)"
+        ],
+        "outputs": {
+          "W4:Z4": "w(P2+P3)"
+        },
+        "conditions": [
+          "Difference image and denominators nonzero; see paper Section 4"
+        ],
+        "fiber": "Additional torsion cosets are lost."
+      },
+      "verification": "finite_field_checked",
+      "verification_test": "tests/test_paper_imports.py",
+      "metadata_sha256": "5d2eeaa405f3cdc3ec8f400e78d739ac9ab3cfb6726297e3cf609f0e6b1edcc4",
+      "op3_sha256": "3b8f8d79588c08d0e3bade4f2ce337e8ac0d1e1dc14ba7fe7e5e32d97dd1c508"
+    },
+    {
+      "path": "generalw/projective/addition/add-chord",
+      "source": "General Weierstrass chord-and-tangent law, homogenized with explicit a1,a2,a3; derived formula, not an optimized paper operation count.",
+      "verification": "finite_field_checked",
+      "contract": {
+        "inputs": [
+          "P1",
+          "P2"
+        ],
+        "outputs": {
+          "P3": "P1+P2"
+        },
+        "conditions": [
+          "Z1*Z2*(X2*Z1-X1*Z2) != 0",
+          "Nonsingular general Weierstrass curve"
+        ]
+      },
+      "verification_test": "tests/test_paper_imports.py",
+      "metadata_sha256": "0b513023f13e8f31a3c31d37b5f7afbe0bc9f32a694264be2939307a9c5e714b",
+      "op3_sha256": "30ab0d807a73c60e1cff054529a6bf6475b489d74443e3d93bd669130515c1c7"
+    },
+    {
+      "path": "shortw/jacobian/coupledstep/step-2020-h",
+      "source": "2020 Hamburg, Faster Montgomery and double-add ladders for short Weierstrass curves, Figure 3; homogeneous step with explicit denominator tracking, https://www.shiftleft.org/papers/ladder/ladder-tches.pdf",
+      "verification": "finite_field_checked",
+      "contract": {
+        "kind": "coupled_state_transition",
+        "inputs": [
+          "XQP=(xQ-xP)*Z^2",
+          "XRP=(xR-xP)*Z^2",
+          "M=slope(P,Q,-R)*Z",
+          "YP=2*yP*Z^3",
+          "Z; R=P+Q"
+        ],
+        "outputs": {
+          "XSP": "(xS-xP)*Zout^2",
+          "XTP": "(xT-xP)*Zout^2",
+          "Mout": "slope(P,S,-T)*Zout",
+          "YPout": "2*yP*Zout^3",
+          "Zout": "updated denominator; S=Q+R,T=2R"
+        },
+        "conditions": [
+          "All state points and slopes in their affine charts",
+          "F=(YP+2*M*XRP)*(XQP-XRP) != 0",
+          "This is a step, not a complete scalar-multiplication implementation."
+        ],
+        "weights": {
+          "XQP": 2,
+          "XRP": 2,
+          "M": 1,
+          "YP": 3,
+          "Z": 1
+        }
+      },
+      "verification_test": "tests/test_paper_imports.py",
+      "metadata_sha256": "6ec0030a12e0208d6efe38637f8d581685afeef06c8385832229ea2ae92b28cf",
+      "op3_sha256": "1b7aa79a3322d37485782ac35d3ff2584c7dfb2d20ec8824278e516534df3c9b"
+    }
+  ]
+}

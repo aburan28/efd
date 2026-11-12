@@ -1,0 +1,16 @@
+R0 = X1^2
+R1 = X1+Y1
+R1 = Y1*R1
+R2 = Z1+X1
+R2 = Z1*R2
+R2 = R0+R2
+R1 = R0+R1
+R0 = X1-Y1
+R0 = R1*R0
+Z3 = R0*Z1
+R1 = Z1-X1
+R1 = R2*R1
+X3 = R1*Y1
+efdtmp0 = R0+R1
+R2 = -efdtmp0
+Y3 = R2*X1

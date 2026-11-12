@@ -1,0 +1,12 @@
+source 2009.04.27 Bernstein
+assume Z1 = 1
+compute SS1 = S1^2
+compute CC1 = 1-SS1
+compute SC1 = (S1+C1)^2-SS1-CC1
+compute E = D1^2
+compute F = SC1^2
+compute G = a*F
+compute Z3 = 4*E+G
+compute D3 = 4*E-G
+compute C3 = 2*(F+4*CC1^2)-Z3
+compute S3 = 2*((SC1+D1)^2-E-F)

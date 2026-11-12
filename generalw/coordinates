@@ -1,0 +1,19 @@
+name general Weierstrass curves
+parameter a1
+parameter a2
+parameter a3
+parameter a4
+parameter a6
+coordinate x
+coordinate y
+satisfying y^2+a1*x*y+a3*y == x^3+a2*x^2+a4*x+a6
+toweierstrass u = x
+toweierstrass v = y
+a0 = 1
+a1 = a1
+a2 = a2
+a3 = a3
+a4 = a4
+a6 = a6
+fromweierstrass x = u
+fromweierstrass y = v

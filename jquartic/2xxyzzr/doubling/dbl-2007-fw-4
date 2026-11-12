@@ -1,0 +1,13 @@
+source 2007 Feng--Wu, second JQN2 doubling formula, plus epsilon=1, plus delta=-a, plus scaling, plus common-subexpression elimination
+appliesto 2xxyzzr
+compute Y12 = 2*Y1
+compute T1 = R1^2
+compute T12 = 2*T1
+compute T2 = Y12^2
+compute X3 = (R1+Y12)^2-T1-T2
+compute XX3 = X3^2
+compute Y3 = (T2+c*T12)^2-c*XX3
+compute Z3 = T2-a*T12-8*XX1^2
+compute ZZ3 = Z3^2
+compute T3 = XX3+ZZ3
+compute R3 = (X3+Z3)^2-T3

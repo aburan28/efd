@@ -1,0 +1,8 @@
+source 2008 Bernstein--Lange--Rezaeian Farashahi
+parameter e
+parameter f
+assume e^4 = d1
+assume f^4 = d2/d1+1
+compute C = W1*(Z1+W1)
+compute W3 = C^2
+compute Z3 = W3+((e*Z1+f*W1)^2)^2

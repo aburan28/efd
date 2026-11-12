@@ -1,0 +1,20 @@
+source 2008 Bernstein--Lange--Rezaeian Farashahi
+assume Z1 = 1
+parameter e
+parameter ee
+parameter f
+parameter ff
+assume e^4 = d1
+assume f^4 = d2/d1+1
+assume ee = e*e
+assume ff = f*f
+compute C = W2*(Z2+W2)
+compute D = W3*(Z3+W3)
+compute W4 = C^2
+compute Z4 = W4+((e*Z2+f*W2)^2)^2
+compute E = Z2*Z3
+compute F = W2*W3
+compute V = C*D
+compute U = V+(ee*E+ff*F)^2
+compute W5 = V+U*W1
+compute Z5 = U

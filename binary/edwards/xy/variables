@@ -1,0 +1,5 @@
+name affine coordinates
+variable X
+variable Y
+satisfying x = X
+satisfying y = Y

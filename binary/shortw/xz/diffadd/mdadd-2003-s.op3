@@ -1,0 +1,7 @@
+A = X2*Z3
+B = X3*Z2
+efdtmp0 = A+B
+Z4 = efdtmp0^2
+efdtmp1 = X1*Z4
+efdtmp2 = A*B
+X4 = efdtmp1+efdtmp2

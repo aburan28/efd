@@ -1,0 +1,3 @@
+compute p_lambda = X1+Y1/X1
+compute X3 = p_lambda^2+p_lambda+a2
+compute Y3 = p_lambda*(X1+X3)+X3+Y1

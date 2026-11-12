@@ -1,0 +1,13 @@
+source 2007 Feng--Wu, first JQN2 doubling formula, plus correction of obvious typos, plus epsilon=1, plus delta=-a, plus Z1=1, plus common-subexpression elimination
+parameter a2
+assume a2 = 2*a
+assume Z1 = 1
+compute U1 = (X1+Y1)^2
+compute U2 = Y1^2
+compute S1 = X1^2
+compute V1 = S1^2
+compute aS1 = a2*S1
+compute T = U2-V1-aS1
+compute X3 = U1-U2-S1
+compute Y3 = (T+V1)*(U2+aS1)+4*V1
+compute Z3 = T-V1

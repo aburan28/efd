@@ -1,0 +1,7 @@
+source 2006 Doche--Icart--Kohel "Efficient scalar multiplication by isogeny decompositions", page 199, top display, plus Z2=1, plus simplification, plus projectification, plus denominator clearing
+compute A = X2*Z1^2-X1*Z2^2
+compute B = Y2*Z1^3-Y1*Z2^3
+compute X3 = B^2-A^3-Z1^2*Z2^2*3*a*A^2-Z2^2*2*A^2*X1
+compute Y3 = B*(Z2^2*A^2*X1-X3)-Z2^3*A^3*Y1
+compute Z3 = Z1*Z2*A
+compute ZZ3 = Z3^2

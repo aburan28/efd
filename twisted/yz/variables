@@ -1,0 +1,10 @@
+name projective y quotient coordinates
+variable Y
+variable Z
+neutral Y = 1
+neutral Z = 1
+satisfying y = Y/Z
+tosystem Y = y
+tosystem Z = 1
+homogweight Y = 1
+homogweight Z = 1

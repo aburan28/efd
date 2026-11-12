@@ -1,0 +1,6 @@
+XX1 = X1^2
+ZZ1 = Z1^2
+efdtmp0 = sqrta6*ZZ1
+efdtmp1 = XX1+efdtmp0
+X3 = efdtmp1^2
+Z3 = XX1*ZZ1

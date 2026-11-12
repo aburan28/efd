@@ -1,0 +1,14 @@
+source 2007 Feng--Wu, first JQN2 doubling formula, plus correction of obvious typos, plus epsilon=1, plus delta=-a, plus scaling, plus common-subexpression elimination
+compute R1 = (X1+Z1)^2-XX1-ZZ1
+compute A1 = (R1+2*Y1)^2
+compute A2 = 4*Y1^2
+compute Q1 = XX1^2
+compute S1 = R1^2
+compute S12 = 2*S1
+compute M = a*S12
+compute A2M = A2-M
+compute X3 = A1-A2-S1
+compute Y3 = A2M*(A2+M)+S12^2
+compute Z3 = A2M-8*Q1
+compute XX3 = X3^2
+compute ZZ3 = Z3^2

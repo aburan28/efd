@@ -1,0 +1,16 @@
+source 2008.02.25 Hisil--Wong--Carter--Dawson, plus U=XX, plus V=ZZ, plus W=R/2, plus rescaling, plus denominator elimination, plus standard streamlining
+parameter k
+assume k = a-1
+compute A = 2*XX1*XX2
+compute B = 2*ZZ1*ZZ2
+compute C = R1*R2
+compute D = Y1*Y2
+compute X3 = (R1+Y1)*(R2+Y2)-C-D
+compute Z3 = B-A
+compute XX3 = X3^2
+compute ZZ3 = Z3^2
+compute F = A+B+C
+compute G = 2*((XX1+ZZ1)*(XX2+ZZ2)+D)+k*C
+compute H = XX3+ZZ3
+compute Y3 = F*G-H
+compute R3 = (X3+Z3)^2-H

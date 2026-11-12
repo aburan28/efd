@@ -1,0 +1,10 @@
+source 2008 Bernstein--Lange--Rezaeian-Farashahi "Binary Edwards Curves"
+parameter sqrta6
+assume sqrta6^2 = a6
+compute A = X1^2
+compute B = Y1^2
+compute Z3 = XZ1^2
+compute X3 = (A+sqrta6*ZZ1)^2
+compute ZZ3 = Z3^2
+compute XZ3 = X3*Z3
+compute Y3 = B*(B+X3+Z3)+a6*ZZ3+XZ3

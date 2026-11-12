@@ -1,0 +1,21 @@
+name doubling-oriented Doche--Icart--Kohel curves
+parameter a
+coordinate x
+coordinate y
+satisfying y^2 == x^3+a*x^2+16*a*x
+addition x = (-x1^3+(x2-a)*x1^2+(x2^2+2*a*x2)*x1+(y1^2-2*y2*y1+(-x2^3-a*x2^2+y2^2)))/(x1^2-2*x2*x1+x2^2)
+addition y = ((-y1+2*y2)*x1^3+(-a*y1+(-3*y2*x2+a*y2))*x1^2+((3*x2^2+2*a*x2)*y1-2*a*y2*x2)*x1+(y1^3-3*y2*y1^2+(-2*x2^3-a*x2^2+3*y2^2)*y1+(y2*x2^3+a*y2*x2^2-y2^3)))/(-x1^3+3*x2*x1^2-3*x2^2*x1+x2^3)
+doubling x = 1/(4*y1^2)*x1^4-8*a/y1^2*x1^2+64*a^2/y1^2
+doubling y = 1/(8*y1^3)*x1^6+((-a^2+40*a)/(4*y1^3))*x1^4+((a*y1^2+(16*a^3-640*a^2))/(4*y1^3))*x1^2+((-4*a^2*y1^2-512*a^3)/y1^3)
+negation x = x1
+negation y = -y1
+toweierstrass u = x
+toweierstrass v = y
+a0 = 1
+a1 = 0
+a2 = a
+a3 = 0
+a4 = 16*a
+a6 = 0
+fromweierstrass x = u
+fromweierstrass y = v

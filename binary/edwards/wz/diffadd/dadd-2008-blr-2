@@ -1,0 +1,10 @@
+source 2008 Bernstein--Lange--Rezaeian Farashahi
+parameter e
+parameter f
+assume e^2 = d1
+assume f^2 = d2/d1+1
+compute A = W2*W3
+compute B = Z2*Z3
+compute C = (W2+Z2)*(W3+Z3)
+compute W4 = Z1*(d1*(C+A+B)^2)
+compute Z4 = W1*(A*C+(e*B+f*A)^2)

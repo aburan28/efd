@@ -1,0 +1,16 @@
+efdtmp0 = X1+Y1
+U1 = efdtmp0^2
+U2 = Y1^2
+S1 = X1^2
+V1 = S1^2
+aS1 = a2*S1
+efdtmp1 = U2-V1
+T = efdtmp1-aS1
+efdtmp2 = U1-U2
+X3 = efdtmp2-S1
+efdtmp3 = T+V1
+efdtmp4 = U2+aS1
+efdtmp5 = efdtmp3*efdtmp4
+efdtmp6 = 4*V1
+Y3 = efdtmp5+efdtmp6
+Z3 = T-V1

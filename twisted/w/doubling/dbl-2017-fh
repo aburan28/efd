@@ -1,0 +1,5 @@
+source 2017 Farashahi--Hosseini, Differential Addition on Twisted Edwards Curves, Section 4, invariant w=d*x^2*y^2; arXiv deposit 2026, https://arxiv.org/pdf/2606.20831
+parameter e
+assume e*d = 4*a
+compute W3 = 4*W1*Z1*((W1+Z1)^2-e*W1*Z1)
+compute Z3 = (W1^2-Z1^2)^2

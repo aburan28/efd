@@ -1,0 +1,3 @@
+name w coordinates
+variable w
+satisfying x+y = w

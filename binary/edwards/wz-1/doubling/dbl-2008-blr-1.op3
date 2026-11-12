@@ -1,0 +1,7 @@
+efdtmp0 = Z1+W1
+C = W1*efdtmp0
+W3 = C^2
+efdtmp1 = Z1^2
+efdtmp2 = efdtmp1^2
+efdtmp3 = d1*efdtmp2
+Z3 = efdtmp3+W3

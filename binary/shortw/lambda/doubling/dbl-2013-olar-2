@@ -1,0 +1,16 @@
+source 2013 Oliveira--López--Aranha--Rodríguez-Henríquez "Lambda coordinates for binary elliptic curves"; database entry contributed by Chitchanok Chuengsatiansup
+parameter a21
+assume a21 = a2+1
+parameter a226
+assume a226 = a2^2+a6
+compute A = Z1^2
+compute B = L1+Z1
+compute C = L1*B
+compute D = a2*A
+compute E = C+D
+compute F = L1+X1
+compute G = F^2
+compute H = A^2
+compute X3 = E^2
+compute Z3 = E*A
+compute L3 = G*(G+E+A)+a226*H+X3+a21*Z3

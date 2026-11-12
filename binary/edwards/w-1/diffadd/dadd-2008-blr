@@ -1,0 +1,7 @@
+source 2008 Bernstein--Lange--Rezaeian Farashahi
+parameter d2overd1plus1
+assume d2overd1plus1 = d2/d1+1
+compute R = w2*w3
+compute S = R^2
+compute T = R*(1+w2+w3)+S
+compute w4 = T/(d1+T+d2overd1plus1*S)+w1

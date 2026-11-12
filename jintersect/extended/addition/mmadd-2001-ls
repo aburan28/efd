@@ -1,0 +1,13 @@
+source 2001 Liardet--Smart "Preventing SPA/DPA in ECC systems using the Jacobi form", plus Z1=1, plus Z2=1
+assume Z1 = 1
+assume Z2 = 1
+compute S1D2 = S1*D2
+compute D1S2 = D1*S2
+compute U = C2*C1
+compute V = D1S2*S1D2
+compute S3 = (C2+D1S2)*(C1+S1D2)-U-V
+compute C3 = U-V
+compute D3 = D1*D2-a*S1*S2*U
+compute Z3 = C2^2+D1S2^2
+compute SC3 = S3*C3
+compute DZ3 = D3*Z3

@@ -1,0 +1,1421 @@
+{
+  "imported_on": "2026-11-12",
+  "source": "https://www.hyperelliptic.org/EFD/g12o/",
+  "characteristic": 2,
+  "conditions": "Binary field formulas only. Do not evaluate using arithmetic modulo an odd prime. Trace/root assumptions remain necessary.",
+  "files": [
+    {
+      "path": "binary/edwards/coordinates",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/coordinates",
+      "sha256": "13e669f282246260554babeae36616cf7f62867f012c4fcf965c4753d26e912d",
+      "normalized_sha256": "fdc5a4cbba1c5f527dc71c93d8bef00f805f0234e3ba2c6e18c48d3d1b74874e",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "fdc5a4cbba1c5f527dc71c93d8bef00f805f0234e3ba2c6e18c48d3d1b74874e"
+    },
+    {
+      "path": "binary/edwards/w-1/diffadd/dadd-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/w-1/diffadd/dadd-2008-blr",
+      "sha256": "6033e352e501cb84f0891e4088ed4d793d0c9429876921fc02110f1731e35b96",
+      "normalized_sha256": "07aeb7f10b76fcbd7f10e4ae96b1c64662a659747b8082d92718a6ed284e9b68",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "07aeb7f10b76fcbd7f10e4ae96b1c64662a659747b8082d92718a6ed284e9b68"
+    },
+    {
+      "path": "binary/edwards/w-1/diffadd/dadd-2008-blr-1",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/w-1/diffadd/dadd-2008-blr-1",
+      "sha256": "8dd7aed1f6123cf4d5468a4a661ea6142a010b75cbc76359e96b9e3d157f58cd",
+      "normalized_sha256": "0e05b2d41cf86357a388d05b7f28529376d3ba40f2877ac6e782601fd2a83493",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "0e05b2d41cf86357a388d05b7f28529376d3ba40f2877ac6e782601fd2a83493"
+    },
+    {
+      "path": "binary/edwards/w-1/doubling/dbl-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/w-1/doubling/dbl-2008-blr",
+      "sha256": "d98a021aa12ffdf79239175788baecf936a49041f43fb51c4567f98ec2bbff1d",
+      "normalized_sha256": "a288bf4f40ba95822f16c77e3e2f98f09a977a2b731d18960d652355687c8c84",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "a288bf4f40ba95822f16c77e3e2f98f09a977a2b731d18960d652355687c8c84"
+    },
+    {
+      "path": "binary/edwards/w-1/doubling/dbl-2008-blr-1",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/w-1/doubling/dbl-2008-blr-1",
+      "sha256": "19a0d89488aa1e0e0b3d0b13ea144a69da2c550b41a8f71570271678563530a8",
+      "normalized_sha256": "19a0d89488aa1e0e0b3d0b13ea144a69da2c550b41a8f71570271678563530a8",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "19a0d89488aa1e0e0b3d0b13ea144a69da2c550b41a8f71570271678563530a8"
+    },
+    {
+      "path": "binary/edwards/w-1/ladder/ladd-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/w-1/ladder/ladd-2008-blr",
+      "sha256": "66ec478f0489d40f2f9d055996e93188f26cf05e340d411d26bbad0954fb3e02",
+      "normalized_sha256": "874dab78ec0897d3c3d65766c7c00adf9bfefe51d4384afd707bd71880ae15e0",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "874dab78ec0897d3c3d65766c7c00adf9bfefe51d4384afd707bd71880ae15e0"
+    },
+    {
+      "path": "binary/edwards/w-1/ladder/ladd-2008-blr-1",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/w-1/ladder/ladd-2008-blr-1",
+      "sha256": "44f26aa190216589f0fbe79fecd08acaf3dfa0a3cfbca54a9907068751228107",
+      "normalized_sha256": "94084be5b262d4a0ae1a2bc53ff7ecaec8b2cf127381f8657329b2509028c3af",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "94084be5b262d4a0ae1a2bc53ff7ecaec8b2cf127381f8657329b2509028c3af"
+    },
+    {
+      "path": "binary/edwards/w-1/scaling/copy",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/w-1/scaling/copy",
+      "sha256": "3572c082af113212b2a0c8bc18cc381e2ed943df3499035cf94f86b67718a298",
+      "normalized_sha256": "3572c082af113212b2a0c8bc18cc381e2ed943df3499035cf94f86b67718a298",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "3572c082af113212b2a0c8bc18cc381e2ed943df3499035cf94f86b67718a298"
+    },
+    {
+      "path": "binary/edwards/w-1/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/w-1/variables",
+      "sha256": "851c0d3820c00362f1ebc0b7c0f7cc8a1b2ab1ffb716be62a04835671c679705",
+      "normalized_sha256": "851c0d3820c00362f1ebc0b7c0f7cc8a1b2ab1ffb716be62a04835671c679705",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "851c0d3820c00362f1ebc0b7c0f7cc8a1b2ab1ffb716be62a04835671c679705"
+    },
+    {
+      "path": "binary/edwards/w/diffadd/dadd-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/w/diffadd/dadd-2008-blr",
+      "sha256": "6033e352e501cb84f0891e4088ed4d793d0c9429876921fc02110f1731e35b96",
+      "normalized_sha256": "07aeb7f10b76fcbd7f10e4ae96b1c64662a659747b8082d92718a6ed284e9b68",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "07aeb7f10b76fcbd7f10e4ae96b1c64662a659747b8082d92718a6ed284e9b68"
+    },
+    {
+      "path": "binary/edwards/w/doubling/dbl-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/w/doubling/dbl-2008-blr",
+      "sha256": "d98a021aa12ffdf79239175788baecf936a49041f43fb51c4567f98ec2bbff1d",
+      "normalized_sha256": "a288bf4f40ba95822f16c77e3e2f98f09a977a2b731d18960d652355687c8c84",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "a288bf4f40ba95822f16c77e3e2f98f09a977a2b731d18960d652355687c8c84"
+    },
+    {
+      "path": "binary/edwards/w/ladder/ladd-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/w/ladder/ladd-2008-blr",
+      "sha256": "66ec478f0489d40f2f9d055996e93188f26cf05e340d411d26bbad0954fb3e02",
+      "normalized_sha256": "874dab78ec0897d3c3d65766c7c00adf9bfefe51d4384afd707bd71880ae15e0",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "874dab78ec0897d3c3d65766c7c00adf9bfefe51d4384afd707bd71880ae15e0"
+    },
+    {
+      "path": "binary/edwards/w/scaling/copy",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/w/scaling/copy",
+      "sha256": "3572c082af113212b2a0c8bc18cc381e2ed943df3499035cf94f86b67718a298",
+      "normalized_sha256": "3572c082af113212b2a0c8bc18cc381e2ed943df3499035cf94f86b67718a298",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "3572c082af113212b2a0c8bc18cc381e2ed943df3499035cf94f86b67718a298"
+    },
+    {
+      "path": "binary/edwards/w/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/w/variables",
+      "sha256": "884db8fea480a4f61f51bf24da29d4d91d5acc6cf93db0ab2a5d3b944d9e3178",
+      "normalized_sha256": "884db8fea480a4f61f51bf24da29d4d91d5acc6cf93db0ab2a5d3b944d9e3178",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "884db8fea480a4f61f51bf24da29d4d91d5acc6cf93db0ab2a5d3b944d9e3178"
+    },
+    {
+      "path": "binary/edwards/wz-1/diffadd/dadd-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz-1/diffadd/dadd-2008-blr",
+      "sha256": "e7f9749f61f60b18c0b4d74dc23f030a4ee91c38335770f4458eb5fff2da83f9",
+      "normalized_sha256": "9ef94b1cbfe281a27772af0af01bf7568c1e6d3b6c3b3376c824943a4240e7fb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9ef94b1cbfe281a27772af0af01bf7568c1e6d3b6c3b3376c824943a4240e7fb"
+    },
+    {
+      "path": "binary/edwards/wz-1/diffadd/dadd-2008-blr-1",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz-1/diffadd/dadd-2008-blr-1",
+      "sha256": "755ef4ed5b23f5d548010f2d114fba5df0f7afc7c43d740dbb228f49341390ab",
+      "normalized_sha256": "e5f1da42191e1ef02f74a8bee0102cf49d3e82eb6296481ed15c0eb4a449f5ce",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "e5f1da42191e1ef02f74a8bee0102cf49d3e82eb6296481ed15c0eb4a449f5ce"
+    },
+    {
+      "path": "binary/edwards/wz-1/diffadd/dadd-2008-blr-2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz-1/diffadd/dadd-2008-blr-2",
+      "sha256": "5c56faee779947aa8e61eb7a5c7c9b758ebee23f6438d724f7ce1e553262579f",
+      "normalized_sha256": "502f0a2432def142aef6f9fbc9254b903bc3f4d2a8741873328acb3f3af058e2",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "502f0a2432def142aef6f9fbc9254b903bc3f4d2a8741873328acb3f3af058e2"
+    },
+    {
+      "path": "binary/edwards/wz-1/diffadd/dadd-2008-blr-3",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz-1/diffadd/dadd-2008-blr-3",
+      "sha256": "a37375fd78b7ce32678493f1bb1a8be0653c75b8565f14bcea87b09118eac32c",
+      "normalized_sha256": "7e9ea4bf7e16eced188dc4a59581871340018b1d1e1138a017a409aec45dd589",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "7e9ea4bf7e16eced188dc4a59581871340018b1d1e1138a017a409aec45dd589"
+    },
+    {
+      "path": "binary/edwards/wz-1/diffadd/mdadd-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz-1/diffadd/mdadd-2008-blr",
+      "sha256": "d44476f6cba4b96364c0d197abef6dfd394cd086f235c77b6e71f7ba21f58e52",
+      "normalized_sha256": "e9531e592d617f99dc7ebf12932f520a5ed0c720a9ffc6f3ed2caa1259ab943a",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "e9531e592d617f99dc7ebf12932f520a5ed0c720a9ffc6f3ed2caa1259ab943a"
+    },
+    {
+      "path": "binary/edwards/wz-1/diffadd/mdadd-2008-blr-1",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz-1/diffadd/mdadd-2008-blr-1",
+      "sha256": "bf32a772cb0fbde89eea0a48f7bc45192cf714b92756f00b91342d3be00a976e",
+      "normalized_sha256": "8ae44790080a6a0f851847b6db53bf602eea7f54fb232f1e88467b76afdb51c6",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "8ae44790080a6a0f851847b6db53bf602eea7f54fb232f1e88467b76afdb51c6"
+    },
+    {
+      "path": "binary/edwards/wz-1/doubling/dbl-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz-1/doubling/dbl-2008-blr",
+      "sha256": "c825cca08445e7142bce4f0e85a5e48d90b2ad3b8a713c6afad4313fe164824d",
+      "normalized_sha256": "88c923021efb74a5c7c4402774a3d7b6e41cb359a1ba31f0cc8c45af712495a8",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "88c923021efb74a5c7c4402774a3d7b6e41cb359a1ba31f0cc8c45af712495a8"
+    },
+    {
+      "path": "binary/edwards/wz-1/doubling/dbl-2008-blr-1",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz-1/doubling/dbl-2008-blr-1",
+      "sha256": "77d513e45fc7be38a153724a848663797372cc607d2e39e7e1137dda6260e81b",
+      "normalized_sha256": "491dccac0e0b9194a1b8cab9437afcabd128dee37697ceb36bd7eabe3b108de6",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "491dccac0e0b9194a1b8cab9437afcabd128dee37697ceb36bd7eabe3b108de6"
+    },
+    {
+      "path": "binary/edwards/wz-1/ladder/ladd-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz-1/ladder/ladd-2008-blr",
+      "sha256": "951d263f84ce6a78ebf070de1bfb6cc8d7891013141b36a84e6830d84be1b82d",
+      "normalized_sha256": "965283033066877e8b299d238599f0ad518170fa9a92344026dd535781d1dd52",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "965283033066877e8b299d238599f0ad518170fa9a92344026dd535781d1dd52"
+    },
+    {
+      "path": "binary/edwards/wz-1/ladder/ladd-2008-blr-1",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz-1/ladder/ladd-2008-blr-1",
+      "sha256": "2a848dd9c44339f58343c268e9d5276e827a33cac2f715bcf223ea3843046794",
+      "normalized_sha256": "d00861b1e7422f7cb961882b352699b79b9514c987d854a19ef5fe99855facbe",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "d00861b1e7422f7cb961882b352699b79b9514c987d854a19ef5fe99855facbe"
+    },
+    {
+      "path": "binary/edwards/wz-1/ladder/mladd-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz-1/ladder/mladd-2008-blr",
+      "sha256": "4f7ba846daa71eef75694620ed483afc83d4472292efad089c28df6a436adc81",
+      "normalized_sha256": "ba02502bcf757ddaa7806ae1d75695ac4802a278d6d774be0ac55ae9a7a49de0",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "ba02502bcf757ddaa7806ae1d75695ac4802a278d6d774be0ac55ae9a7a49de0"
+    },
+    {
+      "path": "binary/edwards/wz-1/ladder/mladd-2008-blr-1",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz-1/ladder/mladd-2008-blr-1",
+      "sha256": "225be377a9f6f074dce6be07f617ef864b944280ab54a8a9d165d99fa622f26d",
+      "normalized_sha256": "a65ddc97eb24020921af43b348f2fd08e09ecc36bc3f0e6d400f757f5b1d2151",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "a65ddc97eb24020921af43b348f2fd08e09ecc36bc3f0e6d400f757f5b1d2151"
+    },
+    {
+      "path": "binary/edwards/wz-1/scaling/scale",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz-1/scaling/scale",
+      "sha256": "5bbd20767582b75cf3bcba655b1cd9ce237e5acbbf7f0fed2cc7fd8c4b3e25d0",
+      "normalized_sha256": "5bbd20767582b75cf3bcba655b1cd9ce237e5acbbf7f0fed2cc7fd8c4b3e25d0",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "5bbd20767582b75cf3bcba655b1cd9ce237e5acbbf7f0fed2cc7fd8c4b3e25d0"
+    },
+    {
+      "path": "binary/edwards/wz-1/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz-1/variables",
+      "sha256": "c8c362b178c95285d751e51e05fd704dce07aed2e7b10c5d0ce4b43c2497e515",
+      "normalized_sha256": "c8c362b178c95285d751e51e05fd704dce07aed2e7b10c5d0ce4b43c2497e515",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "c8c362b178c95285d751e51e05fd704dce07aed2e7b10c5d0ce4b43c2497e515"
+    },
+    {
+      "path": "binary/edwards/wz/diffadd/dadd-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz/diffadd/dadd-2008-blr",
+      "sha256": "e7f9749f61f60b18c0b4d74dc23f030a4ee91c38335770f4458eb5fff2da83f9",
+      "normalized_sha256": "9ef94b1cbfe281a27772af0af01bf7568c1e6d3b6c3b3376c824943a4240e7fb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9ef94b1cbfe281a27772af0af01bf7568c1e6d3b6c3b3376c824943a4240e7fb"
+    },
+    {
+      "path": "binary/edwards/wz/diffadd/dadd-2008-blr-2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz/diffadd/dadd-2008-blr-2",
+      "sha256": "5c56faee779947aa8e61eb7a5c7c9b758ebee23f6438d724f7ce1e553262579f",
+      "normalized_sha256": "502f0a2432def142aef6f9fbc9254b903bc3f4d2a8741873328acb3f3af058e2",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "502f0a2432def142aef6f9fbc9254b903bc3f4d2a8741873328acb3f3af058e2"
+    },
+    {
+      "path": "binary/edwards/wz/diffadd/mdadd-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz/diffadd/mdadd-2008-blr",
+      "sha256": "d44476f6cba4b96364c0d197abef6dfd394cd086f235c77b6e71f7ba21f58e52",
+      "normalized_sha256": "e9531e592d617f99dc7ebf12932f520a5ed0c720a9ffc6f3ed2caa1259ab943a",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "e9531e592d617f99dc7ebf12932f520a5ed0c720a9ffc6f3ed2caa1259ab943a"
+    },
+    {
+      "path": "binary/edwards/wz/doubling/dbl-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz/doubling/dbl-2008-blr",
+      "sha256": "c825cca08445e7142bce4f0e85a5e48d90b2ad3b8a713c6afad4313fe164824d",
+      "normalized_sha256": "88c923021efb74a5c7c4402774a3d7b6e41cb359a1ba31f0cc8c45af712495a8",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "88c923021efb74a5c7c4402774a3d7b6e41cb359a1ba31f0cc8c45af712495a8"
+    },
+    {
+      "path": "binary/edwards/wz/ladder/ladd-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz/ladder/ladd-2008-blr",
+      "sha256": "951d263f84ce6a78ebf070de1bfb6cc8d7891013141b36a84e6830d84be1b82d",
+      "normalized_sha256": "965283033066877e8b299d238599f0ad518170fa9a92344026dd535781d1dd52",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "965283033066877e8b299d238599f0ad518170fa9a92344026dd535781d1dd52"
+    },
+    {
+      "path": "binary/edwards/wz/ladder/mladd-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz/ladder/mladd-2008-blr",
+      "sha256": "4f7ba846daa71eef75694620ed483afc83d4472292efad089c28df6a436adc81",
+      "normalized_sha256": "ba02502bcf757ddaa7806ae1d75695ac4802a278d6d774be0ac55ae9a7a49de0",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "ba02502bcf757ddaa7806ae1d75695ac4802a278d6d774be0ac55ae9a7a49de0"
+    },
+    {
+      "path": "binary/edwards/wz/scaling/scale",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz/scaling/scale",
+      "sha256": "5bbd20767582b75cf3bcba655b1cd9ce237e5acbbf7f0fed2cc7fd8c4b3e25d0",
+      "normalized_sha256": "5bbd20767582b75cf3bcba655b1cd9ce237e5acbbf7f0fed2cc7fd8c4b3e25d0",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "5bbd20767582b75cf3bcba655b1cd9ce237e5acbbf7f0fed2cc7fd8c4b3e25d0"
+    },
+    {
+      "path": "binary/edwards/wz/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/wz/variables",
+      "sha256": "19196a5a8e5a5f07e29d20a7fa5b75d8f640b08541a2e64489121bd0857b1bd1",
+      "normalized_sha256": "19196a5a8e5a5f07e29d20a7fa5b75d8f640b08541a2e64489121bd0857b1bd1",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "19196a5a8e5a5f07e29d20a7fa5b75d8f640b08541a2e64489121bd0857b1bd1"
+    },
+    {
+      "path": "binary/edwards/xy-1/addition/add-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xy-1/addition/add-2008-blr",
+      "sha256": "828a4ca7c362afa5cf6d8e35e9d031cb3144ebad4a7f6a71d0587c41531917af",
+      "normalized_sha256": "e561b5f72f9e3f5d6f2cd6e700f6d038b3295979389107fd2bbf1adbe1cfe265",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "e561b5f72f9e3f5d6f2cd6e700f6d038b3295979389107fd2bbf1adbe1cfe265"
+    },
+    {
+      "path": "binary/edwards/xy-1/doubling/dbl-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xy-1/doubling/dbl-2008-blr",
+      "sha256": "1fd5886f356ad45e392aa262a396cc97c53575f54702fe2ceaaa247d504ff680",
+      "normalized_sha256": "461c6e950c94bb58ef729ca80097da055b7c163817af3ad5d073e99be6f4ee4d",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "461c6e950c94bb58ef729ca80097da055b7c163817af3ad5d073e99be6f4ee4d"
+    },
+    {
+      "path": "binary/edwards/xy-1/doubling/dbl-2008-blr+1",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xy-1/doubling/dbl-2008-blr+1",
+      "sha256": "a1036d197ae2a2c2384441c540c82f5193439c35be49ddea4f1cf4e0c94c0873",
+      "normalized_sha256": "456597690e4874738cb4406738357cda9cf52ed9620dc992947f7fbcbc22bf23",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "456597690e4874738cb4406738357cda9cf52ed9620dc992947f7fbcbc22bf23"
+    },
+    {
+      "path": "binary/edwards/xy-1/doubling/dbl-2008-blr+cse",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xy-1/doubling/dbl-2008-blr+cse",
+      "sha256": "b39c98a02cf1eb88ac35640170379558e9c2c79bb7fe14063879dcd041e62d92",
+      "normalized_sha256": "eece21bfe61b683ebfde2ae943cac6ed2b38c4656fbc9f647a4f8736cefe1a8e",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "eece21bfe61b683ebfde2ae943cac6ed2b38c4656fbc9f647a4f8736cefe1a8e"
+    },
+    {
+      "path": "binary/edwards/xy-1/scaling/copy",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xy-1/scaling/copy",
+      "sha256": "778fd0e2a3e869b927d3633c37a6e862df71bc7e9d753398bd8e338e3959adfb",
+      "normalized_sha256": "778fd0e2a3e869b927d3633c37a6e862df71bc7e9d753398bd8e338e3959adfb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "778fd0e2a3e869b927d3633c37a6e862df71bc7e9d753398bd8e338e3959adfb"
+    },
+    {
+      "path": "binary/edwards/xy-1/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xy-1/variables",
+      "sha256": "a1d5e004f06f1ed4a1c6c7cf2826a410206e3bb08ec61b8221d34efdb14ee6d1",
+      "normalized_sha256": "a1d5e004f06f1ed4a1c6c7cf2826a410206e3bb08ec61b8221d34efdb14ee6d1",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "a1d5e004f06f1ed4a1c6c7cf2826a410206e3bb08ec61b8221d34efdb14ee6d1"
+    },
+    {
+      "path": "binary/edwards/xy/addition/add-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xy/addition/add-2008-blr",
+      "sha256": "828a4ca7c362afa5cf6d8e35e9d031cb3144ebad4a7f6a71d0587c41531917af",
+      "normalized_sha256": "e561b5f72f9e3f5d6f2cd6e700f6d038b3295979389107fd2bbf1adbe1cfe265",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "e561b5f72f9e3f5d6f2cd6e700f6d038b3295979389107fd2bbf1adbe1cfe265"
+    },
+    {
+      "path": "binary/edwards/xy/doubling/dbl-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xy/doubling/dbl-2008-blr",
+      "sha256": "1fd5886f356ad45e392aa262a396cc97c53575f54702fe2ceaaa247d504ff680",
+      "normalized_sha256": "461c6e950c94bb58ef729ca80097da055b7c163817af3ad5d073e99be6f4ee4d",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "461c6e950c94bb58ef729ca80097da055b7c163817af3ad5d073e99be6f4ee4d"
+    },
+    {
+      "path": "binary/edwards/xy/doubling/dbl-2008-blr+cse",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xy/doubling/dbl-2008-blr+cse",
+      "sha256": "b39c98a02cf1eb88ac35640170379558e9c2c79bb7fe14063879dcd041e62d92",
+      "normalized_sha256": "eece21bfe61b683ebfde2ae943cac6ed2b38c4656fbc9f647a4f8736cefe1a8e",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "eece21bfe61b683ebfde2ae943cac6ed2b38c4656fbc9f647a4f8736cefe1a8e"
+    },
+    {
+      "path": "binary/edwards/xy/scaling/copy",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xy/scaling/copy",
+      "sha256": "778fd0e2a3e869b927d3633c37a6e862df71bc7e9d753398bd8e338e3959adfb",
+      "normalized_sha256": "778fd0e2a3e869b927d3633c37a6e862df71bc7e9d753398bd8e338e3959adfb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "778fd0e2a3e869b927d3633c37a6e862df71bc7e9d753398bd8e338e3959adfb"
+    },
+    {
+      "path": "binary/edwards/xy/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xy/variables",
+      "sha256": "84fbb2586154ee24c548c49f69e3b8d7ff1a5f92eff87cfed8eab805756b70b1",
+      "normalized_sha256": "84fbb2586154ee24c548c49f69e3b8d7ff1a5f92eff87cfed8eab805756b70b1",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "84fbb2586154ee24c548c49f69e3b8d7ff1a5f92eff87cfed8eab805756b70b1"
+    },
+    {
+      "path": "binary/edwards/xyz-1/addition/add-2008-blr-1",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz-1/addition/add-2008-blr-1",
+      "sha256": "78e406c3d96b4afab83f3f7c456c9123b956e12f697b270522c9d0d250643767",
+      "normalized_sha256": "eab8d14709b3dfa3b031aadd80a1035066b3f16f4beca97a0fade80b10f775be",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "eab8d14709b3dfa3b031aadd80a1035066b3f16f4beca97a0fade80b10f775be"
+    },
+    {
+      "path": "binary/edwards/xyz-1/addition/add-2008-blr-2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz-1/addition/add-2008-blr-2",
+      "sha256": "e8eeed299c40cf585a06bcf2c52560a33142033ddc30472d29a20f629230ac8a",
+      "normalized_sha256": "89ec0c2f770b9467955549fda5fc8ec29526c753eb8e8e9afaf9c73c2cfc9e45",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "89ec0c2f770b9467955549fda5fc8ec29526c753eb8e8e9afaf9c73c2cfc9e45"
+    },
+    {
+      "path": "binary/edwards/xyz-1/addition/add-2008-blr-3",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz-1/addition/add-2008-blr-3",
+      "sha256": "7c30aca17f2830febcc9e9253dc07caf41ce83e88e928c3f10c72fe22271c14b",
+      "normalized_sha256": "7aa3a293a1f0067ff93ed5a03f35503b3b50c08ba0c1ec5038663466e906793b",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "7aa3a293a1f0067ff93ed5a03f35503b3b50c08ba0c1ec5038663466e906793b"
+    },
+    {
+      "path": "binary/edwards/xyz-1/addition/add-2008-blr-4",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz-1/addition/add-2008-blr-4",
+      "sha256": "4a684fbdccd68f65f30af8a1ab48504f44b30aaf3cd84028c3c483c4c9be14da",
+      "normalized_sha256": "51a0c3d92956c82b99803c3ee61ac48fc3eb564ea02734b4bf4049e492716e53",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "51a0c3d92956c82b99803c3ee61ac48fc3eb564ea02734b4bf4049e492716e53"
+    },
+    {
+      "path": "binary/edwards/xyz-1/addition/add-2008-blr-5",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz-1/addition/add-2008-blr-5",
+      "sha256": "18d9275c1d2534b7af7e726f3d120f8ba20271aa6121bd0ebaa090add4fa4cf2",
+      "normalized_sha256": "99e7a49e3f685934fe8388f6f079728de4c0e371f9326bcdfdd6d5e8f9ef821b",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "99e7a49e3f685934fe8388f6f079728de4c0e371f9326bcdfdd6d5e8f9ef821b"
+    },
+    {
+      "path": "binary/edwards/xyz-1/addition/madd-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz-1/addition/madd-2008-blr",
+      "sha256": "7a24d1610a35ff46dc61f7c10ef104f86abcd43dda9da69a1ecf3123748f3bbb",
+      "normalized_sha256": "0a9e12a50f39ef7accb0d1d82c5edee8171a97c15f36ebc00bd5b40286d5b5aa",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "0a9e12a50f39ef7accb0d1d82c5edee8171a97c15f36ebc00bd5b40286d5b5aa"
+    },
+    {
+      "path": "binary/edwards/xyz-1/doubling/dbl-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz-1/doubling/dbl-2008-blr",
+      "sha256": "048c89e064e6c8e010b533f6786416836096e5ed65083c2936f4985917f53005",
+      "normalized_sha256": "68bb3fb3d557d5edae60a89ff36212c2e163fc15b6d969699ab112e9d9d5f873",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "68bb3fb3d557d5edae60a89ff36212c2e163fc15b6d969699ab112e9d9d5f873"
+    },
+    {
+      "path": "binary/edwards/xyz-1/doubling/dbl-2008-blr-2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz-1/doubling/dbl-2008-blr-2",
+      "sha256": "ad4ab764906c69b37bc2f3a608ed79fef6196f424f10efc0f4c646712363e451",
+      "normalized_sha256": "29376de1f7f2e486600e40bd4aa26c2c870d40153ae381e138dffa4caa8141bd",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "29376de1f7f2e486600e40bd4aa26c2c870d40153ae381e138dffa4caa8141bd"
+    },
+    {
+      "path": "binary/edwards/xyz-1/scaling/scale",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz-1/scaling/scale",
+      "sha256": "da7589baacbb11d7e75506297820a57d8c0a53fdb780d74a8bba4e536f029739",
+      "normalized_sha256": "9e78f23a13f0bf4313b18fcee44a9d3e432f6ac399fb3bac4d0da82d192c42eb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9e78f23a13f0bf4313b18fcee44a9d3e432f6ac399fb3bac4d0da82d192c42eb"
+    },
+    {
+      "path": "binary/edwards/xyz-1/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz-1/variables",
+      "sha256": "4bc91e297be4beebc6d6e1cb9765b3e3fe92b3051761c3e2ea1030751c2dd653",
+      "normalized_sha256": "4bc91e297be4beebc6d6e1cb9765b3e3fe92b3051761c3e2ea1030751c2dd653",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "4bc91e297be4beebc6d6e1cb9765b3e3fe92b3051761c3e2ea1030751c2dd653"
+    },
+    {
+      "path": "binary/edwards/xyz/addition/add-2008-blr-1",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz/addition/add-2008-blr-1",
+      "sha256": "78e406c3d96b4afab83f3f7c456c9123b956e12f697b270522c9d0d250643767",
+      "normalized_sha256": "eab8d14709b3dfa3b031aadd80a1035066b3f16f4beca97a0fade80b10f775be",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "eab8d14709b3dfa3b031aadd80a1035066b3f16f4beca97a0fade80b10f775be"
+    },
+    {
+      "path": "binary/edwards/xyz/addition/add-2008-blr-2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz/addition/add-2008-blr-2",
+      "sha256": "e8eeed299c40cf585a06bcf2c52560a33142033ddc30472d29a20f629230ac8a",
+      "normalized_sha256": "89ec0c2f770b9467955549fda5fc8ec29526c753eb8e8e9afaf9c73c2cfc9e45",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "89ec0c2f770b9467955549fda5fc8ec29526c753eb8e8e9afaf9c73c2cfc9e45"
+    },
+    {
+      "path": "binary/edwards/xyz/addition/add-2008-blr-4",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz/addition/add-2008-blr-4",
+      "sha256": "4a684fbdccd68f65f30af8a1ab48504f44b30aaf3cd84028c3c483c4c9be14da",
+      "normalized_sha256": "51a0c3d92956c82b99803c3ee61ac48fc3eb564ea02734b4bf4049e492716e53",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "51a0c3d92956c82b99803c3ee61ac48fc3eb564ea02734b4bf4049e492716e53"
+    },
+    {
+      "path": "binary/edwards/xyz/addition/madd-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz/addition/madd-2008-blr",
+      "sha256": "7a24d1610a35ff46dc61f7c10ef104f86abcd43dda9da69a1ecf3123748f3bbb",
+      "normalized_sha256": "0a9e12a50f39ef7accb0d1d82c5edee8171a97c15f36ebc00bd5b40286d5b5aa",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "0a9e12a50f39ef7accb0d1d82c5edee8171a97c15f36ebc00bd5b40286d5b5aa"
+    },
+    {
+      "path": "binary/edwards/xyz/doubling/dbl-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz/doubling/dbl-2008-blr",
+      "sha256": "048c89e064e6c8e010b533f6786416836096e5ed65083c2936f4985917f53005",
+      "normalized_sha256": "68bb3fb3d557d5edae60a89ff36212c2e163fc15b6d969699ab112e9d9d5f873",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "68bb3fb3d557d5edae60a89ff36212c2e163fc15b6d969699ab112e9d9d5f873"
+    },
+    {
+      "path": "binary/edwards/xyz/scaling/scale",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz/scaling/scale",
+      "sha256": "da7589baacbb11d7e75506297820a57d8c0a53fdb780d74a8bba4e536f029739",
+      "normalized_sha256": "9e78f23a13f0bf4313b18fcee44a9d3e432f6ac399fb3bac4d0da82d192c42eb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9e78f23a13f0bf4313b18fcee44a9d3e432f6ac399fb3bac4d0da82d192c42eb"
+    },
+    {
+      "path": "binary/edwards/xyz/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/edwards/xyz/variables",
+      "sha256": "98e80e201dfcd2ce48b9ff7cae60223f3230d8ae39d50bd8ae537509e509732b",
+      "normalized_sha256": "98e80e201dfcd2ce48b9ff7cae60223f3230d8ae39d50bd8ae537509e509732b",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "98e80e201dfcd2ce48b9ff7cae60223f3230d8ae39d50bd8ae537509e509732b"
+    },
+    {
+      "path": "binary/hessian/coordinates",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/coordinates",
+      "sha256": "d06457efd57eb274117c823bc3712ce80638d0a62af0173ca852714166626870",
+      "normalized_sha256": "5c3abbc6d5e3e290d421830a2bc31aa886dabaafa1439e9a8468924d68fec6c1",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "5c3abbc6d5e3e290d421830a2bc31aa886dabaafa1439e9a8468924d68fec6c1"
+    },
+    {
+      "path": "binary/hessian/standard/addition/add",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/standard/addition/add",
+      "sha256": "539a4746313da31d45247f082ff2f3793bb60d48d663b13a98fbfc9ec8f488d5",
+      "normalized_sha256": "bb5c4bd111c24c7ce26b61f9e63540a7aa508a787f72162081cb5c1aa6ebc544",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "bb5c4bd111c24c7ce26b61f9e63540a7aa508a787f72162081cb5c1aa6ebc544"
+    },
+    {
+      "path": "binary/hessian/standard/addition/add-2001-jq",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/standard/addition/add-2001-jq",
+      "sha256": "da8b1bffe18349a14a5961d5e05ab3a0d54c7d8c67789e7dcde2a44c7fd489d2",
+      "normalized_sha256": "b6484f7cf2562569a21b2edb2b1cfd127930160d5891924ba493ea627b023dcc",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "b6484f7cf2562569a21b2edb2b1cfd127930160d5891924ba493ea627b023dcc"
+    },
+    {
+      "path": "binary/hessian/standard/addition/add2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/standard/addition/add2",
+      "sha256": "18305a8b1f82084e57f8872e0ac76ad5688e5906699ad2ed11644fbe32c8dbca",
+      "normalized_sha256": "7796290827359ea2d1ff77e81118bf582f0f27fec5a235398cb1ca02646d14db",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "7796290827359ea2d1ff77e81118bf582f0f27fec5a235398cb1ca02646d14db"
+    },
+    {
+      "path": "binary/hessian/standard/addition/madd",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/standard/addition/madd",
+      "sha256": "218fe967e3659de067f24a623d89c2f2b6ba607d8e604474dd31eda883ff3bac",
+      "normalized_sha256": "0f4e2fc0eff511d8c41dd3b1ed00dee54fa7b5a093c908466dc1d4c66b90f43f",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "0f4e2fc0eff511d8c41dd3b1ed00dee54fa7b5a093c908466dc1d4c66b90f43f"
+    },
+    {
+      "path": "binary/hessian/standard/addition/mmadd",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/standard/addition/mmadd",
+      "sha256": "e04cc4d7caf80a750a0311f5c7dfbfc3bc5eafbad85a97dbdc17c3c1cb90252f",
+      "normalized_sha256": "47996561f99a27ac9af158929a9fec8975a8f2eba3e0f7b917989dc808aaee72",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "47996561f99a27ac9af158929a9fec8975a8f2eba3e0f7b917989dc808aaee72"
+    },
+    {
+      "path": "binary/hessian/standard/doubling/dbl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/standard/doubling/dbl",
+      "sha256": "96e2ed7893b384dfd27c11323f7a3a37d6345dd941af99a62fbab9e4ec0aa83f",
+      "normalized_sha256": "731de5d27829cd582ed4a12da9bda501051444b0cee7ee43e867336a4a9735ed",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "731de5d27829cd582ed4a12da9bda501051444b0cee7ee43e867336a4a9735ed"
+    },
+    {
+      "path": "binary/hessian/standard/doubling/dbl-2001-jq",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/standard/doubling/dbl-2001-jq",
+      "sha256": "a53e822a9b6b647fb181d817c815844527e5161070b6f48c0613125578caa431",
+      "normalized_sha256": "9a3cd38b65fbb51b7fd18bbdcea87747add4c555fdcc0442f824177b3872297e",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9a3cd38b65fbb51b7fd18bbdcea87747add4c555fdcc0442f824177b3872297e"
+    },
+    {
+      "path": "binary/hessian/standard/doubling/dbl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/standard/doubling/dbl-2007-hcd",
+      "sha256": "97c392ff578bde82139b489be7b420725d903c8616502f77396117cd8ebb3d4f",
+      "normalized_sha256": "54be80db260423214ffa0157b037ae83de3df282488987cba4c0bb805c0b7c83",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "54be80db260423214ffa0157b037ae83de3df282488987cba4c0bb805c0b7c83"
+    },
+    {
+      "path": "binary/hessian/standard/doubling/dbl-2007-hcd-2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/standard/doubling/dbl-2007-hcd-2",
+      "sha256": "6743b50aa544adb03371b602dc5e5636a7dd98fdd6f33b95b2f36935f85579d6",
+      "normalized_sha256": "6189ff1883d6492af9b27e5ace0f0cc8aafe18688bffbe2a65188f2fea027ff5",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "6189ff1883d6492af9b27e5ace0f0cc8aafe18688bffbe2a65188f2fea027ff5"
+    },
+    {
+      "path": "binary/hessian/standard/doubling/dbl2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/standard/doubling/dbl2",
+      "sha256": "682ea595cec6de2f93e276a80269ced061b26fc0e1689b0a83c17cf6ec4f65c4",
+      "normalized_sha256": "700fa528079b66c9a10f85c3069aefb4b1df22952de58444d44b5e20480a7028",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "700fa528079b66c9a10f85c3069aefb4b1df22952de58444d44b5e20480a7028"
+    },
+    {
+      "path": "binary/hessian/standard/scaling/z",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/standard/scaling/z",
+      "sha256": "da7589baacbb11d7e75506297820a57d8c0a53fdb780d74a8bba4e536f029739",
+      "normalized_sha256": "9e78f23a13f0bf4313b18fcee44a9d3e432f6ac399fb3bac4d0da82d192c42eb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9e78f23a13f0bf4313b18fcee44a9d3e432f6ac399fb3bac4d0da82d192c42eb"
+    },
+    {
+      "path": "binary/hessian/standard/tripling/tpl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/standard/tripling/tpl-2007-hcd",
+      "sha256": "f0c3e01306567a93e3ca411b1e010981938fb643d611fb04987499fb660428af",
+      "normalized_sha256": "827c81743267943be7fe1688722f8d72a5d986312809954c6766d987984a3dc9",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "827c81743267943be7fe1688722f8d72a5d986312809954c6766d987984a3dc9"
+    },
+    {
+      "path": "binary/hessian/standard/tripling/tpl-2007-hcd-2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/standard/tripling/tpl-2007-hcd-2",
+      "sha256": "5f43afaa00dfe22af0022d41d8a73b3abc10d089602ee6be3f369d07c2e636ff",
+      "normalized_sha256": "9b8576924c920faee16b61bcb25b8f2d7c0cab2587e64c4752b89e42bec0c564",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9b8576924c920faee16b61bcb25b8f2d7c0cab2587e64c4752b89e42bec0c564"
+    },
+    {
+      "path": "binary/hessian/standard/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/hessian/standard/variables",
+      "sha256": "98e80e201dfcd2ce48b9ff7cae60223f3230d8ae39d50bd8ae537509e509732b",
+      "normalized_sha256": "98e80e201dfcd2ce48b9ff7cae60223f3230d8ae39d50bd8ae537509e509732b",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "98e80e201dfcd2ce48b9ff7cae60223f3230d8ae39d50bd8ae537509e509732b"
+    },
+    {
+      "path": "binary/shortw/affine/addition/add",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/affine/addition/add",
+      "sha256": "68ced3256e050b9b31fff035f12b684c755c774fbb6b0100a281cd4c8c480f61",
+      "normalized_sha256": "9e737e9e44337db6d31d1cd8c5a4aa184562c709ac34a576fc6366a4a3edbc5b",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9e737e9e44337db6d31d1cd8c5a4aa184562c709ac34a576fc6366a4a3edbc5b"
+    },
+    {
+      "path": "binary/shortw/affine/doubling/dbl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/affine/doubling/dbl",
+      "sha256": "f30d5fc5c9676586a4d1fd1ce422fcaf433734e4d16654dc064e55503456f683",
+      "normalized_sha256": "cd1ee33e792eaf8a8ea8e9c24bf69c0bfa892a17d065df5aa8b23f1af2ae19fd",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "cd1ee33e792eaf8a8ea8e9c24bf69c0bfa892a17d065df5aa8b23f1af2ae19fd"
+    },
+    {
+      "path": "binary/shortw/affine/scaling/copy",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/affine/scaling/copy",
+      "sha256": "778fd0e2a3e869b927d3633c37a6e862df71bc7e9d753398bd8e338e3959adfb",
+      "normalized_sha256": "778fd0e2a3e869b927d3633c37a6e862df71bc7e9d753398bd8e338e3959adfb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "778fd0e2a3e869b927d3633c37a6e862df71bc7e9d753398bd8e338e3959adfb"
+    },
+    {
+      "path": "binary/shortw/affine/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/affine/variables",
+      "sha256": "84fbb2586154ee24c548c49f69e3b8d7ff1a5f92eff87cfed8eab805756b70b1",
+      "normalized_sha256": "84fbb2586154ee24c548c49f69e3b8d7ff1a5f92eff87cfed8eab805756b70b1",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "84fbb2586154ee24c548c49f69e3b8d7ff1a5f92eff87cfed8eab805756b70b1"
+    },
+    {
+      "path": "binary/shortw/coordinates",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/coordinates",
+      "sha256": "d9d6e842a01b95d3193f0e8299a11db48d132b4055b714b722746d065c084bdd",
+      "normalized_sha256": "45d7708dbefb4b255f65b67048fe5a3b9dfa950d57e6096b721f80890f7ffaaf",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "45d7708dbefb4b255f65b67048fe5a3b9dfa950d57e6096b721f80890f7ffaaf"
+    },
+    {
+      "path": "binary/shortw/extended-0/addition/add-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/extended-0/addition/add-2005-dl",
+      "sha256": "f24ea75ca146560c5ff4dbbe88c3c73d6ffb7216f3f785fa1f36ec69c00bea50",
+      "normalized_sha256": "6aa27d1b5099196e97fb7680f5348fb5a64ed961009a9ae6258dcad15fda8610",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "6aa27d1b5099196e97fb7680f5348fb5a64ed961009a9ae6258dcad15fda8610"
+    },
+    {
+      "path": "binary/shortw/extended-0/addition/madd-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/extended-0/addition/madd-2005-dl",
+      "sha256": "8f3d26d753b61ef3607b1f7afdeaf5fed27553ecf829740f424b4aabe862cf8a",
+      "normalized_sha256": "94199b26ad333f12f82b6e873ed6c17429599cab5c97e2f52bc2bd517e877bc6",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "94199b26ad333f12f82b6e873ed6c17429599cab5c97e2f52bc2bd517e877bc6"
+    },
+    {
+      "path": "binary/shortw/extended-0/doubling/dbl-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/extended-0/doubling/dbl-2008-blr",
+      "sha256": "33b86dce233c5ce8c02d7878c7fab80955fe57ace40bf226d525b2552ad29ffa",
+      "normalized_sha256": "54f1e9d24009613ebd5bcc388cadbd5bcb43696531cbee99ffd4a2683b159fa7",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "54f1e9d24009613ebd5bcc388cadbd5bcb43696531cbee99ffd4a2683b159fa7"
+    },
+    {
+      "path": "binary/shortw/extended-0/doubling/mdbl-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/extended-0/doubling/mdbl-2008-blr",
+      "sha256": "cb46e6c349c0fb74c3904de0cb45cde0db54619f6972faf141a4a04284d197d6",
+      "normalized_sha256": "5c00d32d73ea0db9ef512b88d745a5fbafb8498f6312d780f0e22d9486b2f134",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "5c00d32d73ea0db9ef512b88d745a5fbafb8498f6312d780f0e22d9486b2f134"
+    },
+    {
+      "path": "binary/shortw/extended-0/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/extended-0/variables",
+      "sha256": "df93d8518bc25a91070f0845c032ebf82e0a44d5ced45cd3f95b03e716a6397e",
+      "normalized_sha256": "e4f159790ac3aefa51d1f580ebec78882e061e249d69e57035ea9c8398484eec",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "e4f159790ac3aefa51d1f580ebec78882e061e249d69e57035ea9c8398484eec"
+    },
+    {
+      "path": "binary/shortw/extended-1/addition/add-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/extended-1/addition/add-2005-dl",
+      "sha256": "7af4260ff8f83d444c942ebfe8c10fcf9c2327c4b3bdd50c9ce282c85bc1e850",
+      "normalized_sha256": "8950903f4182641bd397e68840a9bbbbbdaa8a8ec89c520335bc9f92e71cb33d",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "8950903f4182641bd397e68840a9bbbbbdaa8a8ec89c520335bc9f92e71cb33d"
+    },
+    {
+      "path": "binary/shortw/extended-1/addition/madd-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/extended-1/addition/madd-2005-dl",
+      "sha256": "1b721e4e7f3856b229c45898e844266d42d12eabde1c620e2727b0f64a416e1b",
+      "normalized_sha256": "a25a0a01e34a45ee13f2383d4e6213fff5857a899f75ecbb5a235bd7a465f9a0",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "a25a0a01e34a45ee13f2383d4e6213fff5857a899f75ecbb5a235bd7a465f9a0"
+    },
+    {
+      "path": "binary/shortw/extended-1/addition/madd-2007-kk",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/extended-1/addition/madd-2007-kk",
+      "sha256": "9dd4b0a957dc3c38992349e9e3375cd516aca4f75fb9d3f5e87192276c11784d",
+      "normalized_sha256": "60184b02fd800173731a100eacb95712689d27247afcdc075eef62b5b26cda1e",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "60184b02fd800173731a100eacb95712689d27247afcdc075eef62b5b26cda1e"
+    },
+    {
+      "path": "binary/shortw/extended-1/doubling/dbl-2007-kk",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/extended-1/doubling/dbl-2007-kk",
+      "sha256": "7ca121816ca9b4d0e86e4b284ff5ed7db92141a526a8f800648a0e478f82e10b",
+      "normalized_sha256": "5f0728001122a45ca41b7c6214f2ba7779e6480b2a244ec94eee7427b3cae892",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "5f0728001122a45ca41b7c6214f2ba7779e6480b2a244ec94eee7427b3cae892"
+    },
+    {
+      "path": "binary/shortw/extended-1/doubling/dbl-2008-blr",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/extended-1/doubling/dbl-2008-blr",
+      "sha256": "d6e826a732911810d84ddb9ce059d9b3bcbf50c20331a136d2e43eb01b5372fc",
+      "normalized_sha256": "002fba5174c014a4ceffe0f2714dc74c7e3881739610343c0700788f8da4d7bb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "002fba5174c014a4ceffe0f2714dc74c7e3881739610343c0700788f8da4d7bb"
+    },
+    {
+      "path": "binary/shortw/extended-1/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/extended-1/variables",
+      "sha256": "270ac64bbd4885dd51dbb95c6c17f730419407a04371bcbae30ab60e25593c89",
+      "normalized_sha256": "270ac64bbd4885dd51dbb95c6c17f730419407a04371bcbae30ab60e25593c89",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "270ac64bbd4885dd51dbb95c6c17f730419407a04371bcbae30ab60e25593c89"
+    },
+    {
+      "path": "binary/shortw/jacobian/addition/add-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/jacobian/addition/add-2005-dl",
+      "sha256": "91e595b43a73329a92d296ef262c8b4a0759d0e1e362ea1346f6e9d0fbb0a177",
+      "normalized_sha256": "10fff3e7a05bcfde2d2201ca3e6177bd4d9521f2b93c28f00f4838196bd8b22e",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "10fff3e7a05bcfde2d2201ca3e6177bd4d9521f2b93c28f00f4838196bd8b22e"
+    },
+    {
+      "path": "binary/shortw/jacobian/addition/madd-2008-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/jacobian/addition/madd-2008-bl",
+      "sha256": "5577e34e490dcde2c20ba269b60abe2c984affa23fe8b28b639c6c7026b0f0fa",
+      "normalized_sha256": "e33360c1163cafb51980812af56ad1e3d9bfdafe42aed8e67d09a18f4ea3196f",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "e33360c1163cafb51980812af56ad1e3d9bfdafe42aed8e67d09a18f4ea3196f"
+    },
+    {
+      "path": "binary/shortw/jacobian/doubling/dbl-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/jacobian/doubling/dbl-2005-dl",
+      "sha256": "2688a2aa052e02c0061e52bbd8232e11b8719cbedbfbce50e3af84b8311ffbc5",
+      "normalized_sha256": "7d5392dbf93617185ecd9a3e32fb952b96b2502564ef2ddcbbdf07f6c1a84c74",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "7d5392dbf93617185ecd9a3e32fb952b96b2502564ef2ddcbbdf07f6c1a84c74"
+    },
+    {
+      "path": "binary/shortw/jacobian/doubling/mdbl-2008-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/jacobian/doubling/mdbl-2008-bl",
+      "sha256": "4b376cf6d1304497b9966dbd6ac0574a01f53f554b51bf0ba9a5ba681516c403",
+      "normalized_sha256": "9f14eb476600ad369a4a1e45cb94861e2a384f12b1c9c39a7f00c97e4be9c378",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9f14eb476600ad369a4a1e45cb94861e2a384f12b1c9c39a7f00c97e4be9c378"
+    },
+    {
+      "path": "binary/shortw/jacobian/scaling/scale",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/jacobian/scaling/scale",
+      "sha256": "0833215cba6c6e67166e70850e3cc822475c524515cb1af3762b99c0badcd8c1",
+      "normalized_sha256": "139667329566ff61a8668aba7886fd2aa81dcddfee51279babeefe47277a69e3",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "139667329566ff61a8668aba7886fd2aa81dcddfee51279babeefe47277a69e3"
+    },
+    {
+      "path": "binary/shortw/jacobian/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/jacobian/variables",
+      "sha256": "9f68870afe3a22d92f54cc0f472820eb804896c52851df89cea41dd5fedb470c",
+      "normalized_sha256": "7c411c8a7fd315d38c13936eae44a0dc5a686d2109cb4725e53867071240fcb5",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "7c411c8a7fd315d38c13936eae44a0dc5a686d2109cb4725e53867071240fcb5"
+    },
+    {
+      "path": "binary/shortw/lambda/addition/add-2013-olar",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lambda/addition/add-2013-olar",
+      "sha256": "bdaeed2a086df22c36e31f2e1681488bda83509b321a0da7b1235504a8663417",
+      "normalized_sha256": "8cadd00b37dd3e2fc306d93bca48efeb95ed3b164be30a38a72034477a03189a",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "8cadd00b37dd3e2fc306d93bca48efeb95ed3b164be30a38a72034477a03189a"
+    },
+    {
+      "path": "binary/shortw/lambda/doubling/dbl-2013-olar",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lambda/doubling/dbl-2013-olar",
+      "sha256": "d0ab28986f7c8a7d61fb1e52d24b1bcfd41e15ca13df9bfa2280c4523afd75c5",
+      "normalized_sha256": "8eeb6fabd4d229197216122c84841a34ddf1cc454f9da23bc96dedd421b0fd7c",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "8eeb6fabd4d229197216122c84841a34ddf1cc454f9da23bc96dedd421b0fd7c"
+    },
+    {
+      "path": "binary/shortw/lambda/doubling/dbl-2013-olar-2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lambda/doubling/dbl-2013-olar-2",
+      "sha256": "807baa084422a15d9cdd7ac9f3dc326179a3f1fec3df3fa3cc92db2babf04b9c",
+      "normalized_sha256": "4f1befd689003d5d17dcb4d6830d1fc267ba4f7e92e954abbda89ef5de027af6",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "4f1befd689003d5d17dcb4d6830d1fc267ba4f7e92e954abbda89ef5de027af6"
+    },
+    {
+      "path": "binary/shortw/lambda/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lambda/variables",
+      "sha256": "54b18a5e8f80e5a61a6d1c553f112e8534a425a4695e96d8741655933d251743",
+      "normalized_sha256": "54b18a5e8f80e5a61a6d1c553f112e8534a425a4695e96d8741655933d251743",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "54b18a5e8f80e5a61a6d1c553f112e8534a425a4695e96d8741655933d251743"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-0/addition/add-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-0/addition/add-2005-dl",
+      "sha256": "a2d82340d2491e502d03eec27eea652061a70010deadbaef9f744020cdef9cc7",
+      "normalized_sha256": "76ccb8d73afe7402fbfa92247ef1fdf2c38c427a2348de1e52b667eb111a2ea2",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "76ccb8d73afe7402fbfa92247ef1fdf2c38c427a2348de1e52b667eb111a2ea2"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-0/addition/madd-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-0/addition/madd-2005-dl",
+      "sha256": "e9a63cdc347eef08a4721588670672b5376413d665475003d05fc55af35de408",
+      "normalized_sha256": "48aee432c09015a53f4da465e395517d4f5968b8760ce847e266a6dbd8e5fde3",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "48aee432c09015a53f4da465e395517d4f5968b8760ce847e266a6dbd8e5fde3"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-0/addition/mmadd-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-0/addition/mmadd-2005-dl",
+      "sha256": "e5e73b0e1bbbf2fa58892f56497bae05e737ac4ea2bdf211d5a697b976ca6fb3",
+      "normalized_sha256": "bf06a61c55c653a3a1188aff0f8dfdcef84fc73da6f3a3cc7c47e5d78dff4919",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "bf06a61c55c653a3a1188aff0f8dfdcef84fc73da6f3a3cc7c47e5d78dff4919"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-0/doubling/dbl-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-0/doubling/dbl-2005-dl",
+      "sha256": "18fd5e32226f16e26c1ae98fd5fa30ee6321f28c87d96bedabbdb932b9fcb9d3",
+      "normalized_sha256": "6c2cdeb8e6d269f2e9ebcc909113f174bdb4cbcc6e864f8f9ff3cc96f5a60bd8",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "6c2cdeb8e6d269f2e9ebcc909113f174bdb4cbcc6e864f8f9ff3cc96f5a60bd8"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-0/doubling/dbl-2005-dl-a2-0",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-0/doubling/dbl-2005-dl-a2-0",
+      "sha256": "b91247b3cb443d34a1f5f4cc649ca2cdb369fe1e3e211450107cb1879422ae3f",
+      "normalized_sha256": "61b7227720a325b1ae8bd434fa47ecb96dc26760ca93d7bb98cc2a8cb38ac2b9",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "61b7227720a325b1ae8bd434fa47ecb96dc26760ca93d7bb98cc2a8cb38ac2b9"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-0/doubling/dbl-2005-l",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-0/doubling/dbl-2005-l",
+      "sha256": "b51165889f0672250730e69d1a29c3ac5730aeed9b4dd0e92c3f5e25830a1b24",
+      "normalized_sha256": "346aec04c4a110999a35803b02ebb4899b261d99db59329809509b4e0b20cef7",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "346aec04c4a110999a35803b02ebb4899b261d99db59329809509b4e0b20cef7"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-0/doubling/mdbl-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-0/doubling/mdbl-2005-dl",
+      "sha256": "f99729cb4a61b27fe0f0210076bbea3fa01a45f56805c2a42a177d3da56b98f4",
+      "normalized_sha256": "5c27d0db8c5e8398231dc3e4226bd5f7dfd13952b60f01a3def8c4520ac45c86",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "5c27d0db8c5e8398231dc3e4226bd5f7dfd13952b60f01a3def8c4520ac45c86"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-0/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-0/variables",
+      "sha256": "9607c822d76e7275974866d2056fcfefba3de88ccfe4523e3fcb9bf25396e2e7",
+      "normalized_sha256": "9607c822d76e7275974866d2056fcfefba3de88ccfe4523e3fcb9bf25396e2e7",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "9607c822d76e7275974866d2056fcfefba3de88ccfe4523e3fcb9bf25396e2e7"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-1/addition/add-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-1/addition/add-2005-dl",
+      "sha256": "a2d82340d2491e502d03eec27eea652061a70010deadbaef9f744020cdef9cc7",
+      "normalized_sha256": "76ccb8d73afe7402fbfa92247ef1fdf2c38c427a2348de1e52b667eb111a2ea2",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "76ccb8d73afe7402fbfa92247ef1fdf2c38c427a2348de1e52b667eb111a2ea2"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-1/addition/madd-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-1/addition/madd-2005-dl",
+      "sha256": "e9a63cdc347eef08a4721588670672b5376413d665475003d05fc55af35de408",
+      "normalized_sha256": "48aee432c09015a53f4da465e395517d4f5968b8760ce847e266a6dbd8e5fde3",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "48aee432c09015a53f4da465e395517d4f5968b8760ce847e266a6dbd8e5fde3"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-1/addition/mmadd-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-1/addition/mmadd-2005-dl",
+      "sha256": "e5e73b0e1bbbf2fa58892f56497bae05e737ac4ea2bdf211d5a697b976ca6fb3",
+      "normalized_sha256": "bf06a61c55c653a3a1188aff0f8dfdcef84fc73da6f3a3cc7c47e5d78dff4919",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "bf06a61c55c653a3a1188aff0f8dfdcef84fc73da6f3a3cc7c47e5d78dff4919"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-1/doubling/dbl-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-1/doubling/dbl-2005-dl",
+      "sha256": "18fd5e32226f16e26c1ae98fd5fa30ee6321f28c87d96bedabbdb932b9fcb9d3",
+      "normalized_sha256": "6c2cdeb8e6d269f2e9ebcc909113f174bdb4cbcc6e864f8f9ff3cc96f5a60bd8",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "6c2cdeb8e6d269f2e9ebcc909113f174bdb4cbcc6e864f8f9ff3cc96f5a60bd8"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-1/doubling/dbl-2005-dl-a2-1",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-1/doubling/dbl-2005-dl-a2-1",
+      "sha256": "dc50f1ee00f15683858700adb3a69a76c12e589bd37b02520219e66fbe9ae84f",
+      "normalized_sha256": "9f22eec02764f1ff2bf83469df6a19e82acfe41921db43e0b4388ced1c51defc",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9f22eec02764f1ff2bf83469df6a19e82acfe41921db43e0b4388ced1c51defc"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-1/doubling/dbl-2005-l",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-1/doubling/dbl-2005-l",
+      "sha256": "b51165889f0672250730e69d1a29c3ac5730aeed9b4dd0e92c3f5e25830a1b24",
+      "normalized_sha256": "346aec04c4a110999a35803b02ebb4899b261d99db59329809509b4e0b20cef7",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "346aec04c4a110999a35803b02ebb4899b261d99db59329809509b4e0b20cef7"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-1/doubling/mdbl-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-1/doubling/mdbl-2005-dl",
+      "sha256": "f99729cb4a61b27fe0f0210076bbea3fa01a45f56805c2a42a177d3da56b98f4",
+      "normalized_sha256": "5c27d0db8c5e8398231dc3e4226bd5f7dfd13952b60f01a3def8c4520ac45c86",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "5c27d0db8c5e8398231dc3e4226bd5f7dfd13952b60f01a3def8c4520ac45c86"
+    },
+    {
+      "path": "binary/shortw/lopezdahab-1/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab-1/variables",
+      "sha256": "3cced484ed72d77eb7f65306117e2cc2cd5f5ae678860dae235713362204a378",
+      "normalized_sha256": "3cced484ed72d77eb7f65306117e2cc2cd5f5ae678860dae235713362204a378",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "3cced484ed72d77eb7f65306117e2cc2cd5f5ae678860dae235713362204a378"
+    },
+    {
+      "path": "binary/shortw/lopezdahab/addition/add-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab/addition/add-2005-dl",
+      "sha256": "a2d82340d2491e502d03eec27eea652061a70010deadbaef9f744020cdef9cc7",
+      "normalized_sha256": "76ccb8d73afe7402fbfa92247ef1fdf2c38c427a2348de1e52b667eb111a2ea2",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "76ccb8d73afe7402fbfa92247ef1fdf2c38c427a2348de1e52b667eb111a2ea2"
+    },
+    {
+      "path": "binary/shortw/lopezdahab/addition/madd-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab/addition/madd-2005-dl",
+      "sha256": "e9a63cdc347eef08a4721588670672b5376413d665475003d05fc55af35de408",
+      "normalized_sha256": "48aee432c09015a53f4da465e395517d4f5968b8760ce847e266a6dbd8e5fde3",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "48aee432c09015a53f4da465e395517d4f5968b8760ce847e266a6dbd8e5fde3"
+    },
+    {
+      "path": "binary/shortw/lopezdahab/addition/mmadd-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab/addition/mmadd-2005-dl",
+      "sha256": "e5e73b0e1bbbf2fa58892f56497bae05e737ac4ea2bdf211d5a697b976ca6fb3",
+      "normalized_sha256": "bf06a61c55c653a3a1188aff0f8dfdcef84fc73da6f3a3cc7c47e5d78dff4919",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "bf06a61c55c653a3a1188aff0f8dfdcef84fc73da6f3a3cc7c47e5d78dff4919"
+    },
+    {
+      "path": "binary/shortw/lopezdahab/doubling/dbl-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab/doubling/dbl-2005-dl",
+      "sha256": "18fd5e32226f16e26c1ae98fd5fa30ee6321f28c87d96bedabbdb932b9fcb9d3",
+      "normalized_sha256": "6c2cdeb8e6d269f2e9ebcc909113f174bdb4cbcc6e864f8f9ff3cc96f5a60bd8",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "6c2cdeb8e6d269f2e9ebcc909113f174bdb4cbcc6e864f8f9ff3cc96f5a60bd8"
+    },
+    {
+      "path": "binary/shortw/lopezdahab/doubling/dbl-2005-l",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab/doubling/dbl-2005-l",
+      "sha256": "b51165889f0672250730e69d1a29c3ac5730aeed9b4dd0e92c3f5e25830a1b24",
+      "normalized_sha256": "346aec04c4a110999a35803b02ebb4899b261d99db59329809509b4e0b20cef7",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "346aec04c4a110999a35803b02ebb4899b261d99db59329809509b4e0b20cef7"
+    },
+    {
+      "path": "binary/shortw/lopezdahab/doubling/mdbl-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab/doubling/mdbl-2005-dl",
+      "sha256": "f99729cb4a61b27fe0f0210076bbea3fa01a45f56805c2a42a177d3da56b98f4",
+      "normalized_sha256": "5c27d0db8c5e8398231dc3e4226bd5f7dfd13952b60f01a3def8c4520ac45c86",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "5c27d0db8c5e8398231dc3e4226bd5f7dfd13952b60f01a3def8c4520ac45c86"
+    },
+    {
+      "path": "binary/shortw/lopezdahab/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/lopezdahab/variables",
+      "sha256": "6ca545720add40ea990a88b1d8adcf2e2d5e719db40234021bee316df1bdbf21",
+      "normalized_sha256": "6ca545720add40ea990a88b1d8adcf2e2d5e719db40234021bee316df1bdbf21",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "6ca545720add40ea990a88b1d8adcf2e2d5e719db40234021bee316df1bdbf21"
+    },
+    {
+      "path": "binary/shortw/projective/addition/add-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/projective/addition/add-2005-dl",
+      "sha256": "59a557e60d8a6a63cd4b882510884b2a1472fe5dc5eb806a8bc74828643d8b17",
+      "normalized_sha256": "7dbcd02b8e2fe235a0f3b68efd0a3f57785f276a537fb93d35c892f9f5d695bf",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "7dbcd02b8e2fe235a0f3b68efd0a3f57785f276a537fb93d35c892f9f5d695bf"
+    },
+    {
+      "path": "binary/shortw/projective/addition/add-2005-dl-2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/projective/addition/add-2005-dl-2",
+      "sha256": "0fe16be2bb9e793397732f9fae5f0a22a0fc5382f33c454dd043a3a22ccccfd8",
+      "normalized_sha256": "c7880eeba32301b9e23f244462ed7d2313c5775ee3c21edb2f4ad0fefe616dea",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "c7880eeba32301b9e23f244462ed7d2313c5775ee3c21edb2f4ad0fefe616dea"
+    },
+    {
+      "path": "binary/shortw/projective/addition/add-2008-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/projective/addition/add-2008-bl",
+      "sha256": "5f940dcebd2f183f1dcec44d201bbf740648c072ca58d3fd3ce0e86b1574e927",
+      "normalized_sha256": "0094cd4abc9a9d890254ec690969e57d9c68d3e168dff2ec0efbd32e4d624dbb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "0094cd4abc9a9d890254ec690969e57d9c68d3e168dff2ec0efbd32e4d624dbb"
+    },
+    {
+      "path": "binary/shortw/projective/addition/madd-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/projective/addition/madd-2005-dl",
+      "sha256": "de4600469724f2a2f503e929cc10ac7e6d7f2d9fe945f6bffd2d87e5e133029b",
+      "normalized_sha256": "25149662749548c6866e21f674e22c1956f2da2516d257b3db7cb9a60f2a5706",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "25149662749548c6866e21f674e22c1956f2da2516d257b3db7cb9a60f2a5706"
+    },
+    {
+      "path": "binary/shortw/projective/addition/madd-2008-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/projective/addition/madd-2008-bl",
+      "sha256": "b14bc750f07e33d81dce5474b27180013daabc958481d3303d0d969358daf114",
+      "normalized_sha256": "de7fbe6fac76cb14763eb36f0e736f444fd8473ffd0dbe0e3e7a7ba2076bcfa8",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "de7fbe6fac76cb14763eb36f0e736f444fd8473ffd0dbe0e3e7a7ba2076bcfa8"
+    },
+    {
+      "path": "binary/shortw/projective/addition/mmadd-2008-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/projective/addition/mmadd-2008-bl",
+      "sha256": "09892e4a077ce4c51074def12c9292e3a4f5504c21690c4cf8594a819f32d3ad",
+      "normalized_sha256": "49922c1ebbc294e5fe8d83a81af37b61e25bcc2677427257f60c65295bdcf86b",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "49922c1ebbc294e5fe8d83a81af37b61e25bcc2677427257f60c65295bdcf86b"
+    },
+    {
+      "path": "binary/shortw/projective/doubling/dbl-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/projective/doubling/dbl-2005-dl",
+      "sha256": "89427ea95f90457c53481b7ca65cf0a09e862f9ab601d0c95181dfd210f0eee2",
+      "normalized_sha256": "3e16981189234a670a3a214ddc96bb90b91f1ffb9101d098d0d8b9cfb1eae108",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "3e16981189234a670a3a214ddc96bb90b91f1ffb9101d098d0d8b9cfb1eae108"
+    },
+    {
+      "path": "binary/shortw/projective/doubling/dbl-2008-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/projective/doubling/dbl-2008-bl",
+      "sha256": "a7c835004cb71f3c93c6690d707bdb244713affe4906821c30affc30837f561a",
+      "normalized_sha256": "93d4e71c217441ef69ef9e2209024bd1028d594864d280b507ba48230275e5a6",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "93d4e71c217441ef69ef9e2209024bd1028d594864d280b507ba48230275e5a6"
+    },
+    {
+      "path": "binary/shortw/projective/doubling/mdbl-2005-dl",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/projective/doubling/mdbl-2005-dl",
+      "sha256": "db85217276e41c4e67f2989e433924fdf547c7741d4d0bbaf64a5ac2d777c758",
+      "normalized_sha256": "c9e8b6fc05f56cb8880bd872f66ff1c0e82c9ef4f1b2d5d8a0f9ec7e1c75f437",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "c9e8b6fc05f56cb8880bd872f66ff1c0e82c9ef4f1b2d5d8a0f9ec7e1c75f437"
+    },
+    {
+      "path": "binary/shortw/projective/scaling/scale",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/projective/scaling/scale",
+      "sha256": "da7589baacbb11d7e75506297820a57d8c0a53fdb780d74a8bba4e536f029739",
+      "normalized_sha256": "9e78f23a13f0bf4313b18fcee44a9d3e432f6ac399fb3bac4d0da82d192c42eb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9e78f23a13f0bf4313b18fcee44a9d3e432f6ac399fb3bac4d0da82d192c42eb"
+    },
+    {
+      "path": "binary/shortw/projective/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/projective/variables",
+      "sha256": "98e80e201dfcd2ce48b9ff7cae60223f3230d8ae39d50bd8ae537509e509732b",
+      "normalized_sha256": "98e80e201dfcd2ce48b9ff7cae60223f3230d8ae39d50bd8ae537509e509732b",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "98e80e201dfcd2ce48b9ff7cae60223f3230d8ae39d50bd8ae537509e509732b"
+    },
+    {
+      "path": "binary/shortw/xz/diffadd/dadd-2003-s",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/diffadd/dadd-2003-s",
+      "sha256": "dba0436769546bf0405db4ac9f9077933124e254ae4b218dd79e43524718991a",
+      "normalized_sha256": "cc3a5da2a58c7b61776145887b804d79881dca614aa40fbdca2cc6a354e094b7",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "cc3a5da2a58c7b61776145887b804d79881dca614aa40fbdca2cc6a354e094b7"
+    },
+    {
+      "path": "binary/shortw/xz/diffadd/dadd-2003-s-2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/diffadd/dadd-2003-s-2",
+      "sha256": "9fd69cd909a46def1c084acb6fc7f12c69cb88c745e2c4a3d2b7cf2c269fecb9",
+      "normalized_sha256": "f2ec7aae53264068239554012671f4a3ccd9d7d79cadd50e99af4fec73d8c8f0",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "f2ec7aae53264068239554012671f4a3ccd9d7d79cadd50e99af4fec73d8c8f0"
+    },
+    {
+      "path": "binary/shortw/xz/diffadd/mdadd-2003-s",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/diffadd/mdadd-2003-s",
+      "sha256": "88a80f1cb358a59289324dff8885a5ab341e925ccbd1fe24b859be08d73b520d",
+      "normalized_sha256": "c8ed6906ffda2010721ac6744ef9174aa8b5d54291ec6d3a957ba36f921b5248",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "c8ed6906ffda2010721ac6744ef9174aa8b5d54291ec6d3a957ba36f921b5248"
+    },
+    {
+      "path": "binary/shortw/xz/diffadd/mdadd-2003-s-2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/diffadd/mdadd-2003-s-2",
+      "sha256": "99539da8c858862fed5ba5ea00e1193eef82f3bb8e2a3a27ae4f5f4c716ff344",
+      "normalized_sha256": "de975b58e2f398895c1a76e5be090b56bbf11ab01fa4fe78b0fcbe01ff2c8cc8",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "de975b58e2f398895c1a76e5be090b56bbf11ab01fa4fe78b0fcbe01ff2c8cc8"
+    },
+    {
+      "path": "binary/shortw/xz/doubling/dbl-2003-s",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/doubling/dbl-2003-s",
+      "sha256": "e2856bfde0df512fe310d69ffc8166ebfb1bcd2baab41d8fdbabcb78d0233953",
+      "normalized_sha256": "96585edd7a24e70ef9877715ab27779313c1533e4b63d1e1d3bb4c5c8e3c1d4c",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "96585edd7a24e70ef9877715ab27779313c1533e4b63d1e1d3bb4c5c8e3c1d4c"
+    },
+    {
+      "path": "binary/shortw/xz/doubling/dbl-2003-s-2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/doubling/dbl-2003-s-2",
+      "sha256": "efdf3f7f6b11ae4b06050dff2822eb462a66106a4fadb3fad59d06a1fbdd0edb",
+      "normalized_sha256": "bc6c1750cb9b1c91ca262a76f882e754dea0e72444104a1f10455f1319086d23",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "bc6c1750cb9b1c91ca262a76f882e754dea0e72444104a1f10455f1319086d23"
+    },
+    {
+      "path": "binary/shortw/xz/doubling/dbl-2003-s-3",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/doubling/dbl-2003-s-3",
+      "sha256": "263bd36dd2e5a2d8020c63cbdd277bb8c1e29185939ca844ea8d9608bd5e05d3",
+      "normalized_sha256": "a4f11aaaf04840b7f6153aee081fa97cdfc9a4f12a92f1575e562118cab49823",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "a4f11aaaf04840b7f6153aee081fa97cdfc9a4f12a92f1575e562118cab49823"
+    },
+    {
+      "path": "binary/shortw/xz/doubling/dbl-2003-s-4",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/doubling/dbl-2003-s-4",
+      "sha256": "3307766cb182fbf20a13cc3b8fff3e083c31cf5484c95f7aebce16f275400bf3",
+      "normalized_sha256": "f71609727eb6bd72aa6bd1d6fb663cbaf4486500d9f1050e0fbba66b33126e2c",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "f71609727eb6bd72aa6bd1d6fb663cbaf4486500d9f1050e0fbba66b33126e2c"
+    },
+    {
+      "path": "binary/shortw/xz/doubling/mdbl-2003-s",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/doubling/mdbl-2003-s",
+      "sha256": "12608a4e6745a767a334139ce031b05151013938d1996de91aed15c312020948",
+      "normalized_sha256": "d1e561aabdc9934367a98e61f4a1364327307cda93b48640a852af7728b16c86",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "d1e561aabdc9934367a98e61f4a1364327307cda93b48640a852af7728b16c86"
+    },
+    {
+      "path": "binary/shortw/xz/ladder/ladd-2003-s",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/ladder/ladd-2003-s",
+      "sha256": "4aa53ee4bd99d811e241e07d66ba0511626e970e6fa8b86f3f44202bc3216bb3",
+      "normalized_sha256": "5e2ad49a7a8ec7e7977fac40b009305bb372e50b390aa51b7951abbb348e2f63",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "5e2ad49a7a8ec7e7977fac40b009305bb372e50b390aa51b7951abbb348e2f63"
+    },
+    {
+      "path": "binary/shortw/xz/ladder/ladd-2003-s-2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/ladder/ladd-2003-s-2",
+      "sha256": "2a5ba31ef1c856de80a534559ab416efc88b35c483b26358e61245ddd14bc4a2",
+      "normalized_sha256": "fddde7504e59fe6f94baad6379e631690faf8b821a355d453dd4f597e27f855c",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "fddde7504e59fe6f94baad6379e631690faf8b821a355d453dd4f597e27f855c"
+    },
+    {
+      "path": "binary/shortw/xz/ladder/ladd-2003-s-3",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/ladder/ladd-2003-s-3",
+      "sha256": "cddc2f5116cf7bd414bd359c34cc0a0edda99dc9932508ebed03ca34598ecd19",
+      "normalized_sha256": "917b32bfa16235760d4ee31a62d246125c277920755d01f9e05c9571d7269ff6",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "917b32bfa16235760d4ee31a62d246125c277920755d01f9e05c9571d7269ff6"
+    },
+    {
+      "path": "binary/shortw/xz/ladder/ladd-2003-s-4",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/ladder/ladd-2003-s-4",
+      "sha256": "a803cd910fa04d64f167269a13da3fc4a9becd61cb01470fe34b6aa7fe91d199",
+      "normalized_sha256": "197ac92c64512184ba2e8089441d80ab4d599ad4be06a0bff92a4ea7dade272a",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "197ac92c64512184ba2e8089441d80ab4d599ad4be06a0bff92a4ea7dade272a"
+    },
+    {
+      "path": "binary/shortw/xz/ladder/mladd-2003-s",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/ladder/mladd-2003-s",
+      "sha256": "34ad74ca7394b6aa7833f12a355279d256c516186cb854306d6cac462200eee7",
+      "normalized_sha256": "12ac2291ff9bb6bfbdbc4d17cc7d1ef92f0f27179f0bc71c7b848f68f4278011",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "12ac2291ff9bb6bfbdbc4d17cc7d1ef92f0f27179f0bc71c7b848f68f4278011"
+    },
+    {
+      "path": "binary/shortw/xz/ladder/mladd-2003-s-2",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/ladder/mladd-2003-s-2",
+      "sha256": "381119e6c636d00a2d42bf7a22753cbb95efe6540091aa2881182f3db08cf08d",
+      "normalized_sha256": "f93e7c2f78364ad1b3e9afdd5decf960bc223bfb2f86d389109f59ac0c10f2e3",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "f93e7c2f78364ad1b3e9afdd5decf960bc223bfb2f86d389109f59ac0c10f2e3"
+    },
+    {
+      "path": "binary/shortw/xz/ladder/mladd-2003-s-3",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/ladder/mladd-2003-s-3",
+      "sha256": "9a918e407e91ffce01e9cdb2e070eacc8bd174402cc8ca7f795934e32133b555",
+      "normalized_sha256": "861666e4d8ed8c7d746a119dd354c44a1000735b434cca779eb6c962fcc74155",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "861666e4d8ed8c7d746a119dd354c44a1000735b434cca779eb6c962fcc74155"
+    },
+    {
+      "path": "binary/shortw/xz/scaling/scale",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/scaling/scale",
+      "sha256": "43a348897fb70de0fe5e664c483d723fbbbacaec783d10a0cdabf752cd55a547",
+      "normalized_sha256": "008ad619ef08fd6605352b09897887875d0ba7703e0c3890b46eaad55bab57bc",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "008ad619ef08fd6605352b09897887875d0ba7703e0c3890b46eaad55bab57bc"
+    },
+    {
+      "path": "binary/shortw/xz/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g12o/data/shortw/xz/variables",
+      "sha256": "c08c1e40cc002c69236cfb54436256f1cfd374f655ddd7151dbca03f9291f756",
+      "normalized_sha256": "c08c1e40cc002c69236cfb54436256f1cfd374f655ddd7151dbca03f9291f756",
+      "verification": "syntax_checked_only",
+      "operation_code": null,
+      "local_sha256": "c08c1e40cc002c69236cfb54436256f1cfd374f655ddd7151dbca03f9291f756"
+    }
+  ]
+}

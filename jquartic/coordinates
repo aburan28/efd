@@ -1,0 +1,23 @@
+name Jacobi quartics
+parameter a
+coordinate x
+coordinate y
+satisfying y^2 == x^4+2*a*x^2+1
+addition x = (x1*y2+y1*x2)/(1-(x1*x2)^2)
+addition y = ((1+(x1*x2)^2)*(y1*y2+2*a*x1*x2)+2*x1*x2*(x1^2+x2^2))/(1-(x1*x2)^2)^2
+doubling x = (x1*y1+y1*x1)/(1-(x1*x1)^2)
+doubling y = ((1+(x1*x1)^2)*(y1*y1+2*a*x1*x1)+2*x1*x1*(x1^2+x1^2))/(1-(x1*x1)^2)^2
+negation x = -x1
+negation y = y1
+neutral x = 0
+neutral y = 1
+toweierstrass u = a+(y+1)/x^2
+toweierstrass v = (a+(y+1)/x^2)/x
+a0 = 2
+a1 = 0
+a2 = -2*a
+a3 = 0
+a4 = a^2-1
+a6 = 0
+fromweierstrass x = u/v
+fromweierstrass y = (u-a)*(u/v)^2-1
