@@ -1,0 +1,13 @@
+source 2012 Chuengsatiansup
+parameter minustwo
+assume minustwo = -2
+compute P = Y1*Z1
+compute p_2P = 2*P
+compute S = Y1+Z1
+compute A = S^2-P
+compute C = (A-p_2P)*S
+compute D = A*(Z1-Y1)
+compute E = 3*C-d*X1*p_2P
+compute X3 = minustwo*X1*D
+compute Y3 = (D-E)*Z1
+compute Z3 = (D+E)*Y1

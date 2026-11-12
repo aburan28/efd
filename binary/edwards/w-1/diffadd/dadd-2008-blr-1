@@ -1,0 +1,7 @@
+source 2008 Bernstein--Lange--Rezaeian Farashahi
+appliesto w-1
+compute A = w2^2
+compute B = A+w2
+compute C = w3^2
+compute D = C+w3
+compute w4 = 1+d1/(d1+B*D)+w1

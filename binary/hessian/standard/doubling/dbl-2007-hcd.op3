@@ -1,0 +1,16 @@
+A = X1^2
+efdtmp0 = X1+Y1
+B = Y1*efdtmp0
+C = A+B
+efdtmp1 = Z1+X1
+D = Z1*efdtmp1
+E = A+D
+efdtmp2 = X1-Y1
+F = C*efdtmp2
+efdtmp3 = Z1-X1
+G = E*efdtmp3
+Z3 = F*Z1
+efdtmp4 = F+G
+efdtmp5 = -efdtmp4
+Y3 = efdtmp5*X1
+X3 = G*Y1

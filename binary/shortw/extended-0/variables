@@ -1,0 +1,11 @@
+name extended Lopez-Dahab coordinates with a2=0
+assume a2 = 0
+variable X
+variable Y
+variable Z
+variable ZZ
+variable XZ
+satisfying x = X/Z
+satisfying y = Y/ZZ
+satisfying ZZ = Z^2
+satisfying XZ = X*Z

@@ -1,0 +1,19 @@
+name projective coordinates
+variable S
+variable C
+variable D
+variable Z
+satisfying s = S/Z
+satisfying c = C/Z
+satisfying d = D/Z
+toaffine s = S/Z
+toaffine c = C/Z
+toaffine d = D/Z
+tosystem Z = 1
+tosystem S = s
+tosystem C = c
+tosystem D = d
+homogweight S = 1
+homogweight C = 1
+homogweight D = 1
+homogweight Z = 1

@@ -1,0 +1,9 @@
+efdtmp0 = Y1/X1
+p_lambda = X1+efdtmp0
+efdtmp1 = p_lambda^2
+efdtmp2 = efdtmp1+p_lambda
+X3 = efdtmp2+a2
+efdtmp3 = X1+X3
+efdtmp4 = p_lambda*efdtmp3
+efdtmp5 = efdtmp4+X3
+Y3 = efdtmp5+Y1

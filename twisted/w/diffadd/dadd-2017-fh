@@ -1,0 +1,3 @@
+source 2017 Farashahi--Hosseini, Differential Addition on Twisted Edwards Curves, Section 4, invariant w=d*x^2*y^2; arXiv deposit 2026, https://arxiv.org/pdf/2606.20831
+compute W4 = Z1*(W2*Z3-W3*Z2)^2
+compute Z4 = W1*(W2*W3-Z2*Z3)^2

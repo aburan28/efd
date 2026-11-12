@@ -1,0 +1,5 @@
+name WZ coordinates with d1=d2
+assume d1 = d2
+variable W
+variable Z
+satisfying x+y = W/Z

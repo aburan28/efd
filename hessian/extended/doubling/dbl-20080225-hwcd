@@ -1,0 +1,10 @@
+source 2008.02.25 Hisil--Wong--Carter--Dawson, page 10, bottom
+compute X3 = (XY1-YZ1)*(XZ1+2*(XX1+ZZ1))
+compute Y3 = (XZ1-XY1)*(YZ1+2*(YY1+ZZ1))
+compute Z3 = (YZ1-XZ1)*(XY1+2*(XX1+YY1))
+compute XX3 = X3^2
+compute YY3 = Y3^2
+compute ZZ3 = Z3^2
+compute XY3 = (X3+Y3)^2-XX3-YY3
+compute XZ3 = (X3+Z3)^2-XX3-ZZ3
+compute YZ3 = (Y3+Z3)^2-YY3-ZZ3

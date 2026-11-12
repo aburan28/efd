@@ -1,0 +1,9 @@
+source 2015 Chung--Costello--Smith, Fast, uniform, and compact scalar multiplication, Section 5.1, Okeya--Sakurai recovery; homogenized chord identity, https://arxiv.org/abs/1510.03174
+assume Z1 = 1
+compute A = X1*Z2+X2
+compute B = X1*X2+Z2
+compute C = X1*Z2-X2
+compute N = A*B*Z3+2*a*X1*X2*Z2*Z3-X3*C^2
+compute Z4 = 2*b*Y1*Z2^2*Z3
+compute X4 = 2*b*Y1*X2*Z2*Z3
+compute Y4 = N

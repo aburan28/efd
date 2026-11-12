@@ -1,0 +1,12 @@
+efdtmp0 = 4*W1
+efdtmp1 = efdtmp0*Z1
+efdtmp2 = W1+Z1
+efdtmp3 = efdtmp2^2
+efdtmp4 = e*W1
+efdtmp5 = efdtmp4*Z1
+efdtmp6 = efdtmp3-efdtmp5
+W3 = efdtmp1*efdtmp6
+efdtmp7 = W1^2
+efdtmp8 = Z1^2
+efdtmp9 = efdtmp7-efdtmp8
+Z3 = efdtmp9^2

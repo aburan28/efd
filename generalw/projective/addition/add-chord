@@ -1,0 +1,8 @@
+source General Weierstrass chord-and-tangent law, homogenized with explicit a1,a2,a3; derived formula, not an optimized paper operation count.
+compute U = X2*Z1-X1*Z2
+compute V = Y2*Z1-Y1*Z2
+compute W = Z1*Z2
+compute N = V^2*W+a1*V*U*W-a2*U^2*W-U^2*(X1*Z2+X2*Z1)
+compute X3 = U*N
+compute Z3 = U^3*W
+compute Y3 = -(V+a1*U)*N-(Y1*X2-Y2*X1)*U^2*W-a3*U^3*W

@@ -1,0 +1,7 @@
+assume Z1 = 1
+assume Z2 = 1
+compute X1Y2 = X1*Y2
+compute Y1X2 = Y1*X2
+compute X3 = Y1X2*Y1-Y2*X1Y2
+compute Y3 = X1*X1Y2-Y1X2*X2
+compute Z3 = Y2*X2-X1*Y1

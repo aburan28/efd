@@ -27,11 +27,12 @@
         "p256": "Not a base-field Montgomery conversion."
       },
       "priority": "high",
-      "implementation_status": "candidate_not_imported",
+      "implementation_status": "partially_imported",
       "notes": [
         "Published in TCHES 2024(4), pp. 737-762, DOI 10.46586/tches.v2024.i4.737-762. Costs are paper-reported; not benchmarked here.",
         "This includes new scaled Edwards variants; overlap with HWCD08 must be checked by identity, not just operation count."
-      ]
+      ],
+      "imported_scope": "Extended Montgomery model and linear maps; transferred general addition. Scaled optimal laws remain to import."
     },
     {
       "id": "hamburg2020",
@@ -52,12 +53,13 @@
         "curve25519": "Can compare via shortw, but native Montgomery arithmetic is a separate baseline."
       },
       "priority": "high",
-      "implementation_status": "candidate_not_imported",
+      "implementation_status": "partially_imported",
       "notes": [
         "8M+3S+7A per bit is paper-reported for a ladder step, not a full scalar multiplication or a universal winner.",
         "Author code: https://github.com/bitwiseshiftleft/ladder_formulas",
         "The word Montgomery describes the ladder algorithm here; it does not imply a Montgomery curve model."
-      ]
+      ],
+      "imported_scope": "Figure 3 coupled step with denominator tracking; complete scalar algorithm and other steps remain."
     },
     {
       "id": "hisil-pala2026",
@@ -110,10 +112,11 @@
         "curve25519": "Available on a shortw model, with conversion costs."
       },
       "priority": "high",
-      "implementation_status": "candidate_not_imported",
+      "implementation_status": "partially_imported",
       "notes": [
         "Co-Z is a shared-denominator state invariant, not a new curve equation. Tests must verify both outputs and preservation of the shared denominator."
-      ]
+      ],
+      "imported_scope": "Conjugate co-Z and updated addition; other fused operations remain."
     },
     {
       "id": "chung2015",
@@ -136,10 +139,11 @@
         "curve25519": "Montgomery recovery, Section 5.1."
       },
       "priority": "high",
-      "implementation_status": "candidate_not_imported",
+      "implementation_status": "partially_imported",
       "notes": [
         "Recovery requires a signed anchor and neighboring quotient point, with torsion and denominator conditions. A lone quotient coordinate is not invertible."
-      ]
+      ],
+      "imported_scope": "Weierstrass and Montgomery signed recovery; two-dimensional algorithms remain."
     },
     {
       "id": "renes-smith2017",
@@ -161,11 +165,12 @@
         "p256": "Use an appropriate generic Weierstrass analogue, not this specialized Montgomery formula."
       },
       "priority": "high",
-      "implementation_status": "candidate_not_imported",
+      "implementation_status": "partially_imported",
       "notes": [
         "Useful to catalog as an unordered sum/difference relation, not full-point addition.",
         "Relevant to polynomial relation experiments; no index-calculus complexity claim follows."
-      ]
+      ],
+      "imported_scope": "Genus-one Montgomery biquadratic relation."
     },
     {
       "id": "hosseini-farashahi",
@@ -187,11 +192,12 @@
         "p256": "No direct base-field twisted Edwards model."
       },
       "priority": "high",
-      "implementation_status": "candidate_not_imported",
+      "implementation_status": "partially_imported",
       "notes": [
         "Related ACISP 2017 DOI: https://doi.org/10.1007/978-3-319-59870-3_21 . Do not count the 2026 deposit as an independent new scheme without version comparison.",
         "Not every invariant w is degree two; the w=d*x^2*y^2 family identifies extra torsion cosets."
-      ]
+      ],
+      "imported_scope": "w=d*x^2*y^2 representation, doubling and differential addition. Other w families remain."
     },
     {
       "id": "cheng2019",
@@ -239,10 +245,11 @@
         "p256": "No direct Edwards model over the base field."
       },
       "priority": "high",
-      "implementation_status": "candidate_not_imported",
+      "implementation_status": "partially_imported",
       "notes": [
         "The paper studies trace-zero subgroups over extensions; its measured compression costs do not establish prime-field relation-collection costs."
-      ]
+      ],
+      "imported_scope": "Explicit Edwards f3 residual; higher resultant recurrences and trace-zero algorithms remain."
     },
     {
       "id": "hisil-renes2019",
@@ -360,10 +367,11 @@
         "p256": "Full rational 2-torsion requirement fails."
       },
       "priority": "medium",
-      "implementation_status": "candidate_not_imported",
+      "implementation_status": "partially_imported",
       "notes": [
         "Primary abstract supplies the full-rational-2-torsion correspondence; verify exact maps and exceptional sets before importing."
-      ]
+      ],
+      "imported_scope": "Model, projective chart and a symbolically checked derived birational map. Optimized arithmetic remains."
     },
     {
       "id": "hone2020",

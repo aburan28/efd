@@ -1,0 +1,7 @@
+A = w1^2
+J = A^2
+K = A+J
+efdtmp0 = d1+K
+efdtmp1 = d2overd1plus1*J
+efdtmp2 = efdtmp0+efdtmp1
+w3 = K/efdtmp2

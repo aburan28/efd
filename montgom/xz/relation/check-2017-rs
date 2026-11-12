@@ -1,0 +1,5 @@
+source 2017 Renes--Smith, qDSA, Section 3.2 Proposition 3 equations (2)-(5), https://joostrenes.nl/publications/qdsa-eprint.pdf
+compute BXX = (X1*X2-Z1*Z2)^2
+compute BXZ = (X1*X2+Z1*Z2)*(X1*Z2+Z1*X2)+2*a*X1*X2*Z1*Z2
+compute BZZ = (X1*Z2-Z1*X2)^2
+compute R = BZZ*X3^2-2*BXZ*X3*Z3+BXX*Z3^2

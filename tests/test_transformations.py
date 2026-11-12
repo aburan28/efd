@@ -7,7 +7,7 @@ from tools.relation_profile import summation_polynomial
 
 ROOT = Path(__file__).resolve().parents[1]
 CAT = json.loads((ROOT / 'transformations/catalog.json').read_text())
-NAMES = 'x y a b c d r s t X Y Z T ZZ ZZZ u v weierx weiery L'.split()
+NAMES = 'x y a b c d r s t X Y Z T ZZ ZZZ u v weierx weiery L S C D U V W R XX YY XY XZ YZ SC DZ'.split()
 SYMS = {n: S.Symbol(n) for n in NAMES}
 x, y = SYMS['x'], SYMS['y']
 
@@ -70,16 +70,23 @@ class Transformations(unittest.TestCase):
                     if line.startswith(('a0 =', 'a1 =', 'a2 =', 'a3 =', 'a4 =', 'a6 =')):
                         key,value = line.split('=',1)
                         invariants[key.strip()] = expr(value.strip())
-                px = forward.get(SYMS['u'], forward.get(SYMS['weierx']))
-                py = forward.get(SYMS['v'], forward.get(SYMS['weiery']))
+                px,py = list(forward.values())
                 target = (invariants['a0']*py**2 + invariants['a1']*px*py
                           + invariants['a3']*py - px**3 - invariants['a2']*px**2
                           - invariants['a4']*px - invariants['a6'])
                 num = S.cancel(target).as_numer_denom()[0]
-                rem = S.Poly(num,y).rem(S.Poly(equations(model),y)).as_expr()
+                affine = [expr(l.split()[1]) for l in path.read_text().splitlines() if l.startswith('coordinate ')]
+                relations = []
+                for line in path.read_text().splitlines():
+                    if line.startswith('satisfying '):
+                        lhs,rhs=line[11:].split('==')
+                        relations.append(expr(lhs)-expr(rhs))
+                ideal=S.groebner(relations,*affine)
+                rem=ideal.reduce(num)[1]
                 self.assertEqual(S.cancel(rem), 0)
                 for variable, formula in inverse.items():
-                    self.assertEqual(S.cancel(formula.subs(forward, simultaneous=True)-variable), 0)
+                    num=S.cancel(formula.subs(forward, simultaneous=True)-variable).as_numer_denom()[0]
+                    self.assertEqual(S.cancel(ideal.reduce(num)[1]), 0)
 
     def test_catalog_links_and_coverage(self):
         self.assertEqual({c['path'] for c in CAT['coordinates']},
@@ -119,10 +126,12 @@ class Transformations(unittest.TestCase):
             with self.subTest(coordinates=coord['id']):
                 definitions = assignments(path, 'satisfying')
                 lift = assignments(path, 'tosystem')
+                affine = {expr(l.split()[1]) for l in (ROOT/coord['model']/'coordinates').read_text().splitlines() if l.startswith('coordinate ')}
                 for variable, formula in back.items():
-                    expanded = resolve(formula, {k:v for k,v in definitions.items() if k not in (x,y)})
-                    self.assertEqual(S.cancel(expanded.subs(lift, simultaneous=True)-variable), 0)
-                    self.assertEqual(S.cancel(expanded-resolve(definitions[variable], {k:v for k,v in definitions.items() if k not in (x,y)})), 0)
+                    expanded = resolve(formula, {k:v for k,v in definitions.items() if k not in affine})
+                    # Lifts may define cached variables in terms of previously lifted base variables.
+                    self.assertEqual(S.cancel(resolve(expanded,lift)-variable), 0)
+                    self.assertEqual(S.cancel(expanded-resolve(definitions[variable], {k:v for k,v in definitions.items() if k not in affine})), 0)
 
     def test_homogeneous_weights(self):
         L = SYMS['L']
@@ -131,9 +140,10 @@ class Transformations(unittest.TestCase):
             weights = assignments(path, 'homogweight')
             scale = {var: var*L**weight for var, weight in weights.items()}
             relations = assignments(path, 'satisfying')
+            affine = {expr(l.split()[1]) for l in (ROOT/coord['model']/'coordinates').read_text().splitlines() if l.startswith('coordinate ')}
             for lhs, rhs in relations.items():
                 # Expand cached ZZ/ZZZ to base variables before checking degree.
-                extra = {k:v for k,v in relations.items() if k not in (x,y) and k not in weights}
+                extra = {k:v for k,v in relations.items() if k not in affine and k not in weights}
                 value = resolve(lhs-rhs, extra).subs(scale, simultaneous=True)
                 numerator = S.cancel(value).as_numer_denom()[0]
                 with self.subTest(coordinates=coord['id'], relation=str(lhs)):

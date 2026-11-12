@@ -1,0 +1,15 @@
+source 2013 Oliveira--López--Aranha--Rodríguez-Henríquez "Lambda coordinates for binary elliptic curves"; database entry contributed by Chitchanok Chuengsatiansup
+compute A = L1*Z2
+compute B = L2*Z1
+compute C = A+B
+compute D = X1*Z2
+compute E = X2*Z1
+compute F = D+E
+compute G = F^2
+compute H = C*D
+compute I = C*E
+compute J = C*G
+compute K = J*Z2
+compute X3 = H*I
+compute L3 = (I+G)^2+K*(L1+Z1)
+compute Z3 = K*Z1

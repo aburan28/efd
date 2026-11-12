@@ -1,0 +1,5 @@
+source 2015 Bianco--Gorla, Compression for trace zero points on twisted Edwards curves, Definition 9; homogenized d*f3, https://arxiv.org/pdf/1507.08555
+compute A = Y1^2*Y2^2
+compute B = Y1^2*Z2^2+Z1^2*Y2^2
+compute C = Z1^2*Z2^2
+compute R = (d*(A-B)+a*C)*Y3^2+2*(d-a)*Y1*Y2*Z1*Z2*Y3*Z3+(a*(B-C)-d*A)*Z3^2

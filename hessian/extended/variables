@@ -1,0 +1,38 @@
+name extended coordinates
+variable X
+variable Y
+variable Z
+variable XX
+variable YY
+variable ZZ
+variable XY
+variable YZ
+variable XZ
+satisfying x = X/Z
+satisfying y = Y/Z
+satisfying XX = X*X
+satisfying YY = Y*Y
+satisfying ZZ = Z*Z
+satisfying XY = 2*X*Y
+satisfying XZ = 2*X*Z
+satisfying YZ = 2*Y*Z
+toaffine x = X/Z
+toaffine y = Y/Z
+tosystem Z = 1
+tosystem X = x
+tosystem Y = y
+tosystem XX = X*X
+tosystem YY = Y*Y
+tosystem ZZ = Z*Z
+tosystem XY = 2*X*Y
+tosystem XZ = 2*X*Z
+tosystem YZ = 2*Y*Z
+homogweight X = 1
+homogweight Y = 1
+homogweight Z = 1
+homogweight XX = 2
+homogweight YY = 2
+homogweight ZZ = 2
+homogweight XY = 2
+homogweight YZ = 2
+homogweight XZ = 2

@@ -1,0 +1,14 @@
+source 2006 Doche--Icart--Kohel "Efficient scalar multiplication by isogeny decompositions", page 198, middle display, plus common-subexpression elimination
+compute YY1 = Y1^2
+compute A = (X1+3*ZZ1)^2
+compute B = a*ZZ1*A
+compute Xt = YY1+B
+compute Yt = Y1*(YY1-3*B)
+compute Zt = X1*Z1
+compute C = Zt^2
+compute Ca = a*C
+compute E = 3*Ca*(4*Ca-9*C-Xt)^2
+compute X3 = Yt^2-E
+compute Y3 = Yt*(X3+4*E)
+compute Z3 = 3*Xt*Zt
+compute ZZ3 = Z3^2

@@ -1,0 +1,15 @@
+YY1 = Y1^2
+X3 = Y1*R1
+efdtmp0 = XX1^2
+Z3 = 1-efdtmp0
+XX3 = X3^2
+ZZ3 = Z3^2
+efdtmp1 = X3+Z3
+efdtmp2 = efdtmp1^2
+efdtmp3 = efdtmp2-XX3
+R3 = efdtmp3-ZZ3
+efdtmp4 = YY1^2
+efdtmp5 = 2*efdtmp4
+efdtmp6 = a*XX3
+efdtmp7 = efdtmp5-efdtmp6
+Y3 = efdtmp7-ZZ3

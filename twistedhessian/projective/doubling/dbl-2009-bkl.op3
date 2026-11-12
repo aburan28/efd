@@ -1,0 +1,10 @@
+D = X1^3
+E = Y1^3
+F = Z1^3
+G = a*D
+efdtmp0 = E-F
+X3 = X1*efdtmp0
+efdtmp1 = G-E
+Y3 = Z1*efdtmp1
+efdtmp2 = F-G
+Z3 = Y1*efdtmp2

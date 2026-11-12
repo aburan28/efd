@@ -1,0 +1,21 @@
+source 2007 Hisil--Carter--Dawson
+parameter b
+assume b = a-1
+compute E = S1^2
+compute F = C1^2
+compute G = E^2
+compute H = F^2
+compute J = 2*H
+compute K = 2*J
+compute L = (2*F+E)^2-G-K
+compute M = b*G
+compute N = K+J
+compute P = M^2
+compute R = N*M
+compute U = M*L
+compute V = H^2
+compute W = H*L
+compute S3 = S1*(R+b*W+2*(P-V)-W-P-V)
+compute C3 = C1*(2*(P-V)-U+P+V-R+b*U)
+compute D3 = D1*(U-P-V+R+b*W)
+compute Z3 = Z1*(R-b*U-W-P-V)

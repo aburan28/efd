@@ -44,8 +44,9 @@ def main():
     models = sorted(h for h in references if h.endswith('/coordinates'))
     coordinates = sorted(h for h in references if h.endswith('/variables'))
     missing = [h for h in formulas if not (ROOT/h).is_file()]
-    native = sorted(str(p.relative_to(ROOT)) for model in ('shortw','montgom','twisted','edwards')
-                    for p in (ROOT/model).glob('*/*/*') if p.is_file() and p.suffix != '.op3')
+    native = sorted(str(p.with_suffix('').relative_to(ROOT))
+                    for model in ROOT.glob('*/coordinates')
+                    for p in model.parent.glob('*/*/*.op3'))
     result = dict(checked_on=date.today().isoformat(), source=BASE+'index.html',
                   comparison='Exact relative paths; presence does not prove algebraic equality or source-version equality. Missing entries may include formulas deliberately removed as broken by the export.',
                   status='Discovery inventory only; no upstream formulas imported or verified.',

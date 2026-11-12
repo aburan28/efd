@@ -1,0 +1,4 @@
+name w coordinates with d1=d2
+assume d1 = d2
+variable w
+satisfying x+y = w

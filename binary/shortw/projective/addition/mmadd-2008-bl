@@ -1,0 +1,11 @@
+source 2008 Bernstein--Lange
+assume Z1 = 1
+assume Z2 = 1
+compute A = Y1+Y2
+compute B = X1+X2
+compute AB = A+B
+compute C = B^2
+compute Z3 = B*C
+compute F = A*AB+a2*C+Z3
+compute X3 = B*F
+compute Y3 = C*(A*X1+B*Y1)+AB*F

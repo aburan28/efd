@@ -1,0 +1,7 @@
+source 2004 Semaev, Summation polynomials and the discrete logarithm problem on elliptic curves, https://eprint.iacr.org/2004/031; homogeneous f3 relation
+compute D = X1*Z2-X2*Z1
+compute S = X1*Z2+X2*Z1
+compute C = Z1*Z2
+compute T = X1*X2
+compute A = S*(T+a*C)+2*b*C^2
+compute R = D^2*X3^2-2*A*X3*Z3+((T-a*C)^2-4*b*S*C)*Z3^2

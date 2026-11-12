@@ -1,0 +1,3 @@
+source 2008 Bernstein--Lange--Rezaeian Farashahi
+compute X3 = 1+(d1+d2*(X1^2+Y1^2)+Y1^2+Y1^4)/(d1+X1^2+Y1^2+(d2/d1)*(X1^4+Y1^4))
+compute Y3 = 1+(d1+d2*(X1^2+Y1^2)+X1^2+X1^4)/(d1+X1^2+Y1^2+(d2/d1)*(X1^4+Y1^4))

@@ -1,0 +1,8 @@
+source 2009 Hisil--Wong--Carter--Dawson, formula (9), plus substitutions U = XX, V = ZZ, W = R/2, plus R rotation, plus assumption Z1=1, plus standard simplification
+assume Z1 = 1
+compute YY1 = Y1^2
+compute X3 = (X1+Y1)^2-XX1-YY1
+compute Z3 = 1-XX1^2
+compute XX3 = X3^2
+compute ZZ3 = Z3^2
+compute Y3 = 2*YY1^2-a*XX3-ZZ3

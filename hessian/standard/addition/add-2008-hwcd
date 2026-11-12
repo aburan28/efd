@@ -1,0 +1,16 @@
+source 2008.02.25 Hisil--Wong--Carter--Dawson, page 10, top
+compute XX1 = X1^2
+compute YY1 = Y1^2
+compute ZZ1 = Z1^2
+compute XY1 = (X1+Y1)^2-XX1-YY1
+compute XZ1 = (X1+Z1)^2-XX1-ZZ1
+compute YZ1 = (Y1+Z1)^2-YY1-ZZ1
+compute XX2 = X2^2
+compute YY2 = Y2^2
+compute ZZ2 = Z2^2
+compute XY2 = (X2+Y2)^2-XX2-YY2
+compute XZ2 = (X2+Z2)^2-XX2-ZZ2
+compute YZ2 = (Y2+Z2)^2-YY2-ZZ2
+compute X3 = YY1*XZ2-XZ1*YY2
+compute Y3 = XX1*YZ2-YZ1*XX2
+compute Z3 = ZZ1*XY2-XY1*ZZ2

@@ -1,0 +1,10 @@
+source 2007 Hisil--Carter--Dawson
+assume Z1 = 1
+compute A = XX1^2
+compute B = Y1^2
+compute X3 = XX1+B-(X1+Y1)^2
+compute Z3 = A-1
+compute XX3 = X3^2
+compute ZZ3 = Z3^2
+compute T3 = XX3+ZZ3
+compute Y3 = 2*B*(A+2*XX1+1)-T3

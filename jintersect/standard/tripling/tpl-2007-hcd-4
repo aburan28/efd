@@ -1,0 +1,36 @@
+source 2007 Hisil--Carter--Dawson, plus common-subexpression elimination
+parameter b
+assume b = a-1
+parameter b2
+assume b2 = 2*b
+parameter b3
+assume b3 = 3*b
+parameter bb2
+assume bb2 = 2*b*b
+compute E = S1^2
+compute F = C1^2
+compute G = E^2
+compute H = F^2
+compute J = G^2
+compute K = H^2
+compute L = (E+F)^2-H-G
+compute M = L^2
+compute N = (G+L)^2-J-M
+compute P = (H+L)^2-K-M
+compute R = bb2*J
+compute Q = b2*N
+compute T = b3*M
+compute U = 2*P
+compute V = 2*K
+compute W = a*U
+compute Y = a*Q
+compute RV = R-V
+compute RQ = R-Q
+compute UV = U+V
+compute TW = T+W
+compute TY = T-Y
+compute RQUV = RQ+UV
+compute S3 = S1*(RV+TW-2*UV)
+compute C3 = C1*(RV-TY+2*RQ)
+compute D3 = D1*(TW-RQUV)
+compute Z3 = Z1*(TY-RQUV)

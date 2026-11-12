@@ -1,0 +1,7 @@
+source 2005 Doche--Lange, following Lopez-Dahab 1998
+compute A = Z1^2
+compute B = a6*A^2
+compute C = X1^2
+compute Z3 = A*C
+compute X3 = C^2+B
+compute Y3 = (Y1^2+a2*Z3+B)*X3+Z3*B

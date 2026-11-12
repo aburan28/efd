@@ -1,0 +1,15 @@
+A = W2*W3
+B = Z2*Z3
+efdtmp0 = W2+Z2
+efdtmp1 = W3+Z3
+C = efdtmp0*efdtmp1
+efdtmp2 = C+A
+efdtmp3 = efdtmp2+B
+efdtmp4 = efdtmp3^2
+efdtmp5 = d1*efdtmp4
+W4 = Z1*efdtmp5
+efdtmp6 = A*C
+efdtmp7 = B^2
+efdtmp8 = d1*efdtmp7
+efdtmp9 = efdtmp6+efdtmp8
+Z4 = W1*efdtmp9

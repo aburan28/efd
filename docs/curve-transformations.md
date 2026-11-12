@@ -1,13 +1,16 @@
 # Curve models, coordinates, and prime-field relation experiments
 
-This atlas extends the existing four-model EFD export. The machine-readable
+This atlas extends the original four-model EFD export. The machine-readable
 [catalog](../transformations/catalog.json) adds eight conditional, reversible
-model transformations, all 20 existing coordinate representations, and concrete
+model transformations, 40 prime-field coordinate representations in 13 model
+families with native Weierstrass maps, and concrete
 Curve25519, P-256 and secp256k1 cases. It does not classify every genus-one model.
 See [additional formulas](additional-formulas.md)
 for new doubling/ladder/tripling entries and a separate degree-two isogeny recipe.
-Hessian, Jacobi quartic/intersection, higher-genus covers, and general isogeny
-catalogs remain future work.
+The unified database also indexes 19 binary representations separately. General
+isogeny catalogs and higher-genus covers remain future work. See
+[coverage and verification](coverage-and-verification.md) for imported families
+and the limits of each verification method.
 
 Use `python tools/curve_map.py` for the complete inventory or
 `python tools/curve_map.py --curve p256` for a particular curve. `--json` exports

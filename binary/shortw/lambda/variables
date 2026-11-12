@@ -1,0 +1,6 @@
+name Lambda coordinates
+variable X
+variable L
+variable Z
+satisfying x = X/Z
+satisfying y/x = (L-X)/Z

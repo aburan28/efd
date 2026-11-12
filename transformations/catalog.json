@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "scope": "Curated transformation atlas for the four models already exported in this repository; not an exhaustive classification of genus-one models.",
+  "scope": "Thirteen prime-field curve families, 40 representations, native Weierstrass maps, conditional model transformations, quotients and joint arithmetic states.",
   "conventions": {
     "field": "F_p, p > 3 unless a field extension is explicitly selected",
     "expressions": "Python-style ** powers; exact rational arithmetic, never floating point. Parse only trusted catalog expressions.",
@@ -29,6 +29,22 @@
     "semaev": {
       "url": "https://eprint.iacr.org/2004/031",
       "scope": "Summation polynomials; bibliographic reference, PDF unavailable during this session."
+    },
+    "ffs2024": {
+      "url": "https://ches.iacr.org/2024/papers-issue-4/4_111.pdf",
+      "scope": "Extended Montgomery embedding and linear Edwards maps, Theorems 2-3."
+    },
+    "fh2017": {
+      "url": "https://arxiv.org/pdf/2606.20831",
+      "scope": "Differential Edwards quotient functions; 2017 conference paper deposited 2026."
+    },
+    "huff2010": {
+      "url": "https://eprint.iacr.org/2010/390",
+      "scope": "General Huff model family; the supplied 1/(x*y) birational map is independently derived and symbolically checked."
+    },
+    "weierstrass": {
+      "url": "https://doc.sagemath.org/html/en/reference/arithmetic_curves/sage/schemes/elliptic_curves/ell_generic.html",
+      "scope": "General Weierstrass coefficient convention and ordinary Legendre specialization."
     }
   },
   "models": {
@@ -47,6 +63,60 @@
     "edwards": {
       "path": "edwards/coordinates",
       "nonsingular": "c*d*(1-d*c**4) != 0"
+    },
+    "2dik": {
+      "path": "2dik/coordinates",
+      "nonsingular": "a*(a-64) != 0",
+      "field": "characteristic > 3",
+      "map": "Native general Weierstrass maps in coordinates file; not necessarily short Weierstrass without further normalization."
+    },
+    "3dik": {
+      "path": "3dik/coordinates",
+      "nonsingular": "a*(4*a-9) != 0",
+      "field": "characteristic > 3",
+      "map": "Native general Weierstrass maps in coordinates file; not necessarily short Weierstrass without further normalization."
+    },
+    "hessian": {
+      "path": "hessian/coordinates",
+      "nonsingular": "d**3 != 1",
+      "field": "characteristic > 3",
+      "map": "Native general Weierstrass maps in coordinates file; not necessarily short Weierstrass without further normalization."
+    },
+    "jintersect": {
+      "path": "jintersect/coordinates",
+      "nonsingular": "a*(a-1) != 0",
+      "field": "characteristic > 3",
+      "map": "Native general Weierstrass maps in coordinates file; not necessarily short Weierstrass without further normalization."
+    },
+    "jquartic": {
+      "path": "jquartic/coordinates",
+      "nonsingular": "a**2 != 1",
+      "field": "characteristic > 3",
+      "map": "Native general Weierstrass maps in coordinates file; not necessarily short Weierstrass without further normalization."
+    },
+    "twistedhessian": {
+      "path": "twistedhessian/coordinates",
+      "nonsingular": "a*(d**3-27*a) != 0",
+      "field": "characteristic > 3",
+      "map": "Native general Weierstrass maps in coordinates file; not necessarily short Weierstrass without further normalization."
+    },
+    "generalw": {
+      "path": "generalw/coordinates",
+      "nonsingular": "general Weierstrass discriminant != 0",
+      "field": "characteristic > 3",
+      "map": "Native birational map to general Weierstrass on an open affine chart; generalhuff excludes x*y=0 and inverse poles."
+    },
+    "legendre": {
+      "path": "legendre/coordinates",
+      "nonsingular": "l*(l-1) != 0",
+      "field": "characteristic > 3",
+      "map": "Native birational map to general Weierstrass on an open affine chart; generalhuff excludes x*y=0 and inverse poles."
+    },
+    "generalhuff": {
+      "path": "generalhuff/coordinates",
+      "nonsingular": "a*b*(a-b) != 0",
+      "field": "characteristic > 3",
+      "map": "Native birational map to general Weierstrass on an open affine chart; generalhuff excludes x*y=0 and inverse poles."
     }
   },
   "coordinates": [
@@ -248,6 +318,206 @@
       "affine_chart": "Z != 0",
       "sources": [
         "efd"
+      ]
+    },
+    {
+      "id": "2dik/standard",
+      "path": "2dik/standard/variables",
+      "model": "2dik",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; model-specific rational maps can exclude additional affine points",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "3dik/standard",
+      "path": "3dik/standard/variables",
+      "model": "3dik",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; model-specific rational maps can exclude additional affine points",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "hessian/extended",
+      "path": "hessian/extended/variables",
+      "model": "hessian",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; model-specific rational maps can exclude additional affine points",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "hessian/standard",
+      "path": "hessian/standard/variables",
+      "model": "hessian",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; model-specific rational maps can exclude additional affine points",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "jintersect/extended",
+      "path": "jintersect/extended/variables",
+      "model": "jintersect",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; model-specific rational maps can exclude additional affine points",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "jintersect/standard",
+      "path": "jintersect/standard/variables",
+      "model": "jintersect",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; model-specific rational maps can exclude additional affine points",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "jquartic/2xxyzz",
+      "path": "jquartic/2xxyzz/variables",
+      "model": "jquartic",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; model-specific rational maps can exclude additional affine points",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "jquartic/2xxyzzr",
+      "path": "jquartic/2xxyzzr/variables",
+      "model": "jquartic",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; model-specific rational maps can exclude additional affine points",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "jquartic/2xyz",
+      "path": "jquartic/2xyz/variables",
+      "model": "jquartic",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; model-specific rational maps can exclude additional affine points",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "jquartic/xxyzz",
+      "path": "jquartic/xxyzz/variables",
+      "model": "jquartic",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; model-specific rational maps can exclude additional affine points",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "jquartic/xxyzzr",
+      "path": "jquartic/xxyzzr/variables",
+      "model": "jquartic",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; model-specific rational maps can exclude additional affine points",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "jquartic/xyz",
+      "path": "jquartic/xyz/variables",
+      "model": "jquartic",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; model-specific rational maps can exclude additional affine points",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "montgom/extended",
+      "path": "montgom/extended/variables",
+      "model": "montgom",
+      "kind": "full_point",
+      "affine_chart": "W != 0 for affine decoding; affine lift with S=y/x requires x != 0; neutral and (0,0) have separate projective representatives",
+      "sources": [
+        "ffs2024"
+      ]
+    },
+    {
+      "id": "montgom/projective",
+      "path": "montgom/projective/variables",
+      "model": "montgom",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; model-specific rational maps can exclude additional affine points",
+      "sources": [
+        "ffs2024"
+      ]
+    },
+    {
+      "id": "twisted/w",
+      "path": "twisted/w/variables",
+      "model": "twisted",
+      "kind": "quotient_torsion_cosets",
+      "affine_chart": "W and Z not both zero; extra torsion cosets are identified; no full inverse",
+      "sources": [
+        "fh2017"
+      ]
+    },
+    {
+      "id": "twisted/yz",
+      "path": "twisted/yz/variables",
+      "model": "twisted",
+      "kind": "quotient_by_negation",
+      "affine_chart": "Z != 0; recovery needs sign/anchor data",
+      "sources": [
+        "fh2017"
+      ]
+    },
+    {
+      "id": "twistedhessian/projective",
+      "path": "twistedhessian/projective/variables",
+      "model": "twistedhessian",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; model-specific rational maps can exclude additional affine points",
+      "sources": [
+        "efd"
+      ]
+    },
+    {
+      "id": "generalw/projective",
+      "model": "generalw",
+      "path": "generalw/projective/variables",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; native birational maps may exclude additional divisors",
+      "sources": [
+        "weierstrass"
+      ]
+    },
+    {
+      "id": "legendre/projective",
+      "model": "legendre",
+      "path": "legendre/projective/variables",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; native birational maps may exclude additional divisors",
+      "sources": [
+        "weierstrass"
+      ]
+    },
+    {
+      "id": "generalhuff/projective",
+      "model": "generalhuff",
+      "path": "generalhuff/projective/variables",
+      "kind": "full_point",
+      "affine_chart": "Z != 0; native birational maps may exclude additional divisors",
+      "sources": [
+        "huff2010"
       ]
     }
   ],

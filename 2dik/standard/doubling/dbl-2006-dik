@@ -1,0 +1,13 @@
+source 2006 Doche--Icart--Kohel "Efficient scalar multiplication by isogeny decompositions", page 196, bottom display
+parameter a16
+assume a16 = 16*a
+compute A = X1^2
+compute B = X1^2-a16*Z1^2
+compute YT = Y1*B
+compute X3 = B^2
+compute Z3 = 4*Y1^2
+compute C = X1^2*a*Z1^2
+compute D = Z3^2
+compute E = a*(Z3-4*C)
+compute Y3 = YT*(2*X3+E+256*C)
+compute ZZ3 = D

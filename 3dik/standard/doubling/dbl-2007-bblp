@@ -1,0 +1,15 @@
+source 2007 Bernstein--Birkner--Lange--Peters
+parameter a2
+assume a2 = 2*a
+parameter a3
+assume a3 = 3*a
+compute A = X1^2
+compute B = a2*ZZ1*(X1+ZZ1)
+compute C = 3*(A+B)
+compute D = Y1^2
+compute E = D^2
+compute Z3 = (Y1+Z1)^2-D-ZZ1
+compute ZZ3 = Z3^2
+compute F = 2*((X1+D)^2-A-E)
+compute X3 = C^2-a3*ZZ3-2*F
+compute Y3 = C*(F-X3)-8*E

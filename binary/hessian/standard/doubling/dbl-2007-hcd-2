@@ -1,0 +1,16 @@
+source 2007 Hisil--Carter--Dawson
+compute R0 = X1^2
+compute R1 = X1+Y1
+compute R1 = Y1*R1
+compute R2 = Z1+X1
+compute R2 = Z1*R2
+compute R2 = R0+R2
+compute R1 = R0+R1
+compute R0 = X1-Y1
+compute R0 = R1*R0
+compute Z3 = R0*Z1
+compute R1 = Z1-X1
+compute R1 = R2*R1
+compute X3 = R1*Y1
+compute R2 = -(R0+R1)
+compute Y3 = R2*X1

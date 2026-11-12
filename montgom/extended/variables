@@ -1,0 +1,22 @@
+name extended Montgomery coordinates
+variable U
+variable V
+variable S
+variable W
+neutral U = 0
+neutral V = 1
+neutral S = 0
+neutral W = 0
+satisfying x = U/W
+satisfying y = V/W
+satisfying S*U = V*W
+toaffine x = U/W
+toaffine y = V/W
+tosystem U = x
+tosystem V = y
+tosystem S = y/x
+tosystem W = 1
+homogweight U = 1
+homogweight V = 1
+homogweight S = 1
+homogweight W = 1

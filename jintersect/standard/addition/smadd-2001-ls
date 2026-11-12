@@ -1,0 +1,12 @@
+source 2001 Liardet--Smart "Preventing SPA/DPA in ECC systems using the Jacobi form", plus substitution S2=1 (as suggested by 2007 Hisil--Carter--Dawson)
+assume S2 = 1
+compute Z2D2 = Z2*D2
+compute E = Z1*C2
+compute F = S1*D2
+compute G = C1*Z2
+compute H = E*G
+compute J = D1*F
+compute S3 = (E+D1)*(G+F)-H-J
+compute C3 = H-J
+compute D3 = Z1*D1*Z2D2-a*S1*C1*C2
+compute Z3 = E^2+D1^2

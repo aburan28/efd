@@ -1,0 +1,5 @@
+source 2008 Bernstein--Lange--Rezaeian Farashahi
+appliesto wz-1
+compute C = W1*(Z1+W1)
+compute W3 = C^2
+compute Z3 = d1*(Z1^2)^2+W3

@@ -1,0 +1,16 @@
+source 2020 Hamburg, Faster Montgomery and double-add ladders for short Weierstrass curves, Figure 3; homogeneous step with explicit denominator tracking, https://www.shiftleft.org/papers/ladder/ladder-tches.pdf
+compute YRbar = YP+2*M*XRP
+compute E = XQP-XRP
+compute F = YRbar*E
+compute G = E^2
+compute XRPa = XRP*G
+compute H = YRbar^2
+compute Ma = M*F
+compute YPa = YP*F*G
+compute K = H+Ma
+compute L = K+Ma
+compute Mout = XRPa-K
+compute XSP = H*L
+compute XTP = XRPa^2+YPa
+compute YPout = YPa*H
+compute Zout = Z*F

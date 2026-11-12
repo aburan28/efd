@@ -1,0 +1,12 @@
+source 2007 Bernstein--Lange
+compute XX = X1^2
+compute XXXX = XX^2
+compute YY = Y1^2
+compute ZZ = Z1^2
+compute ZZZZ = ZZ^2
+compute M = XX+ZZ
+compute XZ = (X1+Z1)^2-M
+compute XZXZ = XZ^2
+compute X3 = (Y1+XZ)^2-YY-XZXZ
+compute Y3 = (ZZZZ+XXXX)*(4*YY+2*a*XZXZ)+XZXZ^2
+compute Z3 = 2*(ZZZZ-XXXX)

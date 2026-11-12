@@ -1,0 +1,17 @@
+source 2002 Billet--Joye "The Jacobi model of an elliptic curve and side-channel analysis", formula (11), plus separation of X2^2,Z2^2 as suggested by 2007 Duquesne
+compute A2 = X2^2
+compute B2 = X2*Z2
+compute C2 = Z2^2
+compute A1 = X1^2
+compute B1 = X1*Z1
+compute C1 = Z1^2
+compute A1A2 = A1*A2
+compute B1B2 = B1*B2
+compute C1C2 = C1*C2
+compute Y1Y2 = Y1*Y2
+compute E = C1C2+A1A2
+compute F = (A1+C1)*(A2+C2)-E
+compute G = 2*B1B2
+compute X3 = (B1+Y1)*(B2+Y2)-B1B2-Y1Y2
+compute Y3 = E*(Y1Y2+a*G)+G*F
+compute Z3 = C1C2-A1A2

@@ -1,5 +1,12 @@
 # Literature and upstream coverage gaps
 
+**Status update, 2026-11-12:** all 200 upstream paths identified below are now
+imported and independently finite-field checked. The complete ordinary-binary
+EFD section and twelve further paper-derived/derived entries have also been
+added. See [current coverage](coverage-and-verification.md). The dated inventory
+below preserves the discovery rationale; paper records now identify partial
+implementations and remaining work.
+
 Checked 2026-11-09 against commit `6f1af53` of this export. This is a discovery
 inventory, not a claim that every candidate is mathematically new or ready for
 import. [Paper records](../research/paper-gaps.json) retain access status,

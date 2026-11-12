@@ -1,0 +1,16 @@
+name doubling-oriented XYZ coordinates
+parameter c
+assume a^2+c^2 = 1
+variable X
+variable Y
+variable Z
+satisfying x = X/Z
+satisfying y = Y/Z^2
+toaffine x = X/Z
+toaffine y = Y/Z^2
+tosystem Z = 1
+tosystem X = x
+tosystem Y = y
+homogweight X = 1
+homogweight Y = 2
+homogweight Z = 1

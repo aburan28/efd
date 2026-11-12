@@ -1,0 +1,13 @@
+X1Y2 = X1*Y2
+Y1X2 = Y1*X2
+Z1X2 = Z1*X2
+Z1Y2 = Z1*Y2
+efdtmp0 = Y1X2*Y1
+efdtmp1 = Z1Y2*X1Y2
+X3 = efdtmp0-efdtmp1
+efdtmp2 = X1*X1Y2
+efdtmp3 = Y1X2*Z1X2
+Y3 = efdtmp2-efdtmp3
+efdtmp4 = Z1Y2*Z1X2
+efdtmp5 = X1*Y1
+Z3 = efdtmp4-efdtmp5

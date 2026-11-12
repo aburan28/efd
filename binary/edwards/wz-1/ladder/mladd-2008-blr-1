@@ -1,0 +1,10 @@
+source 2008 Bernstein--Lange--Rezaeian Farashahi
+assume Z1 = 1
+appliesto wz-1
+compute C = W2*(Z2+W2)
+compute V = C*W3*(Z3+W3)
+compute U = V+d1*(Z2*Z3)^2
+compute W4 = C^2
+compute Z4 = d1*(Z2^2)^2+W4
+compute W5 = V+U*W1
+compute Z5 = U
