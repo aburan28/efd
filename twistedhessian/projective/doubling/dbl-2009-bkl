@@ -1,0 +1,8 @@
+source 2009 Bernstein--Kohel--Lange
+compute D = X1^3
+compute E = Y1^3
+compute F = Z1^3
+compute G = a*D
+compute X3 = X1*(E-F)
+compute Y3 = Z1*(G-E)
+compute Z3 = Y1*(F-G)

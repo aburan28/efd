@@ -1,0 +1,17 @@
+source 2007 Hisil--Carter--Dawson, plus elimination of common subexpressions
+parameter a
+assume a = 3*d
+compute XX = X1^2
+compute A = XX*X1
+compute YY = Y1^2
+compute B = YY*Y1
+compute ZZ = Z1^2
+compute C = ZZ*Z1
+compute AB = A-B
+compute BC = B-C
+compute CA = C-A
+compute U = B*CA
+compute V = A*BC
+compute X3 = a*(U*AB-V*BC)
+compute Y3 = a*(V*AB-U*CA)
+compute Z3 = (A+B+C)*(BC*CA-AB^2)

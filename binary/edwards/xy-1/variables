@@ -1,0 +1,6 @@
+name affine coordinates with d1=d2
+assume d1 = d2
+variable X
+variable Y
+satisfying x = X
+satisfying y = Y

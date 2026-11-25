@@ -1,0 +1,17 @@
+A = X1^2
+U = a4*ZZ1
+efdtmp0 = 4*U
+B = A-efdtmp0
+C = A*U
+efdtmp1 = 2*Y1
+Z3 = efdtmp1^2
+X3 = B^2
+efdtmp2 = Y1*B
+efdtmp3 = 32*C
+efdtmp4 = X3+efdtmp3
+efdtmp5 = 2*efdtmp4
+efdtmp6 = Z3-C
+efdtmp7 = a*efdtmp6
+efdtmp8 = efdtmp5+efdtmp7
+Y3 = efdtmp2*efdtmp8
+ZZ3 = Z3^2

@@ -1,0 +1,7 @@
+A = 1/Z1
+AA = A^2
+X3 = X1*AA
+efdtmp0 = Y1*AA
+Y3 = efdtmp0*A
+Z3 = 1
+ZZ3 = 1

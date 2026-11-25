@@ -1,0 +1,15 @@
+parameter a2
+assume a2 = 2*a
+parameter a3
+assume a3 = 3*a
+assume Z1 = 1
+compute A = X1^2
+compute B = a2*(X1+1)
+compute C = 3*(A+B)
+compute D = Y1^2
+compute E = D^2
+compute Z3 = 2*Y1
+compute ZZ3 = 4*D
+compute F = 2*((X1+D)^2-A-E)
+compute X3 = C^2-a3*ZZ3-2*F
+compute Y3 = C*(F-X3)-8*E

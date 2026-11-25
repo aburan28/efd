@@ -1,0 +1,11 @@
+source 2006 Doche--Icart--Kohel "Efficient scalar multiplication by isogeny decompositions", page 196, bottom display, plus elimination of common subexpressions
+parameter a4
+assume a4 = 4*a
+compute A = X1^2
+compute U = a4*ZZ1
+compute B = A-4*U
+compute C = A*U
+compute Z3 = (2*Y1)^2
+compute X3 = B^2
+compute Y3 = Y1*B*(2*(X3+32*C)+a*(Z3-C))
+compute ZZ3 = Z3^2

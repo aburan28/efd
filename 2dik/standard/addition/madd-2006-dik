@@ -1,0 +1,14 @@
+source 2006 Doche--Icart--Kohel "Efficient scalar multiplication by isogeny decompositions", page 197, middle display, plus reversal of roles of 1 and 2
+assume Z2 = 1
+compute A = Y2*ZZ1-Y1
+compute B = X2*Z1-X1
+compute C = B*Z1
+compute Z3 = C^2
+compute D = X2*Z3
+compute E = A^2
+compute F = X1*B*C
+compute X3 = E-a*Z3-D-F
+compute G = Z3^2
+compute H = A*C
+compute Y3 = H*(D-X3)-Y2*G
+compute ZZ3 = G

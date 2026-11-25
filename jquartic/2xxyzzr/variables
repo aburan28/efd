@@ -1,0 +1,28 @@
+name doubling-oriented XXYZZR coordinates
+parameter c
+assume a^2+c^2 = 1
+variable X
+variable XX
+variable Y
+variable Z
+variable ZZ
+variable R
+satisfying x = X/Z
+satisfying y = Y/ZZ
+satisfying XX = X^2
+satisfying ZZ = Z^2
+satisfying R = 2*X*Z
+toaffine x = X/Z
+toaffine y = Y/ZZ
+tosystem Z = 1
+tosystem X = x
+tosystem Y = y
+tosystem XX = X^2
+tosystem ZZ = Z^2
+tosystem R = 2*X*Z
+homogweight X = 1
+homogweight XX = 2
+homogweight Y = 2
+homogweight Z = 1
+homogweight ZZ = 2
+homogweight R = 2

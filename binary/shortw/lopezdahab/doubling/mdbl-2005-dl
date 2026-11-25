@@ -1,0 +1,6 @@
+source 2005 Doche--Lange
+assume Z1 = 1
+compute C = X1^2
+compute Z3 = C
+compute X3 = C^2+a6
+compute Y3 = (Y1^2+a2*Z3+a6)*X3+a6*Z3

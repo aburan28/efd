@@ -1,0 +1,16 @@
+source 2009 Bernstein--Kohel--Lange
+parameter i
+assume i^2 = -1
+parameter minustwo
+assume minustwo = -2
+parameter p_2d
+assume p_2d = 2*d
+compute iZ = i*Z1
+compute A = (Y1-iZ)*(Y1+iZ)
+compute B = Y1*Z1
+compute C = (A-B)*(Y1+Z1)
+compute D = (A+B)*(Z1-Y1)
+compute E = 3*C-p_2d*X1*B
+compute X3 = minustwo*X1*D
+compute Y3 = (D-E)*Z1
+compute Z3 = (D+E)*Y1

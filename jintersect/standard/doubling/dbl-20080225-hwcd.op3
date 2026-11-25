@@ -1,0 +1,16 @@
+SC1 = S1*C1
+DZ1 = D1*Z1
+E = DZ1^2
+F = SC1^2
+G = a*F
+Z3 = E+G
+D3 = E-G
+CC1 = C1^2
+efdtmp0 = CC1^2
+efdtmp1 = F+efdtmp0
+efdtmp2 = 2*efdtmp1
+C3 = efdtmp2-Z3
+efdtmp3 = SC1+DZ1
+efdtmp4 = efdtmp3^2
+efdtmp5 = efdtmp4-E
+S3 = efdtmp5-F

@@ -1,0 +1,7 @@
+source 2002 Billet--Joye "The Jacobi model of an elliptic curve and side-channel analysis", formula (11), plus specialization to affine
+assume Z1 = 1
+assume Z2 = 1
+compute r = 1-(X1*X2)^2
+compute X3 = (X1*Y2+Y1*X2)/r
+compute Y3 = ((1+(X1*X2)^2)*(Y1*Y2+2*a*X1*X2)+2*X1*X2*(X1^2+X2^2))/r^2
+compute Z3 = 1

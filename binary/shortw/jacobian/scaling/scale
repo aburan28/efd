@@ -1,0 +1,5 @@
+compute A = 1/Z1
+compute B = A^2
+compute X3 = B*X1
+compute Y3 = A*B*Y1
+compute Z3 = 1

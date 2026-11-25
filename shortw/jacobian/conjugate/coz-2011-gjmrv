@@ -1,0 +1,15 @@
+source 2011 Goundar--Joye--Miyaji--Rivain--Venelli, Scalar Multiplication on Weierstrass Elliptic Curves from Co-Z Arithmetic, Algorithm 8 (ZADDC), https://www.matthieurivain.com/files/jcen11b.pdf
+assume Z1 = Z2
+compute C = (X1-X2)^2
+compute W1 = X1*C
+compute W2 = X2*C
+compute R = Y1-Y2
+compute D = R^2
+compute A1 = Y1*(W1-W2)
+compute X3 = D-W1-W2
+compute Y3 = R*(W1-X3)-A1
+compute Z3 = Z1*(X1-X2)
+compute R4 = Y1+Y2
+compute X4 = R4^2-W1-W2
+compute Y4 = R4*(W1-X4)-A1
+compute Z4 = Z3

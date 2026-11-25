@@ -1,0 +1,7 @@
+source 2007(?) Kim--Kim "A New Method for Speeding Up Arithmetic on Elliptic Curves over Binary Fields"
+compute A = X1^2
+compute B = Y1^2
+compute Z3 = ZZ1*A
+compute ZZ3 = Z3^2
+compute X3 = A^2+a6*ZZ1^2
+compute Y3 = B*(B+X3+Z3)+a6*ZZ3+ZZ3

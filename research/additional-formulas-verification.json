@@ -1,0 +1,53 @@
+{
+  "method": "Independent affine-group tests, with both metadata and operation-code execution; see referenced unit tests.",
+  "formulas": [
+    {
+      "path": "montgom/xz/doubling/dbl-rfc7748",
+      "status": "finite_field_checked",
+      "fields": [
+        101,
+        103,
+        107
+      ],
+      "test": "tests/test_additional_formulas.py",
+      "metadata_sha256": "ea4160cc2401ecdfbbcefd1724c16cdd3ccd9e63672c0926433b361587ba81b3",
+      "op3_sha256": "c750f51527e272f615aaf47a802f00164934a35a84be4430c4e55cc48fbd84c6"
+    },
+    {
+      "path": "montgom/xz/ladder/ladd-rfc7748",
+      "status": "finite_field_checked",
+      "fields": [
+        101,
+        103,
+        107
+      ],
+      "test": "tests/test_additional_formulas.py",
+      "metadata_sha256": "811d0ce0f9d390d0a0dfe888deeb199f34c4812a45c9fe55417706ae921d4f5d",
+      "op3_sha256": "61d2cbf34aa7d140c0f16e8e35e72acaf301a793d5e0f8374dd773f643f7fedb"
+    },
+    {
+      "path": "montgom/xz/ladder/mladd-rfc7748",
+      "status": "finite_field_checked",
+      "fields": [
+        101,
+        103,
+        107
+      ],
+      "test": "tests/test_additional_formulas.py",
+      "metadata_sha256": "45f8dd50250ddf97f1f26e320a6d84cf75ae1d3c57e2c1ca2db0cadc2a8f647a",
+      "op3_sha256": "951b3d8b2a08b5d92cf3efcdf467fe8884e75b33e6fa6ab93feece4afb364a18"
+    },
+    {
+      "path": "shortw/xz/tripling/tpl-division",
+      "status": "finite_field_checked",
+      "fields": [
+        101,
+        103,
+        107
+      ],
+      "test": "tests/test_additional_formulas.py",
+      "metadata_sha256": "edc7bdd6dc7fb4f3ab94fdff7dd56298eab0086dcb1d7403e30ef30ae1eaf756",
+      "op3_sha256": "670305577520349b68b7e97e59ef97c5177fbc3e23b5b5d45464a086387beb23"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+source 2007 Bernstein--Lange
+parameter a2
+assume a2 = 2*a
+parameter a16
+assume a16 = 16*a
+assume Z1 = 1
+compute A = X1^2
+compute B = A-a16
+compute C = a2*A
+compute YY = Y1^2
+compute YY2 = 2*YY
+compute Z3 = 2*YY2
+compute X3 = B^2
+compute V = (Y1+B)^2-YY-X3
+compute Y3 = V*(X3+64*C+a*(YY2-C))
+compute ZZ3 = Z3^2

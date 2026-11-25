@@ -1,0 +1,9 @@
+source 2008 Bernstein-–Lange-–Rezaeian Farashahi
+parameter sqrtd1
+assume sqrtd1^2 = d1
+appliesto xyz-1
+compute W1 = X1+Y1
+compute E = (W1*(W1+Z1))^2
+compute X3 = ((sqrtd1*W1+X1)*Z1+X1^2)^2
+compute Y3 = X3+E
+compute Z3 = E+d1*(Z1^2)^2

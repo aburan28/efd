@@ -1,0 +1,8 @@
+source 2005 Lange
+compute A = X1*Z1
+compute B = X1^2
+compute C = B+Y1
+compute D = A*C
+compute Z3 = A^2
+compute X3 = C^2+D+a2*Z3
+compute Y3 = (Z3+D)*X3+B^2*Z3

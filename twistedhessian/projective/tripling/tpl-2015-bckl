@@ -1,0 +1,20 @@
+source 2015 Bernstein--Chuengsatiansup--Kohel--Lange "Twisted Hessian curves"
+parameter w
+assume w^2+w+1 = 0
+parameter f
+assume f*d^3 = 27*a
+parameter p_3overd
+assume d*p_3overd = 3
+compute R = a*X1*X1^2
+compute V = Y1*Y1^2
+compute S = Z1*Z1^2
+compute F = R+S+V
+compute G = R+w*S+w*w*V
+compute H = R+w*w*S+w*V
+compute A = F*F^2
+compute B = A-f*A
+compute C = G*G^2
+compute D = H*H^2
+compute X3 = p_3overd*(B+C+D)
+compute Y3 = B+w*C+w*w*D
+compute Z3 = B+w*w*C+w*D

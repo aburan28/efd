@@ -1,0 +1,7 @@
+compute A = 1/Z1
+compute S3 = S1*A
+compute C3 = C1*A
+compute D3 = D1*A
+compute Z3 = 1
+compute SC3 = S3*C3
+compute DZ3 = D3

@@ -1,0 +1,12 @@
+source 2006 Doche--Icart--Kohel "Efficient scalar multiplication by isogeny decompositions", page 198, bottom display, plus correction from 2007 Bernstein--Birkner--Lange--Peters to incorporate the missing -3a term
+parameter a3
+assume a3 = 3*a
+compute A = Y1*Z1
+compute Z3 = 2*A
+compute B = 4*Y1^2*X1
+compute C = B+6*a*A^2
+compute ZZ3 = 4*A^2
+compute D = 3*X1^2
+compute E = D+6*a*ZZ1*(ZZ1+X1)
+compute X3 = E^2-2*B-a3*ZZ3
+compute Y3 = E*(B-X3)-8*Y1^4

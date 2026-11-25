@@ -1,0 +1,12 @@
+efdtmp0 = Z1^3
+efdtmp1 = X1^3
+efdtmp2 = efdtmp0-efdtmp1
+X3 = Y1*efdtmp2
+efdtmp3 = Y1^3
+efdtmp4 = Z1^3
+efdtmp5 = efdtmp3-efdtmp4
+Y3 = X1*efdtmp5
+efdtmp6 = X1^3
+efdtmp7 = Y1^3
+efdtmp8 = efdtmp6-efdtmp7
+Z3 = Z1*efdtmp8

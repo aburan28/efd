@@ -1,0 +1,18 @@
+name standard coordinates
+variable X
+variable Y
+variable Z
+variable ZZ
+satisfying x = X/Z^2
+satisfying y = Y/Z^3
+satisfying ZZ = Z^2
+toaffine x = X/Z^2
+toaffine y = Y/Z^3
+tosystem Z = 1
+tosystem X = x
+tosystem Y = y
+tosystem ZZ = Z^2
+homogweight X = 2
+homogweight Y = 3
+homogweight Z = 1
+homogweight ZZ = 2

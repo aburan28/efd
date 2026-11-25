@@ -1,0 +1,11 @@
+source 2007 Hisil--Carter--Dawson
+compute A = X1^2
+compute B = Y1*(X1+Y1)
+compute C = A+B
+compute D = Z1*(Z1+X1)
+compute E = A+D
+compute F = C*(X1-Y1)
+compute G = E*(Z1-X1)
+compute Z3 = F*Z1
+compute Y3 = -(F+G)*X1
+compute X3 = G*Y1

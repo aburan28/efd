@@ -1,0 +1,1978 @@
+{
+  "imported_on": "2026-11-12",
+  "source": "https://www.hyperelliptic.org/EFD/g1p/",
+  "policy": "Implicit products normalized; operation code regenerated from metadata, preserving source expressions. Verification recorded by a separate verifier.",
+  "files": [
+    {
+      "path": "2dik/coordinates",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/coordinates",
+      "sha256": "2e14bc3598dcc0913094deec4fc146bd2d38098e1ccaa0d7a5ff7fbf8aa48230",
+      "normalized_sha256": "b9865ce723aa07ccfadcf98c44fced77c975b3aa8446c0a9afc65e872ba5fef4",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "b9865ce723aa07ccfadcf98c44fced77c975b3aa8446c0a9afc65e872ba5fef4"
+    },
+    {
+      "path": "3dik/coordinates",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/coordinates",
+      "sha256": "695f4bf3ec85ad7a4d94c7db444b6df37b20a007c02b5092abaaace5fa5f92e1",
+      "normalized_sha256": "d02349e226d6a614ce586d11bb6186cd579e4ca148bfb4474dc96f2ff4315de3",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "d02349e226d6a614ce586d11bb6186cd579e4ca148bfb4474dc96f2ff4315de3"
+    },
+    {
+      "path": "hessian/coordinates",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/coordinates",
+      "sha256": "3935fa43b2bc2c87f4a6705d929bd82192e66dce30c08c012505027058a64b97",
+      "normalized_sha256": "e30547a62e0e4652959aa824ac871b7eae313bb0a9d7da50f735a5d351058ac7",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "e30547a62e0e4652959aa824ac871b7eae313bb0a9d7da50f735a5d351058ac7"
+    },
+    {
+      "path": "jintersect/coordinates",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/coordinates",
+      "sha256": "fd4fbc146a464d187c4a3f4e80e514dea6f030d88ef4f25f577a56f7de0aff14",
+      "normalized_sha256": "3d0f648d9f70c2676eaf01fbb25c1eb495c37d7fdb4daca15a7df28ab39695a9",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "3d0f648d9f70c2676eaf01fbb25c1eb495c37d7fdb4daca15a7df28ab39695a9"
+    },
+    {
+      "path": "jquartic/coordinates",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/coordinates",
+      "sha256": "38d5c37b66fadb38c4a38a2e094585ff5f700726bb074f1395e91a64b58c8e33",
+      "normalized_sha256": "692fe1b435975a4b33c02db998b2e928c39021bcb82658970304175333570dd7",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "692fe1b435975a4b33c02db998b2e928c39021bcb82658970304175333570dd7"
+    },
+    {
+      "path": "twistedhessian/coordinates",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/twistedhessian/coordinates",
+      "sha256": "b98d7a40f2288075e7e2d555533becfd5eea6120befee917a991d103914f39e7",
+      "normalized_sha256": "a677e5a8576e18418fada28df2eb82fdb9049f88769d88b953240dea5ca5c68c",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "a677e5a8576e18418fada28df2eb82fdb9049f88769d88b953240dea5ca5c68c"
+    },
+    {
+      "path": "2dik/standard/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/standard/variables",
+      "sha256": "2846e4fef8c00e9aa47949d2d33c8780e36171b81fee719cd69138773767b016",
+      "normalized_sha256": "2846e4fef8c00e9aa47949d2d33c8780e36171b81fee719cd69138773767b016",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "f7bd02b6931babd464cfac1a3ad673acbbb539ad168d1d65013b71be4ea60ba5"
+    },
+    {
+      "path": "3dik/standard/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/variables",
+      "sha256": "985d0779b63b92c1249f4b055f6ff0d782206261965dc0f078ced3a7f62667b6",
+      "normalized_sha256": "985d0779b63b92c1249f4b055f6ff0d782206261965dc0f078ced3a7f62667b6",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "822e2a966863baf3af0f5b0b31f1801d794dc4fa567f85dac9f2f96f48f51dba"
+    },
+    {
+      "path": "hessian/extended/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/extended/variables",
+      "sha256": "e596f648826552fb8901da001d829695ceec079c68bdbe8f2be5fe9f018495ed",
+      "normalized_sha256": "f198e8b78ad0760f02d3871718c65f546f7e7caf668cf3911bada6d47b01aff3",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "52838d44e8522b793100b784776948674d4bb0a6f70cac736eaad482b2eb8b89"
+    },
+    {
+      "path": "hessian/standard/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/variables",
+      "sha256": "98e80e201dfcd2ce48b9ff7cae60223f3230d8ae39d50bd8ae537509e509732b",
+      "normalized_sha256": "98e80e201dfcd2ce48b9ff7cae60223f3230d8ae39d50bd8ae537509e509732b",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "cd6c0310c865d8040df0818ac215e8b3e683a2f8661927a739fabe4f36f92027"
+    },
+    {
+      "path": "jintersect/extended/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/variables",
+      "sha256": "efd54a38cb7ffd5b79db7088b43b2578f01df77a9091aecd2d3a30c0988ae53c",
+      "normalized_sha256": "1bf045fe05b8518671c86844a2a2c38eec0c67b3ccce4a3cab11dba3e5f19356",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "945cd988772487ad40724b945e6e69b8193fb1333ccc8528b77af9e84e7c1195"
+    },
+    {
+      "path": "jintersect/standard/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/variables",
+      "sha256": "7217db4ecd9f2e5784704c5daa6fa23e2b4be61364776764052ff9302faff727",
+      "normalized_sha256": "7217db4ecd9f2e5784704c5daa6fa23e2b4be61364776764052ff9302faff727",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "7afc71c41b67d3f8336a0b3eeb0dd8cd8b09e3637d4a0faf84654a2fe226f94b"
+    },
+    {
+      "path": "jquartic/2xxyzz/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzz/variables",
+      "sha256": "b7d1a0a558e963958affacdc9b6926ad966f0191b4974f524a4945398df4455c",
+      "normalized_sha256": "ecc9664ad029da4a70d0b7bc1b8837dc1b243b29ed0640ec9ec8fd81cbad5f7b",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "532d157216fb7427135cf0753528054eeef0dbc11687acd52c429272fc9b7d18"
+    },
+    {
+      "path": "jquartic/2xxyzzr/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/variables",
+      "sha256": "1e275ab148defc527420cf3b008e806b2da383b9941730e92999fe2b614ba436",
+      "normalized_sha256": "1d06df43cac2c9e75ad0a3342953d5127eae984db3a65d2683ab9f25c4df28d9",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "4a1ba579a273ec5b874aa6b1362424dded7b3e0c5684bb4cb0f1878f36f035d7"
+    },
+    {
+      "path": "jquartic/2xyz/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/variables",
+      "sha256": "c0f2b71fdf2adc218a7c50b59ad34f59f0eefea6d203874043006b90df870b50",
+      "normalized_sha256": "2f66987dcda674de8906bf0fc60c9db4dc5a32b4a8267e2d6750ec2449a5a6cb",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "eecb38b498018730ac65af3b6815b74dde3a1c6d209fe3fd1c78b4d91c654dbf"
+    },
+    {
+      "path": "jquartic/xxyzz/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzz/variables",
+      "sha256": "e9f504f462f1e803532a223dd97bc1bdcf80eb2abc1e593bb249f9cdba59d1cd",
+      "normalized_sha256": "e9f504f462f1e803532a223dd97bc1bdcf80eb2abc1e593bb249f9cdba59d1cd",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "4fb25be146abd4857c94c57d755cf06debc329324a6cb8a375653f518c8e28e2"
+    },
+    {
+      "path": "jquartic/xxyzzr/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/variables",
+      "sha256": "047add91840c733f87a7c9fd598ccc1e6550b45f7e2e6f054c119fcd74a5953e",
+      "normalized_sha256": "51505d001387997bd328a56cc8ada77f8b4ca969ad190c21da8a07bc9f9f3922",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "c36f2c484b33794271651e9748f45578fdbfee9c398c4f542ab12fd0e38a3671"
+    },
+    {
+      "path": "jquartic/xyz/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/variables",
+      "sha256": "fdaf16e58a6e8d2e47b9cdd0a776a90b7007b4674449e0cb1e41e8490c477aaf",
+      "normalized_sha256": "fdaf16e58a6e8d2e47b9cdd0a776a90b7007b4674449e0cb1e41e8490c477aaf",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "819f68755f4bc9a86f1111bebbf77cab03e6e022228fbb25c78a038f2a04d2f1"
+    },
+    {
+      "path": "twistedhessian/projective/variables",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/twistedhessian/projective/variables",
+      "sha256": "98e80e201dfcd2ce48b9ff7cae60223f3230d8ae39d50bd8ae537509e509732b",
+      "normalized_sha256": "98e80e201dfcd2ce48b9ff7cae60223f3230d8ae39d50bd8ae537509e509732b",
+      "verification": "symbolic_map_or_affine_chart_checked",
+      "operation_code": null,
+      "local_sha256": "cd6c0310c865d8040df0818ac215e8b3e683a2f8661927a739fabe4f36f92027"
+    },
+    {
+      "path": "2dik/standard/addition/add-2006-dik",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/standard/addition/add-2006-dik",
+      "sha256": "888c3d11fae741d1b28b605b2084f64b4145eb6fde4421dd95ad4b8094b20327",
+      "normalized_sha256": "a42497786b3b09b98b6fc95854fe2a240dc7b07390895d650cd74afd76c788b1",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "a42497786b3b09b98b6fc95854fe2a240dc7b07390895d650cd74afd76c788b1"
+    },
+    {
+      "path": "2dik/standard/addition/add-2006-dik-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/standard/addition/add-2006-dik-2",
+      "sha256": "11c5665abcbfb88892af5ee4f7409fe5011674545ff9d2970b33cb6da55be8c3",
+      "normalized_sha256": "6362744ba101a7418c3cdd746736fefb1fe8085714a00ce4739508ef0ba285df",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "6362744ba101a7418c3cdd746736fefb1fe8085714a00ce4739508ef0ba285df"
+    },
+    {
+      "path": "2dik/standard/addition/add-2006-dik-3",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/standard/addition/add-2006-dik-3",
+      "sha256": "d4cb2a92292f1cef2c4383a77aa485a4c1ffaddd8c3fd2053d5e16e0e52e7168",
+      "normalized_sha256": "3c7074184425089159ade80ff9ab7e1d77ed1e6875d646c8c67abc57f490b376",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "3c7074184425089159ade80ff9ab7e1d77ed1e6875d646c8c67abc57f490b376"
+    },
+    {
+      "path": "2dik/standard/addition/madd-2006-dik",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/standard/addition/madd-2006-dik",
+      "sha256": "32fe410a9aa355c6b5760851aa8de5ddef9e7647903472bfe67484273992ce2c",
+      "normalized_sha256": "1312d26f4f4730c71c964f260dce3d8dac8f1916013b876d5edf3cbcb9800aae",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "1312d26f4f4730c71c964f260dce3d8dac8f1916013b876d5edf3cbcb9800aae"
+    },
+    {
+      "path": "2dik/standard/addition/madd-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/standard/addition/madd-2007-bl",
+      "sha256": "9a59db20a7e366b9e9ba3e8449a93901101970e5a691d39e6043865296a26fbd",
+      "normalized_sha256": "edb0bdd16256aca805684982f5a9e9a702346daa6eeaffa35b8e41dba0442646",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "edb0bdd16256aca805684982f5a9e9a702346daa6eeaffa35b8e41dba0442646"
+    },
+    {
+      "path": "2dik/standard/addition/mmadd-2006-dik",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/standard/addition/mmadd-2006-dik",
+      "sha256": "688a9c4bd6a2702750485c9a7bcec2f59ff4b4a85aa7be836441ce510d2291ef",
+      "normalized_sha256": "82a7e42b8216b881a5cdfecad0bfd2c973fb10dff50f18af73af87efa9097c71",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "82a7e42b8216b881a5cdfecad0bfd2c973fb10dff50f18af73af87efa9097c71"
+    },
+    {
+      "path": "2dik/standard/addition/mmadd-20080308-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/standard/addition/mmadd-20080308-bl",
+      "sha256": "aa18d9d4c096b0319af4f58081ddef2efeb68b863e1ce1166c4147f64740b598",
+      "normalized_sha256": "1bf19ff40fa24c931f928a1e74d441d453461211da9639e2f5644ede4a8b9159",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "1bf19ff40fa24c931f928a1e74d441d453461211da9639e2f5644ede4a8b9159"
+    },
+    {
+      "path": "2dik/standard/addition/mmadd-20080313-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/standard/addition/mmadd-20080313-bl",
+      "sha256": "f9f485cb29b0a3ac61d885b407adda1a72537f4544cccaf1c2b45a431c0cd517",
+      "normalized_sha256": "4d61cac2d42f2b633a822797d415a5a442239c7b71f3a24fa0c6b28b28b7363d",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "4d61cac2d42f2b633a822797d415a5a442239c7b71f3a24fa0c6b28b28b7363d"
+    },
+    {
+      "path": "2dik/standard/doubling/dbl-2006-dik",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/standard/doubling/dbl-2006-dik",
+      "sha256": "0635777b4c5456cd4f3d403564460e2d0490fa1e03842252bb9f7ba9c41dbaaa",
+      "normalized_sha256": "218f3d48d24d5ef2ba134c9e730ac2503550ecb6e2d3a5e6a3c39fca14407efb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "218f3d48d24d5ef2ba134c9e730ac2503550ecb6e2d3a5e6a3c39fca14407efb"
+    },
+    {
+      "path": "2dik/standard/doubling/dbl-2006-dik-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/standard/doubling/dbl-2006-dik-2",
+      "sha256": "0f3126a37909eb4e888e21b72e7734522e0a9764892d5e7ac8c28a335a925285",
+      "normalized_sha256": "9c1e47bf262024f85140eab952aa054f2c1930d241fa3c57e6f16685195e3007",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9c1e47bf262024f85140eab952aa054f2c1930d241fa3c57e6f16685195e3007"
+    },
+    {
+      "path": "2dik/standard/doubling/dbl-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/standard/doubling/dbl-2007-bl",
+      "sha256": "c259f35763a6d536960f06778200b3c18d9f1bea04a30bd02e360005058aee73",
+      "normalized_sha256": "a0717e9e758f40467b0b175c80664d9c5d8e86eea7cef2f1966064d03cf90df9",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "a0717e9e758f40467b0b175c80664d9c5d8e86eea7cef2f1966064d03cf90df9"
+    },
+    {
+      "path": "2dik/standard/doubling/mdbl-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/standard/doubling/mdbl-2007-bl",
+      "sha256": "b4bbac222ddeca9e8c1fc9f5708c6c9bb812bfca82fd9f5f27169c416cdc66db",
+      "normalized_sha256": "346afc4cb36f7edc5abde4b4bf12501d09bfd8f4e4209e486e434a62990d6600",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "346afc4cb36f7edc5abde4b4bf12501d09bfd8f4e4209e486e434a62990d6600"
+    },
+    {
+      "path": "2dik/standard/scaling/z",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/2dik/standard/scaling/z",
+      "sha256": "7e49f267a1d5b299b632545b31c53bad3f464e86234e5dba6a9a614cd647eda1",
+      "normalized_sha256": "3644ee6da67e2d5eaa76b749b71640f82d5996e29b1e742bbf79ef5f34bf2b31",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "3644ee6da67e2d5eaa76b749b71640f82d5996e29b1e742bbf79ef5f34bf2b31"
+    },
+    {
+      "path": "3dik/standard/addition/add-2006-dik",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/addition/add-2006-dik",
+      "sha256": "de913626246a0cd5236d74459a20c0c3c0d1de0cc3d2dd458eb9934802cd89a4",
+      "normalized_sha256": "518c58016d8fd504e9b72a4adf7291ac89060e9b02887b7accabaedcac0b9de7",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "518c58016d8fd504e9b72a4adf7291ac89060e9b02887b7accabaedcac0b9de7"
+    },
+    {
+      "path": "3dik/standard/addition/add-2006-dik-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/addition/add-2006-dik-2",
+      "sha256": "3a16d933694e6b2dbf016271f2db532ab489f8bad8d686c8a0603f91c8e420d8",
+      "normalized_sha256": "67745e67891c4e2111f9420b13743fef52112a3ded738d8514d1d36e0029d2c8",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "67745e67891c4e2111f9420b13743fef52112a3ded738d8514d1d36e0029d2c8"
+    },
+    {
+      "path": "3dik/standard/addition/add-2006-dik-3",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/addition/add-2006-dik-3",
+      "sha256": "23ff17f86487e3a329309b8ba686a656cb34eea48337f1544d06ba44f44988aa",
+      "normalized_sha256": "b90034ee39822b127bb7c659ed5e51a2bf74d160e7dbdce2230ee48d9a605ece",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "b90034ee39822b127bb7c659ed5e51a2bf74d160e7dbdce2230ee48d9a605ece"
+    },
+    {
+      "path": "3dik/standard/addition/add-2007-bblp",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/addition/add-2007-bblp",
+      "sha256": "3a3f80bb4fa9a6584045463e34ea14dafb275b1c122ccc01d3bd4d875a81fbc0",
+      "normalized_sha256": "f2587e9f34cca893f4cbd23bbc506720491eee5bc736e99f30366680adcf900c",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "f2587e9f34cca893f4cbd23bbc506720491eee5bc736e99f30366680adcf900c"
+    },
+    {
+      "path": "3dik/standard/addition/madd-2006-dik",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/addition/madd-2006-dik",
+      "sha256": "7a57d517df692f361e84f43477716c6b456a5269beed496c4cfe3acd9988e240",
+      "normalized_sha256": "628387d3faa45b4749322ba3ae2bab25bf4f8e65e2672df28ff8173e36c11541",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "628387d3faa45b4749322ba3ae2bab25bf4f8e65e2672df28ff8173e36c11541"
+    },
+    {
+      "path": "3dik/standard/addition/madd-2007-bblp",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/addition/madd-2007-bblp",
+      "sha256": "54db55a1de3848d109ef2ebb276eb7d2613fffc83c7157ec17408fa9b3e30cd9",
+      "normalized_sha256": "ec9b19eb0ec13c03cbf2fb1d9dc78b872b14600125def1c02e0b73e41d7280b7",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "ec9b19eb0ec13c03cbf2fb1d9dc78b872b14600125def1c02e0b73e41d7280b7"
+    },
+    {
+      "path": "3dik/standard/addition/mmadd-2006-dik",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/addition/mmadd-2006-dik",
+      "sha256": "e5853ca35e5be95e4fb4488ee4a1b6b1c8ade4a28dfbdb36c6044b19040f973c",
+      "normalized_sha256": "f71ac943c8b0130076d5280391801d5e25113ab823580f4ae249024977f080a6",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "f71ac943c8b0130076d5280391801d5e25113ab823580f4ae249024977f080a6"
+    },
+    {
+      "path": "3dik/standard/addition/mmadd-2007-bblp",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/addition/mmadd-2007-bblp",
+      "sha256": "7c7ce8e74003cfc8c0843241b03aaa2dfca8adc3698a53137b70eb94dafe23dd",
+      "normalized_sha256": "074139cd652af0520d27585f4410829a257afde1128f69728b54b3fc19ffd2ad",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "074139cd652af0520d27585f4410829a257afde1128f69728b54b3fc19ffd2ad"
+    },
+    {
+      "path": "3dik/standard/doubling/dbl-2006-dik",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/doubling/dbl-2006-dik",
+      "sha256": "74cccfb1a0bbf39eb9b182a0790c0f7dbd3e8694c1f2a9b190d27cafc6d0c744",
+      "normalized_sha256": "9f616803cabbbf2d279e590b67b796abc55761e62a40b4376966dab870ef1398",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9f616803cabbbf2d279e590b67b796abc55761e62a40b4376966dab870ef1398"
+    },
+    {
+      "path": "3dik/standard/doubling/dbl-2006-dik-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/doubling/dbl-2006-dik-2",
+      "sha256": "44bbcd572323ac224e6c65f87e771e6d17b46d063f0c901225fce8ca113a89a8",
+      "normalized_sha256": "aea35c78f20e34e91b9e7bea393d27921cfa43b7a3cb50d05af84ea90858059e",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "aea35c78f20e34e91b9e7bea393d27921cfa43b7a3cb50d05af84ea90858059e"
+    },
+    {
+      "path": "3dik/standard/doubling/dbl-2007-bblp",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/doubling/dbl-2007-bblp",
+      "sha256": "e292317f67536b267bec305161b8217a262bd667ade6e00d3afd4a9d3fd05d94",
+      "normalized_sha256": "8d5111a54897fe9db481fce487c7a7f179356d42e8d3e82328e6754d77d69b17",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "8d5111a54897fe9db481fce487c7a7f179356d42e8d3e82328e6754d77d69b17"
+    },
+    {
+      "path": "3dik/standard/doubling/mdbl-2007-bblp",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/doubling/mdbl-2007-bblp",
+      "sha256": "7d3af944bf3729944e3fb8348e454b8af766f3699f10a11fc40387854219c9f7",
+      "normalized_sha256": "ea689757fb33fe994df66ebc91b3ba325b524d0c21a71a0cb71221930d38bd04",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "ea689757fb33fe994df66ebc91b3ba325b524d0c21a71a0cb71221930d38bd04"
+    },
+    {
+      "path": "3dik/standard/scaling/z",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/scaling/z",
+      "sha256": "32687d38fbc7761fee630ee6bd1c2295bd85b973059a9267b0e0880a9ecf43bf",
+      "normalized_sha256": "10294f1198b3e90a080dfbbfc23a90ae085b01aa1b9dab64f1f1c74021e2cb87",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "10294f1198b3e90a080dfbbfc23a90ae085b01aa1b9dab64f1f1c74021e2cb87"
+    },
+    {
+      "path": "3dik/standard/tripling/tpl-2006-dik",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/tripling/tpl-2006-dik",
+      "sha256": "0bba54410cb29d33ae5672aba9a005b4807e3d1e6c75e2cc0763f1958c321cf9",
+      "normalized_sha256": "5eccdc43bc4ce1e7c0426c625b840b279cb40838144e408f307945e1789a7564",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "5eccdc43bc4ce1e7c0426c625b840b279cb40838144e408f307945e1789a7564"
+    },
+    {
+      "path": "3dik/standard/tripling/tpl-2006-dik-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/3dik/standard/tripling/tpl-2006-dik-2",
+      "sha256": "9f0bda954e8fb840f44ba50472b87d2c98969664c9ad9ffd2b7e853651c267c0",
+      "normalized_sha256": "6301700eac660a5f21c3e98ef442952f85d46db24e5cd3cae6a0cccb3b764533",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "6301700eac660a5f21c3e98ef442952f85d46db24e5cd3cae6a0cccb3b764533"
+    },
+    {
+      "path": "hessian/extended/addition/add-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/extended/addition/add-20080225-hwcd",
+      "sha256": "74d056e4fbfc4e3da205ac2268d3b96544f557aedb23f7769cb7b529bba3f378",
+      "normalized_sha256": "749fc0ab226acd2985bc2707756a50f288fd4bf37b365a1bf0ae23db1d7e17bf",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "749fc0ab226acd2985bc2707756a50f288fd4bf37b365a1bf0ae23db1d7e17bf"
+    },
+    {
+      "path": "hessian/extended/addition/madd-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/extended/addition/madd-20080225-hwcd",
+      "sha256": "f80e679e24a82a421e85ac6a655c4a00fd469261c6374884935d18b17938b4c4",
+      "normalized_sha256": "3ae865bde9532bec8272b235be8c36d4c6f2a765bdfa187b8d667879dc31c5f5",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "3ae865bde9532bec8272b235be8c36d4c6f2a765bdfa187b8d667879dc31c5f5"
+    },
+    {
+      "path": "hessian/extended/doubling/dbl-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/extended/doubling/dbl-20080225-hwcd",
+      "sha256": "e4040e24160cdc8e83689be765571c76bb1172da84a4c8c678e00d3c9f45b38a",
+      "normalized_sha256": "675f5285a45dd5590605f29030683e4cde9ce6ae1d941fe812cd102492594211",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "675f5285a45dd5590605f29030683e4cde9ce6ae1d941fe812cd102492594211"
+    },
+    {
+      "path": "hessian/extended/doubling/mdbl-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/extended/doubling/mdbl-20080225-hwcd",
+      "sha256": "e4040e24160cdc8e83689be765571c76bb1172da84a4c8c678e00d3c9f45b38a",
+      "normalized_sha256": "675f5285a45dd5590605f29030683e4cde9ce6ae1d941fe812cd102492594211",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "675f5285a45dd5590605f29030683e4cde9ce6ae1d941fe812cd102492594211"
+    },
+    {
+      "path": "hessian/extended/scaling/z",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/extended/scaling/z",
+      "sha256": "968114f38c0aabe0ef3b07868d374836d39537c144d832720a719e46590ac5f6",
+      "normalized_sha256": "b9e2abf6a8c585063c781c68e005d84743dd99a039b627ac73905f2feff94f63",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "b9e2abf6a8c585063c781c68e005d84743dd99a039b627ac73905f2feff94f63"
+    },
+    {
+      "path": "hessian/standard/addition/add",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/addition/add",
+      "sha256": "539a4746313da31d45247f082ff2f3793bb60d48d663b13a98fbfc9ec8f488d5",
+      "normalized_sha256": "bb5c4bd111c24c7ce26b61f9e63540a7aa508a787f72162081cb5c1aa6ebc544",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "bb5c4bd111c24c7ce26b61f9e63540a7aa508a787f72162081cb5c1aa6ebc544"
+    },
+    {
+      "path": "hessian/standard/addition/add-2001-jq",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/addition/add-2001-jq",
+      "sha256": "da8b1bffe18349a14a5961d5e05ab3a0d54c7d8c67789e7dcde2a44c7fd489d2",
+      "normalized_sha256": "b6484f7cf2562569a21b2edb2b1cfd127930160d5891924ba493ea627b023dcc",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "b6484f7cf2562569a21b2edb2b1cfd127930160d5891924ba493ea627b023dcc"
+    },
+    {
+      "path": "hessian/standard/addition/add-2008-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/addition/add-2008-hwcd",
+      "sha256": "4b836dee21ae0b47fc8873319d2b784c83a1c43a621ab8196c8f8c5240857850",
+      "normalized_sha256": "5e7a3e70ad2551afa53b6b2f1b0f2e4db86275350df4d672d4c95992ef087405",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "5e7a3e70ad2551afa53b6b2f1b0f2e4db86275350df4d672d4c95992ef087405"
+    },
+    {
+      "path": "hessian/standard/addition/add-2009-bkl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/addition/add-2009-bkl",
+      "sha256": "61a94fde0641123cd30ac3ad86e18fe02df85c0a2dda2f1737e1bdf54649177b",
+      "normalized_sha256": "0ed66e3c3ed4864e61f5014109ce8952ca4058c8035e8409fa980d6afab07984",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "0ed66e3c3ed4864e61f5014109ce8952ca4058c8035e8409fa980d6afab07984"
+    },
+    {
+      "path": "hessian/standard/addition/add2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/addition/add2",
+      "sha256": "18305a8b1f82084e57f8872e0ac76ad5688e5906699ad2ed11644fbe32c8dbca",
+      "normalized_sha256": "7796290827359ea2d1ff77e81118bf582f0f27fec5a235398cb1ca02646d14db",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "7796290827359ea2d1ff77e81118bf582f0f27fec5a235398cb1ca02646d14db"
+    },
+    {
+      "path": "hessian/standard/addition/madd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/addition/madd",
+      "sha256": "218fe967e3659de067f24a623d89c2f2b6ba607d8e604474dd31eda883ff3bac",
+      "normalized_sha256": "0f4e2fc0eff511d8c41dd3b1ed00dee54fa7b5a093c908466dc1d4c66b90f43f",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "0f4e2fc0eff511d8c41dd3b1ed00dee54fa7b5a093c908466dc1d4c66b90f43f"
+    },
+    {
+      "path": "hessian/standard/addition/mmadd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/addition/mmadd",
+      "sha256": "e04cc4d7caf80a750a0311f5c7dfbfc3bc5eafbad85a97dbdc17c3c1cb90252f",
+      "normalized_sha256": "47996561f99a27ac9af158929a9fec8975a8f2eba3e0f7b917989dc808aaee72",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "47996561f99a27ac9af158929a9fec8975a8f2eba3e0f7b917989dc808aaee72"
+    },
+    {
+      "path": "hessian/standard/addition/xmadd-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/addition/xmadd-2007-hcd",
+      "sha256": "7da38f4b584cc729d02f1e3d260b9ee0fd125540a29db284e87a1eb39ae94dca",
+      "normalized_sha256": "7e0b6dfa15322f78c9987f47ef99020bae65df7be6d416ea22b28437cb845cca",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "7e0b6dfa15322f78c9987f47ef99020bae65df7be6d416ea22b28437cb845cca"
+    },
+    {
+      "path": "hessian/standard/doubling/dbl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/doubling/dbl",
+      "sha256": "96e2ed7893b384dfd27c11323f7a3a37d6345dd941af99a62fbab9e4ec0aa83f",
+      "normalized_sha256": "731de5d27829cd582ed4a12da9bda501051444b0cee7ee43e867336a4a9735ed",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "731de5d27829cd582ed4a12da9bda501051444b0cee7ee43e867336a4a9735ed"
+    },
+    {
+      "path": "hessian/standard/doubling/dbl-2001-jq",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/doubling/dbl-2001-jq",
+      "sha256": "a53e822a9b6b647fb181d817c815844527e5161070b6f48c0613125578caa431",
+      "normalized_sha256": "9a3cd38b65fbb51b7fd18bbdcea87747add4c555fdcc0442f824177b3872297e",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9a3cd38b65fbb51b7fd18bbdcea87747add4c555fdcc0442f824177b3872297e"
+    },
+    {
+      "path": "hessian/standard/doubling/dbl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/doubling/dbl-2007-hcd",
+      "sha256": "97c392ff578bde82139b489be7b420725d903c8616502f77396117cd8ebb3d4f",
+      "normalized_sha256": "54be80db260423214ffa0157b037ae83de3df282488987cba4c0bb805c0b7c83",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "54be80db260423214ffa0157b037ae83de3df282488987cba4c0bb805c0b7c83"
+    },
+    {
+      "path": "hessian/standard/doubling/dbl-2007-hcd-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/doubling/dbl-2007-hcd-2",
+      "sha256": "6743b50aa544adb03371b602dc5e5636a7dd98fdd6f33b95b2f36935f85579d6",
+      "normalized_sha256": "6189ff1883d6492af9b27e5ace0f0cc8aafe18688bffbe2a65188f2fea027ff5",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "6189ff1883d6492af9b27e5ace0f0cc8aafe18688bffbe2a65188f2fea027ff5"
+    },
+    {
+      "path": "hessian/standard/doubling/dbl-2007-hcd-3",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/doubling/dbl-2007-hcd-3",
+      "sha256": "8f4a43afd27abbb71af37577bf50651004b7e2b86ee89066cfeaa02c9986b3d0",
+      "normalized_sha256": "85c3c33677cfe6946ff86155b53ea7161b546df9be745a8360f9794bb065e894",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "85c3c33677cfe6946ff86155b53ea7161b546df9be745a8360f9794bb065e894"
+    },
+    {
+      "path": "hessian/standard/doubling/dbl-2007-hcd-4",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/doubling/dbl-2007-hcd-4",
+      "sha256": "5303465568431fb0806cd90e0f146c42c703ad8815bd25893ebc0578acbc3e87",
+      "normalized_sha256": "66202da76b2bd41ee756eb9a4496875fbe29706d0cdeb7cc3e1c33c95c76951f",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "66202da76b2bd41ee756eb9a4496875fbe29706d0cdeb7cc3e1c33c95c76951f"
+    },
+    {
+      "path": "hessian/standard/doubling/dbl2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/doubling/dbl2",
+      "sha256": "682ea595cec6de2f93e276a80269ced061b26fc0e1689b0a83c17cf6ec4f65c4",
+      "normalized_sha256": "700fa528079b66c9a10f85c3069aefb4b1df22952de58444d44b5e20480a7028",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "700fa528079b66c9a10f85c3069aefb4b1df22952de58444d44b5e20480a7028"
+    },
+    {
+      "path": "hessian/standard/doubling/mdbl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/doubling/mdbl-2007-hcd",
+      "sha256": "aecad0f67166f563dc1fba024332226abe73770ab5577b56a5bd53aba7f4e632",
+      "normalized_sha256": "443dde386bc8e801dc472f83f724af51a7d4fca795a18a7b34259b7d33df2715",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "443dde386bc8e801dc472f83f724af51a7d4fca795a18a7b34259b7d33df2715"
+    },
+    {
+      "path": "hessian/standard/scaling/z",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/scaling/z",
+      "sha256": "da7589baacbb11d7e75506297820a57d8c0a53fdb780d74a8bba4e536f029739",
+      "normalized_sha256": "9e78f23a13f0bf4313b18fcee44a9d3e432f6ac399fb3bac4d0da82d192c42eb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9e78f23a13f0bf4313b18fcee44a9d3e432f6ac399fb3bac4d0da82d192c42eb"
+    },
+    {
+      "path": "hessian/standard/tripling/tpl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/tripling/tpl-2007-hcd",
+      "sha256": "f0c3e01306567a93e3ca411b1e010981938fb643d611fb04987499fb660428af",
+      "normalized_sha256": "827c81743267943be7fe1688722f8d72a5d986312809954c6766d987984a3dc9",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "827c81743267943be7fe1688722f8d72a5d986312809954c6766d987984a3dc9"
+    },
+    {
+      "path": "hessian/standard/tripling/tpl-2007-hcd-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/tripling/tpl-2007-hcd-2",
+      "sha256": "5f43afaa00dfe22af0022d41d8a73b3abc10d089602ee6be3f369d07c2e636ff",
+      "normalized_sha256": "9b8576924c920faee16b61bcb25b8f2d7c0cab2587e64c4752b89e42bec0c564",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9b8576924c920faee16b61bcb25b8f2d7c0cab2587e64c4752b89e42bec0c564"
+    },
+    {
+      "path": "hessian/standard/tripling/tpl-2007-hcd-3",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/hessian/standard/tripling/tpl-2007-hcd-3",
+      "sha256": "0057a3dea379ccea33ef37b8e96d9415f7641a9c09837fa671d9b8fa23f34c36",
+      "normalized_sha256": "e178f68fd2da69b38fb86821cf132204c6385b43163179745148b7e379e9626b",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "e178f68fd2da69b38fb86821cf132204c6385b43163179745148b7e379e9626b"
+    },
+    {
+      "path": "jintersect/extended/addition/add-1986-cc",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/addition/add-1986-cc",
+      "sha256": "9e7cdbe88ea2145788e2cd2a885e7183679eb01e4ae86529a01e05808ece3ad8",
+      "normalized_sha256": "094ae6c1b895b855f07c972cb498c2c7b110b68273e6278554cbd8a3442729fe",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "094ae6c1b895b855f07c972cb498c2c7b110b68273e6278554cbd8a3442729fe"
+    },
+    {
+      "path": "jintersect/extended/addition/add-1986-cc-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/addition/add-1986-cc-2",
+      "sha256": "30bdec9310d405b3de5434dea00a6c845c31b75b60881c13a698723e15f5cbc3",
+      "normalized_sha256": "66bb810fced9b9286ec3ce8ad58b9f1da7859207b780e34eb47252160987349b",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "66bb810fced9b9286ec3ce8ad58b9f1da7859207b780e34eb47252160987349b"
+    },
+    {
+      "path": "jintersect/extended/addition/add-2001-ls",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/addition/add-2001-ls",
+      "sha256": "9c7d6cb8ac6ccfcae648923aec0e9b180298764267755a00238a4414e26bb7c9",
+      "normalized_sha256": "501df96a7124a8e6e97b020b6f880fa5a6307fa1e5ed77fbb405ffee9892ccff",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "501df96a7124a8e6e97b020b6f880fa5a6307fa1e5ed77fbb405ffee9892ccff"
+    },
+    {
+      "path": "jintersect/extended/addition/add-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/addition/add-20080225-hwcd",
+      "sha256": "56fec0689ea0c992050b975006a12c17d5bbbe8ddbe022994d304f992161088f",
+      "normalized_sha256": "bf94b55d9cad77d394cff7f82de7a853d7fabab149b6ae2d7662d1fb64e5da20",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "bf94b55d9cad77d394cff7f82de7a853d7fabab149b6ae2d7662d1fb64e5da20"
+    },
+    {
+      "path": "jintersect/extended/addition/madd-2001-ls",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/addition/madd-2001-ls",
+      "sha256": "fadde182bfb88ffed9739d5f33959cb432b1fc7024a804879c5a62ce326e73a1",
+      "normalized_sha256": "9f3112aa24f04844542f0abb61a1f3b7862002eb3131b319ab757d254cc4d75d",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9f3112aa24f04844542f0abb61a1f3b7862002eb3131b319ab757d254cc4d75d"
+    },
+    {
+      "path": "jintersect/extended/addition/madd-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/addition/madd-20080225-hwcd",
+      "sha256": "00934b33158d5a6ed35de426c1d96b90155e8827d60dc005ecfa81c96ce68ca4",
+      "normalized_sha256": "83e08c9e8336aec74f8a55bfa12ff33e1ab491d5ff3bc0701f699a370b3148e4",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "83e08c9e8336aec74f8a55bfa12ff33e1ab491d5ff3bc0701f699a370b3148e4"
+    },
+    {
+      "path": "jintersect/extended/addition/mmadd-2001-ls",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/addition/mmadd-2001-ls",
+      "sha256": "5ffde1e4705bd3e8c9672d57feae61e37e6cc30bc833ea2f0b9a9682abdb5cda",
+      "normalized_sha256": "08e54862d914877774f9de5b7b041106afe01e402c2a65c16cc02550cc64d5fd",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "08e54862d914877774f9de5b7b041106afe01e402c2a65c16cc02550cc64d5fd"
+    },
+    {
+      "path": "jintersect/extended/addition/smadd-2001-ls",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/addition/smadd-2001-ls",
+      "sha256": "7af07bad451d350760d200b114cf7147470ecff3aea5cb6626de1ae11a9e2bcb",
+      "normalized_sha256": "647f9af3e9c4d88820adea07767d358f8d3d1e6294117a2a773bb1fd8d11bd57",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "647f9af3e9c4d88820adea07767d358f8d3d1e6294117a2a773bb1fd8d11bd57"
+    },
+    {
+      "path": "jintersect/extended/doubling/dbl-1986-cc",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/doubling/dbl-1986-cc",
+      "sha256": "c245017d1cdb4a3b930c135a518a046514d1fc5a266486a475d5c7166bf88c38",
+      "normalized_sha256": "3b16b9933ac00fe6549ea626d2101633b71cb181fe18a7c537469cd7550b59bc",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "3b16b9933ac00fe6549ea626d2101633b71cb181fe18a7c537469cd7550b59bc"
+    },
+    {
+      "path": "jintersect/extended/doubling/dbl-1986-cc-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/doubling/dbl-1986-cc-2",
+      "sha256": "c53890356f05e6739873dcb76cc1b8c076c9e140be7758980ecb19cbb8f6e8bb",
+      "normalized_sha256": "4255b3a363ec5504781fce1642b1c3352bc47e26d613c412570a07c2ca40cd22",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "4255b3a363ec5504781fce1642b1c3352bc47e26d613c412570a07c2ca40cd22"
+    },
+    {
+      "path": "jintersect/extended/doubling/dbl-2001-ls",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/doubling/dbl-2001-ls",
+      "sha256": "7e531c6bd6c4697e7ff984d56e4f5fa01e07f4d2763c86f17ee001e56f57b35b",
+      "normalized_sha256": "277fb3c5c01e9b92d2748e25fc38cc4b048cef9ce140b6c50112f29091fcde86",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "277fb3c5c01e9b92d2748e25fc38cc4b048cef9ce140b6c50112f29091fcde86"
+    },
+    {
+      "path": "jintersect/extended/doubling/dbl-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/doubling/dbl-2007-bl",
+      "sha256": "35ab2d2b205a9a3979a3c7d758e5bf937bbe04b72afc82f921790a3bfbce872c",
+      "normalized_sha256": "8f15b84c806ece66b72f5bb4fd532735cd956077799130f473ac429a92c856a7",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "8f15b84c806ece66b72f5bb4fd532735cd956077799130f473ac429a92c856a7"
+    },
+    {
+      "path": "jintersect/extended/doubling/dbl-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/doubling/dbl-20080225-hwcd",
+      "sha256": "8bd1e76f3c772f382e67172af0afd95d2d92164c48eb0c78e7af55895c5cc488",
+      "normalized_sha256": "0102e5cb813b31b33f4dc5c650a0182b03afe77fa343719bbbb2de85ae02ff43",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "0102e5cb813b31b33f4dc5c650a0182b03afe77fa343719bbbb2de85ae02ff43"
+    },
+    {
+      "path": "jintersect/extended/doubling/mdbl-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/doubling/mdbl-2007-bl",
+      "sha256": "7b2ff25ede823dcde861e40eb605e7dfb74d41897f43721dbf8aadd978545c9a",
+      "normalized_sha256": "23ce33a0ed6058ac10f8b31808227e55d1b08dbcfd10dd68458882a5a37c868b",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "23ce33a0ed6058ac10f8b31808227e55d1b08dbcfd10dd68458882a5a37c868b"
+    },
+    {
+      "path": "jintersect/extended/scaling/z",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/scaling/z",
+      "sha256": "929eadc1386f6e5b2e7da4ab8f5389570fb175266b656b5e7dfc6aeba1f2ed17",
+      "normalized_sha256": "0868d631747bf5d2a30e07bd1a3622f487afb8db16e8e3f35d66e427d7cd1f20",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "0868d631747bf5d2a30e07bd1a3622f487afb8db16e8e3f35d66e427d7cd1f20"
+    },
+    {
+      "path": "jintersect/extended/tripling/tpl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/tripling/tpl-2007-hcd",
+      "sha256": "6fd03098a1fedf9aa93a72aecaa2646acbb1df6c100f9d4abbf1840aad774c8f",
+      "normalized_sha256": "04f038bc5ea8814bd4e177b998b1a386923ebd6cca757cb57e0a4fd107dd46fa",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "04f038bc5ea8814bd4e177b998b1a386923ebd6cca757cb57e0a4fd107dd46fa"
+    },
+    {
+      "path": "jintersect/extended/tripling/tpl-2007-hcd-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/tripling/tpl-2007-hcd-2",
+      "sha256": "15fa27a4c38e83ac2a2a22756ab4ad46f7d785613434c8bd86960776a80e3473",
+      "normalized_sha256": "44e74a493a7cd8cad5a8674a03574864f5f380c9741e9fbdfdb25b07aa33b9b5",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "44e74a493a7cd8cad5a8674a03574864f5f380c9741e9fbdfdb25b07aa33b9b5"
+    },
+    {
+      "path": "jintersect/extended/tripling/tpl-2007-hcd-3",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/tripling/tpl-2007-hcd-3",
+      "sha256": "efe472c44963651b34177da25f0371effcef56d7e10e626a15b5929025759aaf",
+      "normalized_sha256": "f85fa75769469906c33ab251d36c687faeb97bfc83750df6dd0fc66c0474d0a8",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "f85fa75769469906c33ab251d36c687faeb97bfc83750df6dd0fc66c0474d0a8"
+    },
+    {
+      "path": "jintersect/extended/tripling/tpl-2007-hcd-4",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/extended/tripling/tpl-2007-hcd-4",
+      "sha256": "464dead34abbf45b87cd6d934b21c9acd2d2fdfea97ed4b5337e87dcfdd324a8",
+      "normalized_sha256": "4d6c11509f07277f1f690ca7ed3988fa61a9cdb70ee6b5c2105876d64c6d0b0c",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "4d6c11509f07277f1f690ca7ed3988fa61a9cdb70ee6b5c2105876d64c6d0b0c"
+    },
+    {
+      "path": "jintersect/standard/addition/add-1986-cc",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/addition/add-1986-cc",
+      "sha256": "a0509e07113670cf79245bf44a1d99ffba6753a56aa620b1a721cab586296d28",
+      "normalized_sha256": "c651e879a0a31bb02064ea1ecddfeb181d5f9593bad67f61265c115496b03dbf",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "c651e879a0a31bb02064ea1ecddfeb181d5f9593bad67f61265c115496b03dbf"
+    },
+    {
+      "path": "jintersect/standard/addition/add-1986-cc-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/addition/add-1986-cc-2",
+      "sha256": "bf821f19b96a91489a693a644b38b534df659017c24848b2feeac097d569ba02",
+      "normalized_sha256": "c310e4e9f47a401fc6493ebdd9b152cc2e641bbce01e9abddebcd4f7efdb4963",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "c310e4e9f47a401fc6493ebdd9b152cc2e641bbce01e9abddebcd4f7efdb4963"
+    },
+    {
+      "path": "jintersect/standard/addition/add-2001-ls",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/addition/add-2001-ls",
+      "sha256": "95ac56211ed55988b714bcf9cb292f9c92358d0a9df099c2a4a1b6eeebc47f8f",
+      "normalized_sha256": "1e1227bb0020e45f7441ac9a06c3d08494ce540976ddb261da469f64d29f6d79",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "1e1227bb0020e45f7441ac9a06c3d08494ce540976ddb261da469f64d29f6d79"
+    },
+    {
+      "path": "jintersect/standard/addition/add-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/addition/add-20080225-hwcd",
+      "sha256": "9002f3f1f45e1a9456a1af9769d86e4eef7e31d3782027a5c24d65fe50a2908b",
+      "normalized_sha256": "4aa26ef4e4a0172e6f326124c392530dd2b240f51c1931a27de58cc78789fef9",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "4aa26ef4e4a0172e6f326124c392530dd2b240f51c1931a27de58cc78789fef9"
+    },
+    {
+      "path": "jintersect/standard/addition/madd-2001-ls",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/addition/madd-2001-ls",
+      "sha256": "e5e40c5219f4470e934c61610df0ee49ffe4cd4b26836424f48b51b182872585",
+      "normalized_sha256": "cd661b004e6156efdd201f48ab55330c4c5a2f4d0df1c242d48d57a54cf066ef",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "cd661b004e6156efdd201f48ab55330c4c5a2f4d0df1c242d48d57a54cf066ef"
+    },
+    {
+      "path": "jintersect/standard/addition/madd-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/addition/madd-20080225-hwcd",
+      "sha256": "5f633e5632ee426e57fefe3482c9a1d7179175ebab2e46f576b3e6c681a42666",
+      "normalized_sha256": "c4c07431ae40c075c5ac91935bf22bea312b6761ee613411423c4a83cef0c09a",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "c4c07431ae40c075c5ac91935bf22bea312b6761ee613411423c4a83cef0c09a"
+    },
+    {
+      "path": "jintersect/standard/addition/mmadd-2001-ls",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/addition/mmadd-2001-ls",
+      "sha256": "cffcb2a79ae6d17ae1a5fc387dab2f82a660155dc1ced9bfcf77316bbd2f95bb",
+      "normalized_sha256": "2b3b117212c35761bb825084a4229d78ab9213ae30c905bdf3d91df92311a072",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "2b3b117212c35761bb825084a4229d78ab9213ae30c905bdf3d91df92311a072"
+    },
+    {
+      "path": "jintersect/standard/addition/smadd-2001-ls",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/addition/smadd-2001-ls",
+      "sha256": "a4ecab4cf18cb4d4511947dbaf037b67a6ddc76d00a4e7210d1b5be66043fae8",
+      "normalized_sha256": "f120eddc9500d2c97d938be3f07edd625d2e4d7460cdcf789e17bd7b91bc5a27",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "f120eddc9500d2c97d938be3f07edd625d2e4d7460cdcf789e17bd7b91bc5a27"
+    },
+    {
+      "path": "jintersect/standard/doubling/dbl-1986-cc",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/doubling/dbl-1986-cc",
+      "sha256": "c0aa1e4927aa310c37d16877c8ef0e2c4d2e69f930f9573d86fab77c0f14b695",
+      "normalized_sha256": "2637b2e3820e0ac0eab6dc5470589b7ac1aaed33b7749e593ec72945c3ff8096",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "2637b2e3820e0ac0eab6dc5470589b7ac1aaed33b7749e593ec72945c3ff8096"
+    },
+    {
+      "path": "jintersect/standard/doubling/dbl-1986-cc-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/doubling/dbl-1986-cc-2",
+      "sha256": "bb375185871b119b52f4ad36e1ece0aa3827876dd827212d6fdaedc42ea35b75",
+      "normalized_sha256": "faa54faf208819f6088f3d43b4bbd7b7b9be8880d25e829e2b30efcf27a15a2a",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "faa54faf208819f6088f3d43b4bbd7b7b9be8880d25e829e2b30efcf27a15a2a"
+    },
+    {
+      "path": "jintersect/standard/doubling/dbl-2001-ls",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/doubling/dbl-2001-ls",
+      "sha256": "621f0ee4266f169679f82d7be545b65ea2b98c5c96ab07e1b88352129955f2de",
+      "normalized_sha256": "2155d097178cffd1f314c60fedaada254ecc2e6d17b68d02e99191cefad613cb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "2155d097178cffd1f314c60fedaada254ecc2e6d17b68d02e99191cefad613cb"
+    },
+    {
+      "path": "jintersect/standard/doubling/dbl-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/doubling/dbl-2007-bl",
+      "sha256": "08fcb0cfc61b0098147a9907f020ed7011cd25c638add8fdfeccadffe0532016",
+      "normalized_sha256": "ce13ba17946c6bd7910a71a3d370b41b3d492c9973fb47f1c5e751e3991a3d56",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "ce13ba17946c6bd7910a71a3d370b41b3d492c9973fb47f1c5e751e3991a3d56"
+    },
+    {
+      "path": "jintersect/standard/doubling/dbl-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/doubling/dbl-20080225-hwcd",
+      "sha256": "5738f383f87e8dd14b84236ce936d6e4492bd04ea351577a8fdd416b468b9df9",
+      "normalized_sha256": "236d014be4329b4647b961d2497e8ffd72c2f90f5399ead5d23da4cbd6040d3e",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "236d014be4329b4647b961d2497e8ffd72c2f90f5399ead5d23da4cbd6040d3e"
+    },
+    {
+      "path": "jintersect/standard/doubling/mdbl-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/doubling/mdbl-2007-bl",
+      "sha256": "f12af35dff7a2401d5c780cfc66d0db926c607f5e898032c54af253d80441b43",
+      "normalized_sha256": "adae7535c0449b251d6920d3837386d11e7add52a571b09fc03867c5c594a85a",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "adae7535c0449b251d6920d3837386d11e7add52a571b09fc03867c5c594a85a"
+    },
+    {
+      "path": "jintersect/standard/doubling/mdbl-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/doubling/mdbl-20080225-hwcd",
+      "sha256": "8732200f23202db361caecfeb225460fda1e19bd51159b53c0492f7f7eb70083",
+      "normalized_sha256": "eafb4f4bffa5c31470e0d58c7992b9512fbe91916a321804d58d80e736ee88af",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "eafb4f4bffa5c31470e0d58c7992b9512fbe91916a321804d58d80e736ee88af"
+    },
+    {
+      "path": "jintersect/standard/doubling/mdbl-20090427-b",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/doubling/mdbl-20090427-b",
+      "sha256": "9d4b83eea4d0eec339aacf40ac554a6c1139e70c524b483b8ac4704e7c24c56f",
+      "normalized_sha256": "110785683835feeb1c1e2d816d5471e0f77e5b565ba2507cf4c686b012211f43",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "110785683835feeb1c1e2d816d5471e0f77e5b565ba2507cf4c686b012211f43"
+    },
+    {
+      "path": "jintersect/standard/scaling/z",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/scaling/z",
+      "sha256": "468763607ad6af4cdf74601670e470c15ce7c21e144b0799b5b3f9392d9239e0",
+      "normalized_sha256": "81459f9a9b4b03ec1ff317422f5102a8f83c6ca2e1cf1e564eaaf939fe12c432",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "81459f9a9b4b03ec1ff317422f5102a8f83c6ca2e1cf1e564eaaf939fe12c432"
+    },
+    {
+      "path": "jintersect/standard/tripling/tpl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/tripling/tpl-2007-hcd",
+      "sha256": "87abfa4aaafb2132d7a792df2357bc798491b1811500d32bbe0f9b11bda51b23",
+      "normalized_sha256": "826a1c619bddaa79f67f738b016187a56c778b001f6f3e9679c102804aadaaf9",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "826a1c619bddaa79f67f738b016187a56c778b001f6f3e9679c102804aadaaf9"
+    },
+    {
+      "path": "jintersect/standard/tripling/tpl-2007-hcd-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/tripling/tpl-2007-hcd-2",
+      "sha256": "fb4a8396ea4653f7e54a20182a4793ba6c79ad69c8ac96bf677b000bc5dfec24",
+      "normalized_sha256": "15f77e3a59e770c33daecbe151feac4066f29efdb639b2f97c2e53eeb8bbbf21",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "15f77e3a59e770c33daecbe151feac4066f29efdb639b2f97c2e53eeb8bbbf21"
+    },
+    {
+      "path": "jintersect/standard/tripling/tpl-2007-hcd-3",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/tripling/tpl-2007-hcd-3",
+      "sha256": "3921b226a015c3785b44b9b495dd73e69156e5392797105e8325800f3430f5d9",
+      "normalized_sha256": "d3b845158abe7b3c01e801fd4bfc2c063f4421839e2731b287d77f7c2767cf14",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "d3b845158abe7b3c01e801fd4bfc2c063f4421839e2731b287d77f7c2767cf14"
+    },
+    {
+      "path": "jintersect/standard/tripling/tpl-2007-hcd-4",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jintersect/standard/tripling/tpl-2007-hcd-4",
+      "sha256": "09b301abf08c0ac01496f2f1bbf9b4ec0e847198b204cd783ad926808886293d",
+      "normalized_sha256": "91f5d34fb5e122fcb24dc44be1b19530017c28b6fc92330524ed2578e0f0717f",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "91f5d34fb5e122fcb24dc44be1b19530017c28b6fc92330524ed2578e0f0717f"
+    },
+    {
+      "path": "jquartic/2xxyzz/addition/add-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzz/addition/add-20080225-hwcd",
+      "sha256": "769c3040b48bacf800ea7840953b0f73d4f035285f97d66412273da8f250c39f",
+      "normalized_sha256": "bf115b20a7b791731ab45b6ed2de9398925049d7f07d63aac7898df2e1832a1e",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "bf115b20a7b791731ab45b6ed2de9398925049d7f07d63aac7898df2e1832a1e"
+    },
+    {
+      "path": "jquartic/2xxyzz/addition/madd-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzz/addition/madd-20080225-hwcd",
+      "sha256": "58531c63ca0705966f31730c8c2d4a01a1c418bce890a9815e91c26ef5d66571",
+      "normalized_sha256": "24d81f5bc23f6f075f0acb3c49ad73980a877c37a972b3d7a3d17e0082fef03a",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "24d81f5bc23f6f075f0acb3c49ad73980a877c37a972b3d7a3d17e0082fef03a"
+    },
+    {
+      "path": "jquartic/2xxyzz/doubling/dbl-2007-fw",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzz/doubling/dbl-2007-fw",
+      "sha256": "23659683874c65372aa811f0046a2965863827d31e029bb4a270ba77b240ccb7",
+      "normalized_sha256": "4cc0e53c1a6936f6eaa8c3182b20b1d86a2fae3660e407f43ca54640f9d7bc67",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "4cc0e53c1a6936f6eaa8c3182b20b1d86a2fae3660e407f43ca54640f9d7bc67"
+    },
+    {
+      "path": "jquartic/2xxyzz/doubling/dbl-2007-fw-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzz/doubling/dbl-2007-fw-2",
+      "sha256": "7205335826deb2f4be4c658f0af208b716c5a0d110535b49f3ce10928af298f8",
+      "normalized_sha256": "d1aae9904af3d1b172a9ae1bad755b1195a1951819f43e723ad997bf1da44bc9",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "d1aae9904af3d1b172a9ae1bad755b1195a1951819f43e723ad997bf1da44bc9"
+    },
+    {
+      "path": "jquartic/2xxyzz/doubling/dbl-2007-fw-3",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzz/doubling/dbl-2007-fw-3",
+      "sha256": "42412bbe7695d40ceea4c09cbf81b342768f4ed1cb16a84400f19945ac45a4a1",
+      "normalized_sha256": "b199063287ba55adc80b8ef79da20e9557bb715364485ede28008a75c8aee59d",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "b199063287ba55adc80b8ef79da20e9557bb715364485ede28008a75c8aee59d"
+    },
+    {
+      "path": "jquartic/2xxyzz/doubling/dbl-2007-fw-4",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzz/doubling/dbl-2007-fw-4",
+      "sha256": "44fbb1dfad672c54144f48c15b01314938d50478b051d328bddd20cfb465cb16",
+      "normalized_sha256": "05251ac138e95fce0dc008f32229c91e99f4113757df1f020951557588d75bb5",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "05251ac138e95fce0dc008f32229c91e99f4113757df1f020951557588d75bb5"
+    },
+    {
+      "path": "jquartic/2xxyzz/doubling/dbl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzz/doubling/dbl-2007-hcd",
+      "sha256": "8b6e02997e90bff3186e907adaadb275e65f102f82a22b6f901ecdd178a4c5fb",
+      "normalized_sha256": "76f68b2853f6305d4ab494b69f20aa2dc45209c7e56e995998747179d46fe725",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "76f68b2853f6305d4ab494b69f20aa2dc45209c7e56e995998747179d46fe725"
+    },
+    {
+      "path": "jquartic/2xxyzz/doubling/dbl-20090311-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzz/doubling/dbl-20090311-hwcd",
+      "sha256": "2422fb86044f592943b7c2ef9d9526c57adfc266c8669fe4f56fe26996c4dc63",
+      "normalized_sha256": "ea5c4ae79031dca958b352687524512b1d54dd2a1c337cd360f02485e4d2d283",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "ea5c4ae79031dca958b352687524512b1d54dd2a1c337cd360f02485e4d2d283"
+    },
+    {
+      "path": "jquartic/2xxyzz/doubling/mdbl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzz/doubling/mdbl-2007-hcd",
+      "sha256": "ed06c92c7e7ea530405ae7238bed0b093f93fdaf2fd9606d5afb1fa5cc9f7421",
+      "normalized_sha256": "2ce994fcea383f55053c00bd3c3430f52eecac56d1ac81e4d79eab4003881746",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "2ce994fcea383f55053c00bd3c3430f52eecac56d1ac81e4d79eab4003881746"
+    },
+    {
+      "path": "jquartic/2xxyzz/doubling/mdbl-20090311-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzz/doubling/mdbl-20090311-hwcd",
+      "sha256": "88ef3e1cc4a6ade672dd1092f3d0471f3e7183e2fe59b41ce85f4d4cd0f793dd",
+      "normalized_sha256": "449305f6afe4c9fd581f685d5107d516eff7d04b36f586f2ed1e328d5b798cfb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "449305f6afe4c9fd581f685d5107d516eff7d04b36f586f2ed1e328d5b798cfb"
+    },
+    {
+      "path": "jquartic/2xxyzz/scaling/z",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzz/scaling/z",
+      "sha256": "561057e120ff036eb7cf6114a47dd0aa5f0479f8a296fce8b4496dfacb1c0d3a",
+      "normalized_sha256": "3723da6d54772c93fb1c6cc544566eb5ac92030fadd05ada167a8f59af535335",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "3723da6d54772c93fb1c6cc544566eb5ac92030fadd05ada167a8f59af535335"
+    },
+    {
+      "path": "jquartic/2xxyzz/tripling/tpl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzz/tripling/tpl-2007-hcd",
+      "sha256": "0618520d99d6f3b2550dbb32477034441a5432fc347da183eb7f0eaa9c394e38",
+      "normalized_sha256": "711c37400799ce9fc8a85771677897c6dae264a7e7037b7afac1a8ede6f9ec52",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "711c37400799ce9fc8a85771677897c6dae264a7e7037b7afac1a8ede6f9ec52"
+    },
+    {
+      "path": "jquartic/2xxyzz/tripling/tpl-2007-hcd-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzz/tripling/tpl-2007-hcd-2",
+      "sha256": "cf3f535fa41cf26bb304e78e712d0312e3f11ef9b6a71f232905ace63a8fae45",
+      "normalized_sha256": "74994fdb3c9f5706a0523d3c2143d13ff36fe717da76b3e0437879510f466997",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "74994fdb3c9f5706a0523d3c2143d13ff36fe717da76b3e0437879510f466997"
+    },
+    {
+      "path": "jquartic/2xxyzzr/addition/add-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/addition/add-2007-bl",
+      "sha256": "45aa9cd1effa82b7ba6c12a5ad749866d8b484501a4b2325c2bfd6a9dc141c5e",
+      "normalized_sha256": "b57565452c556456b43d0447fe34b575584e5ac079759baf243ee354b1364403",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "b57565452c556456b43d0447fe34b575584e5ac079759baf243ee354b1364403"
+    },
+    {
+      "path": "jquartic/2xxyzzr/addition/add-2007-d",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/addition/add-2007-d",
+      "sha256": "f6754671926665682d52cd1a5d44994787bf7f6e2a9bb93b33dc7731703735e8",
+      "normalized_sha256": "62f8fcc149b899becfd636f6014e628b49872cce3e1fbe7b0cc37af0051563c5",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "62f8fcc149b899becfd636f6014e628b49872cce3e1fbe7b0cc37af0051563c5"
+    },
+    {
+      "path": "jquartic/2xxyzzr/addition/add-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/addition/add-20080225-hwcd",
+      "sha256": "6b6ae2a91fec5681d79d220431e8662691075b4a2f33445df363c5491644a3a1",
+      "normalized_sha256": "b587428c148b5bb18d9a71fe95c7cd0b2276e50ae11630103bb9c9b989ba725f",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "b587428c148b5bb18d9a71fe95c7cd0b2276e50ae11630103bb9c9b989ba725f"
+    },
+    {
+      "path": "jquartic/2xxyzzr/addition/madd-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/addition/madd-2007-bl",
+      "sha256": "5b56a3806947b7f68c19a9efc97e76d63e626528c60d2379e69dc5c0023c5522",
+      "normalized_sha256": "70ddb9acf647d6295b48bba2a4b4963078f2eba966d600a7a1e50f0a6ab0111b",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "70ddb9acf647d6295b48bba2a4b4963078f2eba966d600a7a1e50f0a6ab0111b"
+    },
+    {
+      "path": "jquartic/2xxyzzr/addition/madd-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/addition/madd-20080225-hwcd",
+      "sha256": "c7aadeaaebb2a9b2125d81202bedd3a6d9f86a1da412e24381b8db3f998a9ce9",
+      "normalized_sha256": "d904471474e666c41a3e1c82fb469cf43f1367cc473b85214a69572f46d7183d",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "d904471474e666c41a3e1c82fb469cf43f1367cc473b85214a69572f46d7183d"
+    },
+    {
+      "path": "jquartic/2xxyzzr/addition/mmadd-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/addition/mmadd-2007-bl",
+      "sha256": "04e4c12e92809690ee18ea766166dced277403f529f25cba2e22f266ef41ea0d",
+      "normalized_sha256": "13ff8af7cce0d52fed687460d8ef8de45057baad95e44a75017c8e16187f9921",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "13ff8af7cce0d52fed687460d8ef8de45057baad95e44a75017c8e16187f9921"
+    },
+    {
+      "path": "jquartic/2xxyzzr/doubling/dbl-2007-fw",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/doubling/dbl-2007-fw",
+      "sha256": "89400aff833d45e37927210487e54bde4c65fd9ad5952c9afc4daf62a7083a22",
+      "normalized_sha256": "ec0134b90331cb48eafb4099321b20970b453f36d9b79634745b25a96e30a4db",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "ec0134b90331cb48eafb4099321b20970b453f36d9b79634745b25a96e30a4db"
+    },
+    {
+      "path": "jquartic/2xxyzzr/doubling/dbl-2007-fw-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/doubling/dbl-2007-fw-2",
+      "sha256": "566402d879ed1c7ef5a08e636ade1e265a494e18340b8f4899b8fd960cfeb5b8",
+      "normalized_sha256": "2900ff8bcb4f15e3a0aaac353eadc0c1e16bdd602ad7cea8acf4ca0f9ec274a7",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "2900ff8bcb4f15e3a0aaac353eadc0c1e16bdd602ad7cea8acf4ca0f9ec274a7"
+    },
+    {
+      "path": "jquartic/2xxyzzr/doubling/dbl-2007-fw-3",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/doubling/dbl-2007-fw-3",
+      "sha256": "2298430925ebaa930be93b0d8dcf7c535976d23a749f8a862b83fd5f8b0fe493",
+      "normalized_sha256": "41a96c8118863d50c76449f870c7c77608a2e72039991892013a2130afb69d55",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "41a96c8118863d50c76449f870c7c77608a2e72039991892013a2130afb69d55"
+    },
+    {
+      "path": "jquartic/2xxyzzr/doubling/dbl-2007-fw-4",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/doubling/dbl-2007-fw-4",
+      "sha256": "0e36fce99c3a57c5bbb7a0cb733ad4fe9c90fa017238414eb3ab8ccc7abe1103",
+      "normalized_sha256": "30f352bddf780816e7bde32b2cc81556783d1a3553f19f258d06032c76b98e8c",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "30f352bddf780816e7bde32b2cc81556783d1a3553f19f258d06032c76b98e8c"
+    },
+    {
+      "path": "jquartic/2xxyzzr/doubling/dbl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/doubling/dbl-2007-hcd",
+      "sha256": "1392973f5c0c2145a663f271d51ca73bf62ce6fa151fd8fbc9048d382b4b93af",
+      "normalized_sha256": "9a8237621125d6034d2e9029e68ce7ba32597389f18fb06f3f9a79cef91f967a",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9a8237621125d6034d2e9029e68ce7ba32597389f18fb06f3f9a79cef91f967a"
+    },
+    {
+      "path": "jquartic/2xxyzzr/doubling/dbl-20090311-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/doubling/dbl-20090311-hwcd",
+      "sha256": "baf68f9c5569f4919720f8e06645c6c192d4e3943890605c42bcbf7799ed7eb3",
+      "normalized_sha256": "686c62b7f8ffd6ab32f7a8961cf2ac0760f38b8dd6116e3d858e253ccdae008f",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "686c62b7f8ffd6ab32f7a8961cf2ac0760f38b8dd6116e3d858e253ccdae008f"
+    },
+    {
+      "path": "jquartic/2xxyzzr/doubling/mdbl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/doubling/mdbl-2007-hcd",
+      "sha256": "ea422b4a9430b1df9e71711a61212f26ac9ae4e33c2a7c654d196f29aa9140f7",
+      "normalized_sha256": "11093a1bbc5beaa02fbf09fd1ac11987e8b24740101190f4a55631d6e70d1668",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "11093a1bbc5beaa02fbf09fd1ac11987e8b24740101190f4a55631d6e70d1668"
+    },
+    {
+      "path": "jquartic/2xxyzzr/doubling/mdbl-20090311-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/doubling/mdbl-20090311-hwcd",
+      "sha256": "907318099838823c9c5f03547224a085a8d00a2e4bd13b99328d016dfced0eb4",
+      "normalized_sha256": "091eb2fdc7f58fd92c655d1d4229b6a8cd7a394c1eb98e63a9533bee776dada5",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "091eb2fdc7f58fd92c655d1d4229b6a8cd7a394c1eb98e63a9533bee776dada5"
+    },
+    {
+      "path": "jquartic/2xxyzzr/scaling/z",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/scaling/z",
+      "sha256": "2ded72b1a4aac392443d5db1ecb66789d3e539994df93135f84b5cbb379390af",
+      "normalized_sha256": "3a5a3991319789650e8ee82379971689f21aee88c9d9d019adc7833ba5e213a6",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "3a5a3991319789650e8ee82379971689f21aee88c9d9d019adc7833ba5e213a6"
+    },
+    {
+      "path": "jquartic/2xxyzzr/tripling/tpl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/tripling/tpl-2007-hcd",
+      "sha256": "c910c4351636619c4511b4f6bc6066de37b480610f71ebdbbbb2e37a56923385",
+      "normalized_sha256": "128025f54754ab1e16108a7b82d0fbe8d8651067c2df9cede27b8e109296a864",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "128025f54754ab1e16108a7b82d0fbe8d8651067c2df9cede27b8e109296a864"
+    },
+    {
+      "path": "jquartic/2xxyzzr/tripling/tpl-2007-hcd-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xxyzzr/tripling/tpl-2007-hcd-2",
+      "sha256": "5513da17733e5d9dce41b49d6409665f47fa2df64e6683e243b8bd70911cb65a",
+      "normalized_sha256": "1d89a1ab2c027f9301eedaabc0a70bf7d10b726f4e8cc46551b76b5e7d286771",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "1d89a1ab2c027f9301eedaabc0a70bf7d10b726f4e8cc46551b76b5e7d286771"
+    },
+    {
+      "path": "jquartic/2xyz/addition/add-2002-bj",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/addition/add-2002-bj",
+      "sha256": "0f259151894124a2c2bf6b65b17426f3b5151645719dbc0d4ac547c21e11a873",
+      "normalized_sha256": "f09fa37142b7bcad5654ea2c87839ab0aea7af08875789ee5c8a0d518cc79644",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "f09fa37142b7bcad5654ea2c87839ab0aea7af08875789ee5c8a0d518cc79644"
+    },
+    {
+      "path": "jquartic/2xyz/addition/add-2002-bj-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/addition/add-2002-bj-2",
+      "sha256": "02ad353f43b4099a14b6d4ddc39cc22de827b9a26a5f6f5e012e97971f090a2a",
+      "normalized_sha256": "da5e01f0190cafc933bcf4059f0ae1a0d065daaa18705a0e6025833db92a3a56",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "da5e01f0190cafc933bcf4059f0ae1a0d065daaa18705a0e6025833db92a3a56"
+    },
+    {
+      "path": "jquartic/2xyz/addition/add-2002-bj-3",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/addition/add-2002-bj-3",
+      "sha256": "fe29aac5e564a0d598183010dc93b701bcf57cb0281d6ac8f2b52ef57cd14f33",
+      "normalized_sha256": "023bb6871a580e5534082f66a379ec75b1068549bbc8f0d2a1dc289eb352f6dd",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "023bb6871a580e5534082f66a379ec75b1068549bbc8f0d2a1dc289eb352f6dd"
+    },
+    {
+      "path": "jquartic/2xyz/addition/add-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/addition/add-2007-bl",
+      "sha256": "3fbacde5e5929c91dd01c4e9e304edc4ca0ab210accf83f4aaa1574d4e72d38e",
+      "normalized_sha256": "c25cd3375d3763a3c92933d8739a4337fdbe923ac5ffecdf9a6cf176138743fa",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "c25cd3375d3763a3c92933d8739a4337fdbe923ac5ffecdf9a6cf176138743fa"
+    },
+    {
+      "path": "jquartic/2xyz/addition/add-2007-d",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/addition/add-2007-d",
+      "sha256": "8a87f0ed09fa83992eef326705bada8dcf6dca49568082115f88cf93d326f77f",
+      "normalized_sha256": "96388a28136011aed7acb8d315cfe216a126c6c8158307367d3f57242981e743",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "96388a28136011aed7acb8d315cfe216a126c6c8158307367d3f57242981e743"
+    },
+    {
+      "path": "jquartic/2xyz/addition/madd-2002-bj",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/addition/madd-2002-bj",
+      "sha256": "ec79984f302b7ca6a52a543b52e8bbe21418247477b2201c114aafa0936f85bc",
+      "normalized_sha256": "f14ab61213c8291aa9143d3497cf7325528d098b0dd4787c8899b7f69936dcd3",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "f14ab61213c8291aa9143d3497cf7325528d098b0dd4787c8899b7f69936dcd3"
+    },
+    {
+      "path": "jquartic/2xyz/addition/mmadd-2002-bj",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/addition/mmadd-2002-bj",
+      "sha256": "53119875b0a117afb82169bc7af27457b25cb7df7ac2f1aecb3089d93432e6b3",
+      "normalized_sha256": "fbe96c0a86e1927f04cfed1005dababe81d858cfc6afe77f839a7d3c5c092e0d",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "fbe96c0a86e1927f04cfed1005dababe81d858cfc6afe77f839a7d3c5c092e0d"
+    },
+    {
+      "path": "jquartic/2xyz/addition/mmadd-2002-bj-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/addition/mmadd-2002-bj-2",
+      "sha256": "f562247c609faf9cd6bea1445d85ebca4efa36229e12d4a70561718f7b4fe588",
+      "normalized_sha256": "8cf525d7f91fd4a805f46fe7d76311c2e9ee648ea862bbf5ef4b67f88b4263b3",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "8cf525d7f91fd4a805f46fe7d76311c2e9ee648ea862bbf5ef4b67f88b4263b3"
+    },
+    {
+      "path": "jquartic/2xyz/doubling/dbl-2002-bj",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/doubling/dbl-2002-bj",
+      "sha256": "90c4e3f0d4863e0bbed57d9dccbdfa70da5e6c4cdff8c3bf475f22fa26a3c820",
+      "normalized_sha256": "083fe56ba3e19ee7e84eab318447335e48bded8ec71a3352aa3c7430c174f348",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "083fe56ba3e19ee7e84eab318447335e48bded8ec71a3352aa3c7430c174f348"
+    },
+    {
+      "path": "jquartic/2xyz/doubling/dbl-2002-bj-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/doubling/dbl-2002-bj-2",
+      "sha256": "9597cfc3ade2fff7faedccb299847ca6aa15c1e0046f926b533d59a1e667bf8a",
+      "normalized_sha256": "5133350f40d9a7ec5af044f4693777d4c71b4c651730f42def9c890b40f06d7c",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "5133350f40d9a7ec5af044f4693777d4c71b4c651730f42def9c890b40f06d7c"
+    },
+    {
+      "path": "jquartic/2xyz/doubling/dbl-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/doubling/dbl-2007-bl",
+      "sha256": "08b9263eff59534f4ce03f24a9e48da82e6ce79c4992fe76747c81f5991a35c1",
+      "normalized_sha256": "06be161454f5a22c6c1d41500311386c0ba61e79683e0288c407343d62ad5658",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "06be161454f5a22c6c1d41500311386c0ba61e79683e0288c407343d62ad5658"
+    },
+    {
+      "path": "jquartic/2xyz/doubling/dbl-2007-fw",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/doubling/dbl-2007-fw",
+      "sha256": "d0979090d6f6ab82251b600018a744fea962af6b4f9c1a7e539ab37dbc1c92fd",
+      "normalized_sha256": "05648eb10b5c8448bfac6190b182e65e920ea68fcb15cb76970f9802e29d6569",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "05648eb10b5c8448bfac6190b182e65e920ea68fcb15cb76970f9802e29d6569"
+    },
+    {
+      "path": "jquartic/2xyz/doubling/dbl-2007-fw-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/doubling/dbl-2007-fw-2",
+      "sha256": "d0b26dbe9af9ac3f486494465f8cb4ddba5b1a7895bcb79c1d89d971610d4e0d",
+      "normalized_sha256": "c1e2cd2843adea46d366c70a521eab4804babd6c1e6ec9b15989648a28f055e0",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "c1e2cd2843adea46d366c70a521eab4804babd6c1e6ec9b15989648a28f055e0"
+    },
+    {
+      "path": "jquartic/2xyz/doubling/dbl-2007-fw-3",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/doubling/dbl-2007-fw-3",
+      "sha256": "3cbf0f08aece57a2dc799bcf8cc8549f97eb48e53c349c9254a364648d004081",
+      "normalized_sha256": "33fd872a4ccb7756cf80b981753560a12a0b4c2379a728ba0c6d908af7e84830",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "33fd872a4ccb7756cf80b981753560a12a0b4c2379a728ba0c6d908af7e84830"
+    },
+    {
+      "path": "jquartic/2xyz/doubling/dbl-2007-fw-4",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/doubling/dbl-2007-fw-4",
+      "sha256": "fd0338979a4c4e5fcaec644af013643f12bd4ce1c75c9a26e00471cb298109fc",
+      "normalized_sha256": "9e0ea44b604440f7e451c9dfed7fd11bc01f462c5542dbe1e35491517559af32",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9e0ea44b604440f7e451c9dfed7fd11bc01f462c5542dbe1e35491517559af32"
+    },
+    {
+      "path": "jquartic/2xyz/doubling/dbl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/doubling/dbl-2007-hcd",
+      "sha256": "d433a93d4b34d58157f06a1853d47bc94b473ba0958459a7aabe7ad27235018d",
+      "normalized_sha256": "25ae02f4a214a5cf69470c8044f77cc955a1f5b3a39cc580c5c4cae38bb2b601",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "25ae02f4a214a5cf69470c8044f77cc955a1f5b3a39cc580c5c4cae38bb2b601"
+    },
+    {
+      "path": "jquartic/2xyz/doubling/mdbl-2007-fw",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/doubling/mdbl-2007-fw",
+      "sha256": "5d37590f01b347ad96a92754d137fb895064610ded9c8aad51d1dc644dc6502c",
+      "normalized_sha256": "45242c4d7db73439fc9a8e3a9d530b5f8e2f2b0bf344cf12cfcf787fb8f8756d",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "45242c4d7db73439fc9a8e3a9d530b5f8e2f2b0bf344cf12cfcf787fb8f8756d"
+    },
+    {
+      "path": "jquartic/2xyz/scaling/z",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/2xyz/scaling/z",
+      "sha256": "459a1b11d77b011d3c951a3082ab0a99a0ee292cd8f2d6305afc93e7eef2dff0",
+      "normalized_sha256": "affbd555c7840dce0e7b9197a0b510da4fb60cb3afbc3dcbec9fe2744d090713",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "affbd555c7840dce0e7b9197a0b510da4fb60cb3afbc3dcbec9fe2744d090713"
+    },
+    {
+      "path": "jquartic/xxyzz/addition/add-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzz/addition/add-20080225-hwcd",
+      "sha256": "769c3040b48bacf800ea7840953b0f73d4f035285f97d66412273da8f250c39f",
+      "normalized_sha256": "bf115b20a7b791731ab45b6ed2de9398925049d7f07d63aac7898df2e1832a1e",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "bf115b20a7b791731ab45b6ed2de9398925049d7f07d63aac7898df2e1832a1e"
+    },
+    {
+      "path": "jquartic/xxyzz/addition/madd-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzz/addition/madd-20080225-hwcd",
+      "sha256": "58531c63ca0705966f31730c8c2d4a01a1c418bce890a9815e91c26ef5d66571",
+      "normalized_sha256": "24d81f5bc23f6f075f0acb3c49ad73980a877c37a972b3d7a3d17e0082fef03a",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "24d81f5bc23f6f075f0acb3c49ad73980a877c37a972b3d7a3d17e0082fef03a"
+    },
+    {
+      "path": "jquartic/xxyzz/doubling/dbl-2007-fw",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzz/doubling/dbl-2007-fw",
+      "sha256": "23659683874c65372aa811f0046a2965863827d31e029bb4a270ba77b240ccb7",
+      "normalized_sha256": "4cc0e53c1a6936f6eaa8c3182b20b1d86a2fae3660e407f43ca54640f9d7bc67",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "4cc0e53c1a6936f6eaa8c3182b20b1d86a2fae3660e407f43ca54640f9d7bc67"
+    },
+    {
+      "path": "jquartic/xxyzz/doubling/dbl-2007-fw-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzz/doubling/dbl-2007-fw-2",
+      "sha256": "7205335826deb2f4be4c658f0af208b716c5a0d110535b49f3ce10928af298f8",
+      "normalized_sha256": "d1aae9904af3d1b172a9ae1bad755b1195a1951819f43e723ad997bf1da44bc9",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "d1aae9904af3d1b172a9ae1bad755b1195a1951819f43e723ad997bf1da44bc9"
+    },
+    {
+      "path": "jquartic/xxyzz/doubling/dbl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzz/doubling/dbl-2007-hcd",
+      "sha256": "8b6e02997e90bff3186e907adaadb275e65f102f82a22b6f901ecdd178a4c5fb",
+      "normalized_sha256": "76f68b2853f6305d4ab494b69f20aa2dc45209c7e56e995998747179d46fe725",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "76f68b2853f6305d4ab494b69f20aa2dc45209c7e56e995998747179d46fe725"
+    },
+    {
+      "path": "jquartic/xxyzz/doubling/dbl-20090311-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzz/doubling/dbl-20090311-hwcd",
+      "sha256": "2422fb86044f592943b7c2ef9d9526c57adfc266c8669fe4f56fe26996c4dc63",
+      "normalized_sha256": "ea5c4ae79031dca958b352687524512b1d54dd2a1c337cd360f02485e4d2d283",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "ea5c4ae79031dca958b352687524512b1d54dd2a1c337cd360f02485e4d2d283"
+    },
+    {
+      "path": "jquartic/xxyzz/doubling/mdbl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzz/doubling/mdbl-2007-hcd",
+      "sha256": "ed06c92c7e7ea530405ae7238bed0b093f93fdaf2fd9606d5afb1fa5cc9f7421",
+      "normalized_sha256": "2ce994fcea383f55053c00bd3c3430f52eecac56d1ac81e4d79eab4003881746",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "2ce994fcea383f55053c00bd3c3430f52eecac56d1ac81e4d79eab4003881746"
+    },
+    {
+      "path": "jquartic/xxyzz/doubling/mdbl-20090311-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzz/doubling/mdbl-20090311-hwcd",
+      "sha256": "88ef3e1cc4a6ade672dd1092f3d0471f3e7183e2fe59b41ce85f4d4cd0f793dd",
+      "normalized_sha256": "449305f6afe4c9fd581f685d5107d516eff7d04b36f586f2ed1e328d5b798cfb",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "449305f6afe4c9fd581f685d5107d516eff7d04b36f586f2ed1e328d5b798cfb"
+    },
+    {
+      "path": "jquartic/xxyzz/scaling/z",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzz/scaling/z",
+      "sha256": "561057e120ff036eb7cf6114a47dd0aa5f0479f8a296fce8b4496dfacb1c0d3a",
+      "normalized_sha256": "3723da6d54772c93fb1c6cc544566eb5ac92030fadd05ada167a8f59af535335",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "3723da6d54772c93fb1c6cc544566eb5ac92030fadd05ada167a8f59af535335"
+    },
+    {
+      "path": "jquartic/xxyzz/tripling/tpl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzz/tripling/tpl-2007-hcd",
+      "sha256": "0618520d99d6f3b2550dbb32477034441a5432fc347da183eb7f0eaa9c394e38",
+      "normalized_sha256": "711c37400799ce9fc8a85771677897c6dae264a7e7037b7afac1a8ede6f9ec52",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "711c37400799ce9fc8a85771677897c6dae264a7e7037b7afac1a8ede6f9ec52"
+    },
+    {
+      "path": "jquartic/xxyzz/tripling/tpl-2007-hcd-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzz/tripling/tpl-2007-hcd-2",
+      "sha256": "cf3f535fa41cf26bb304e78e712d0312e3f11ef9b6a71f232905ace63a8fae45",
+      "normalized_sha256": "74994fdb3c9f5706a0523d3c2143d13ff36fe717da76b3e0437879510f466997",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "74994fdb3c9f5706a0523d3c2143d13ff36fe717da76b3e0437879510f466997"
+    },
+    {
+      "path": "jquartic/xxyzzr/addition/add-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/addition/add-2007-bl",
+      "sha256": "45aa9cd1effa82b7ba6c12a5ad749866d8b484501a4b2325c2bfd6a9dc141c5e",
+      "normalized_sha256": "b57565452c556456b43d0447fe34b575584e5ac079759baf243ee354b1364403",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "b57565452c556456b43d0447fe34b575584e5ac079759baf243ee354b1364403"
+    },
+    {
+      "path": "jquartic/xxyzzr/addition/add-2007-d",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/addition/add-2007-d",
+      "sha256": "f6754671926665682d52cd1a5d44994787bf7f6e2a9bb93b33dc7731703735e8",
+      "normalized_sha256": "62f8fcc149b899becfd636f6014e628b49872cce3e1fbe7b0cc37af0051563c5",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "62f8fcc149b899becfd636f6014e628b49872cce3e1fbe7b0cc37af0051563c5"
+    },
+    {
+      "path": "jquartic/xxyzzr/addition/add-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/addition/add-20080225-hwcd",
+      "sha256": "6b6ae2a91fec5681d79d220431e8662691075b4a2f33445df363c5491644a3a1",
+      "normalized_sha256": "b587428c148b5bb18d9a71fe95c7cd0b2276e50ae11630103bb9c9b989ba725f",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "b587428c148b5bb18d9a71fe95c7cd0b2276e50ae11630103bb9c9b989ba725f"
+    },
+    {
+      "path": "jquartic/xxyzzr/addition/madd-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/addition/madd-2007-bl",
+      "sha256": "5b56a3806947b7f68c19a9efc97e76d63e626528c60d2379e69dc5c0023c5522",
+      "normalized_sha256": "70ddb9acf647d6295b48bba2a4b4963078f2eba966d600a7a1e50f0a6ab0111b",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "70ddb9acf647d6295b48bba2a4b4963078f2eba966d600a7a1e50f0a6ab0111b"
+    },
+    {
+      "path": "jquartic/xxyzzr/addition/madd-20080225-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/addition/madd-20080225-hwcd",
+      "sha256": "c7aadeaaebb2a9b2125d81202bedd3a6d9f86a1da412e24381b8db3f998a9ce9",
+      "normalized_sha256": "d904471474e666c41a3e1c82fb469cf43f1367cc473b85214a69572f46d7183d",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "d904471474e666c41a3e1c82fb469cf43f1367cc473b85214a69572f46d7183d"
+    },
+    {
+      "path": "jquartic/xxyzzr/addition/mmadd-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/addition/mmadd-2007-bl",
+      "sha256": "04e4c12e92809690ee18ea766166dced277403f529f25cba2e22f266ef41ea0d",
+      "normalized_sha256": "13ff8af7cce0d52fed687460d8ef8de45057baad95e44a75017c8e16187f9921",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "13ff8af7cce0d52fed687460d8ef8de45057baad95e44a75017c8e16187f9921"
+    },
+    {
+      "path": "jquartic/xxyzzr/doubling/dbl-2007-fw",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/doubling/dbl-2007-fw",
+      "sha256": "89400aff833d45e37927210487e54bde4c65fd9ad5952c9afc4daf62a7083a22",
+      "normalized_sha256": "ec0134b90331cb48eafb4099321b20970b453f36d9b79634745b25a96e30a4db",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "ec0134b90331cb48eafb4099321b20970b453f36d9b79634745b25a96e30a4db"
+    },
+    {
+      "path": "jquartic/xxyzzr/doubling/dbl-2007-fw-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/doubling/dbl-2007-fw-2",
+      "sha256": "566402d879ed1c7ef5a08e636ade1e265a494e18340b8f4899b8fd960cfeb5b8",
+      "normalized_sha256": "2900ff8bcb4f15e3a0aaac353eadc0c1e16bdd602ad7cea8acf4ca0f9ec274a7",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "2900ff8bcb4f15e3a0aaac353eadc0c1e16bdd602ad7cea8acf4ca0f9ec274a7"
+    },
+    {
+      "path": "jquartic/xxyzzr/doubling/dbl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/doubling/dbl-2007-hcd",
+      "sha256": "1392973f5c0c2145a663f271d51ca73bf62ce6fa151fd8fbc9048d382b4b93af",
+      "normalized_sha256": "9a8237621125d6034d2e9029e68ce7ba32597389f18fb06f3f9a79cef91f967a",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9a8237621125d6034d2e9029e68ce7ba32597389f18fb06f3f9a79cef91f967a"
+    },
+    {
+      "path": "jquartic/xxyzzr/doubling/dbl-20090311-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/doubling/dbl-20090311-hwcd",
+      "sha256": "baf68f9c5569f4919720f8e06645c6c192d4e3943890605c42bcbf7799ed7eb3",
+      "normalized_sha256": "686c62b7f8ffd6ab32f7a8961cf2ac0760f38b8dd6116e3d858e253ccdae008f",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "686c62b7f8ffd6ab32f7a8961cf2ac0760f38b8dd6116e3d858e253ccdae008f"
+    },
+    {
+      "path": "jquartic/xxyzzr/doubling/mdbl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/doubling/mdbl-2007-hcd",
+      "sha256": "ea422b4a9430b1df9e71711a61212f26ac9ae4e33c2a7c654d196f29aa9140f7",
+      "normalized_sha256": "11093a1bbc5beaa02fbf09fd1ac11987e8b24740101190f4a55631d6e70d1668",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "11093a1bbc5beaa02fbf09fd1ac11987e8b24740101190f4a55631d6e70d1668"
+    },
+    {
+      "path": "jquartic/xxyzzr/doubling/mdbl-20090311-hwcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/doubling/mdbl-20090311-hwcd",
+      "sha256": "907318099838823c9c5f03547224a085a8d00a2e4bd13b99328d016dfced0eb4",
+      "normalized_sha256": "091eb2fdc7f58fd92c655d1d4229b6a8cd7a394c1eb98e63a9533bee776dada5",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "091eb2fdc7f58fd92c655d1d4229b6a8cd7a394c1eb98e63a9533bee776dada5"
+    },
+    {
+      "path": "jquartic/xxyzzr/scaling/z",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/scaling/z",
+      "sha256": "2ded72b1a4aac392443d5db1ecb66789d3e539994df93135f84b5cbb379390af",
+      "normalized_sha256": "3a5a3991319789650e8ee82379971689f21aee88c9d9d019adc7833ba5e213a6",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "3a5a3991319789650e8ee82379971689f21aee88c9d9d019adc7833ba5e213a6"
+    },
+    {
+      "path": "jquartic/xxyzzr/tripling/tpl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/tripling/tpl-2007-hcd",
+      "sha256": "c910c4351636619c4511b4f6bc6066de37b480610f71ebdbbbb2e37a56923385",
+      "normalized_sha256": "128025f54754ab1e16108a7b82d0fbe8d8651067c2df9cede27b8e109296a864",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "128025f54754ab1e16108a7b82d0fbe8d8651067c2df9cede27b8e109296a864"
+    },
+    {
+      "path": "jquartic/xxyzzr/tripling/tpl-2007-hcd-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xxyzzr/tripling/tpl-2007-hcd-2",
+      "sha256": "5513da17733e5d9dce41b49d6409665f47fa2df64e6683e243b8bd70911cb65a",
+      "normalized_sha256": "1d89a1ab2c027f9301eedaabc0a70bf7d10b726f4e8cc46551b76b5e7d286771",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "1d89a1ab2c027f9301eedaabc0a70bf7d10b726f4e8cc46551b76b5e7d286771"
+    },
+    {
+      "path": "jquartic/xyz/addition/add-2002-bj",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/addition/add-2002-bj",
+      "sha256": "0f259151894124a2c2bf6b65b17426f3b5151645719dbc0d4ac547c21e11a873",
+      "normalized_sha256": "f09fa37142b7bcad5654ea2c87839ab0aea7af08875789ee5c8a0d518cc79644",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "f09fa37142b7bcad5654ea2c87839ab0aea7af08875789ee5c8a0d518cc79644"
+    },
+    {
+      "path": "jquartic/xyz/addition/add-2002-bj-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/addition/add-2002-bj-2",
+      "sha256": "02ad353f43b4099a14b6d4ddc39cc22de827b9a26a5f6f5e012e97971f090a2a",
+      "normalized_sha256": "da5e01f0190cafc933bcf4059f0ae1a0d065daaa18705a0e6025833db92a3a56",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "da5e01f0190cafc933bcf4059f0ae1a0d065daaa18705a0e6025833db92a3a56"
+    },
+    {
+      "path": "jquartic/xyz/addition/add-2002-bj-3",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/addition/add-2002-bj-3",
+      "sha256": "fe29aac5e564a0d598183010dc93b701bcf57cb0281d6ac8f2b52ef57cd14f33",
+      "normalized_sha256": "023bb6871a580e5534082f66a379ec75b1068549bbc8f0d2a1dc289eb352f6dd",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "023bb6871a580e5534082f66a379ec75b1068549bbc8f0d2a1dc289eb352f6dd"
+    },
+    {
+      "path": "jquartic/xyz/addition/add-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/addition/add-2007-bl",
+      "sha256": "3fbacde5e5929c91dd01c4e9e304edc4ca0ab210accf83f4aaa1574d4e72d38e",
+      "normalized_sha256": "c25cd3375d3763a3c92933d8739a4337fdbe923ac5ffecdf9a6cf176138743fa",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "c25cd3375d3763a3c92933d8739a4337fdbe923ac5ffecdf9a6cf176138743fa"
+    },
+    {
+      "path": "jquartic/xyz/addition/add-2007-d",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/addition/add-2007-d",
+      "sha256": "8a87f0ed09fa83992eef326705bada8dcf6dca49568082115f88cf93d326f77f",
+      "normalized_sha256": "96388a28136011aed7acb8d315cfe216a126c6c8158307367d3f57242981e743",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "96388a28136011aed7acb8d315cfe216a126c6c8158307367d3f57242981e743"
+    },
+    {
+      "path": "jquartic/xyz/addition/madd-2002-bj",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/addition/madd-2002-bj",
+      "sha256": "ec79984f302b7ca6a52a543b52e8bbe21418247477b2201c114aafa0936f85bc",
+      "normalized_sha256": "f14ab61213c8291aa9143d3497cf7325528d098b0dd4787c8899b7f69936dcd3",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "f14ab61213c8291aa9143d3497cf7325528d098b0dd4787c8899b7f69936dcd3"
+    },
+    {
+      "path": "jquartic/xyz/addition/mmadd-2002-bj",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/addition/mmadd-2002-bj",
+      "sha256": "53119875b0a117afb82169bc7af27457b25cb7df7ac2f1aecb3089d93432e6b3",
+      "normalized_sha256": "fbe96c0a86e1927f04cfed1005dababe81d858cfc6afe77f839a7d3c5c092e0d",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "fbe96c0a86e1927f04cfed1005dababe81d858cfc6afe77f839a7d3c5c092e0d"
+    },
+    {
+      "path": "jquartic/xyz/addition/mmadd-2002-bj-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/addition/mmadd-2002-bj-2",
+      "sha256": "f562247c609faf9cd6bea1445d85ebca4efa36229e12d4a70561718f7b4fe588",
+      "normalized_sha256": "8cf525d7f91fd4a805f46fe7d76311c2e9ee648ea862bbf5ef4b67f88b4263b3",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "8cf525d7f91fd4a805f46fe7d76311c2e9ee648ea862bbf5ef4b67f88b4263b3"
+    },
+    {
+      "path": "jquartic/xyz/doubling/dbl-2002-bj",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/doubling/dbl-2002-bj",
+      "sha256": "90c4e3f0d4863e0bbed57d9dccbdfa70da5e6c4cdff8c3bf475f22fa26a3c820",
+      "normalized_sha256": "083fe56ba3e19ee7e84eab318447335e48bded8ec71a3352aa3c7430c174f348",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "083fe56ba3e19ee7e84eab318447335e48bded8ec71a3352aa3c7430c174f348"
+    },
+    {
+      "path": "jquartic/xyz/doubling/dbl-2002-bj-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/doubling/dbl-2002-bj-2",
+      "sha256": "9597cfc3ade2fff7faedccb299847ca6aa15c1e0046f926b533d59a1e667bf8a",
+      "normalized_sha256": "5133350f40d9a7ec5af044f4693777d4c71b4c651730f42def9c890b40f06d7c",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "5133350f40d9a7ec5af044f4693777d4c71b4c651730f42def9c890b40f06d7c"
+    },
+    {
+      "path": "jquartic/xyz/doubling/dbl-2007-bl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/doubling/dbl-2007-bl",
+      "sha256": "08b9263eff59534f4ce03f24a9e48da82e6ce79c4992fe76747c81f5991a35c1",
+      "normalized_sha256": "06be161454f5a22c6c1d41500311386c0ba61e79683e0288c407343d62ad5658",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "06be161454f5a22c6c1d41500311386c0ba61e79683e0288c407343d62ad5658"
+    },
+    {
+      "path": "jquartic/xyz/doubling/dbl-2007-fw",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/doubling/dbl-2007-fw",
+      "sha256": "d0979090d6f6ab82251b600018a744fea962af6b4f9c1a7e539ab37dbc1c92fd",
+      "normalized_sha256": "05648eb10b5c8448bfac6190b182e65e920ea68fcb15cb76970f9802e29d6569",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "05648eb10b5c8448bfac6190b182e65e920ea68fcb15cb76970f9802e29d6569"
+    },
+    {
+      "path": "jquartic/xyz/doubling/dbl-2007-fw-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/doubling/dbl-2007-fw-2",
+      "sha256": "d0b26dbe9af9ac3f486494465f8cb4ddba5b1a7895bcb79c1d89d971610d4e0d",
+      "normalized_sha256": "c1e2cd2843adea46d366c70a521eab4804babd6c1e6ec9b15989648a28f055e0",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "c1e2cd2843adea46d366c70a521eab4804babd6c1e6ec9b15989648a28f055e0"
+    },
+    {
+      "path": "jquartic/xyz/doubling/dbl-2007-hcd",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/doubling/dbl-2007-hcd",
+      "sha256": "d433a93d4b34d58157f06a1853d47bc94b473ba0958459a7aabe7ad27235018d",
+      "normalized_sha256": "25ae02f4a214a5cf69470c8044f77cc955a1f5b3a39cc580c5c4cae38bb2b601",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "25ae02f4a214a5cf69470c8044f77cc955a1f5b3a39cc580c5c4cae38bb2b601"
+    },
+    {
+      "path": "jquartic/xyz/doubling/mdbl-2007-fw",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/doubling/mdbl-2007-fw",
+      "sha256": "5d37590f01b347ad96a92754d137fb895064610ded9c8aad51d1dc644dc6502c",
+      "normalized_sha256": "45242c4d7db73439fc9a8e3a9d530b5f8e2f2b0bf344cf12cfcf787fb8f8756d",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "45242c4d7db73439fc9a8e3a9d530b5f8e2f2b0bf344cf12cfcf787fb8f8756d"
+    },
+    {
+      "path": "jquartic/xyz/scaling/z",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/jquartic/xyz/scaling/z",
+      "sha256": "459a1b11d77b011d3c951a3082ab0a99a0ee292cd8f2d6305afc93e7eef2dff0",
+      "normalized_sha256": "affbd555c7840dce0e7b9197a0b510da4fb60cb3afbc3dcbec9fe2744d090713",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "affbd555c7840dce0e7b9197a0b510da4fb60cb3afbc3dcbec9fe2744d090713"
+    },
+    {
+      "path": "shortw/jacobian-0/addition/add-1986-cc-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/shortw/jacobian-0/addition/add-1986-cc-2",
+      "sha256": "da33061d4e9f81c151e1466a1801566ee18003a52400e76b15277843e70f5ce9",
+      "normalized_sha256": "86ffb7a1e0cb41c2b732be0d2e87561cf7d2e5e4952a4b2bd019271b2aa9f273",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "86ffb7a1e0cb41c2b732be0d2e87561cf7d2e5e4952a4b2bd019271b2aa9f273"
+    },
+    {
+      "path": "shortw/jacobian-3/addition/add-1986-cc-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/shortw/jacobian-3/addition/add-1986-cc-2",
+      "sha256": "da33061d4e9f81c151e1466a1801566ee18003a52400e76b15277843e70f5ce9",
+      "normalized_sha256": "86ffb7a1e0cb41c2b732be0d2e87561cf7d2e5e4952a4b2bd019271b2aa9f273",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "86ffb7a1e0cb41c2b732be0d2e87561cf7d2e5e4952a4b2bd019271b2aa9f273"
+    },
+    {
+      "path": "shortw/jacobian/addition/add-1986-cc-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/shortw/jacobian/addition/add-1986-cc-2",
+      "sha256": "da33061d4e9f81c151e1466a1801566ee18003a52400e76b15277843e70f5ce9",
+      "normalized_sha256": "86ffb7a1e0cb41c2b732be0d2e87561cf7d2e5e4952a4b2bd019271b2aa9f273",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "86ffb7a1e0cb41c2b732be0d2e87561cf7d2e5e4952a4b2bd019271b2aa9f273"
+    },
+    {
+      "path": "shortw/projective-1/addition/add-1986-cc",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/shortw/projective-1/addition/add-1986-cc",
+      "sha256": "7665b48baeb34dbfda6e131fb89fa9e79f53496fb49dd0d1e7fc06b916d1d736",
+      "normalized_sha256": "bc8ef3390612c8d73c10340ebeafb2b6828cc126f78d96f646b06ecf55a0d0ef",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "bc8ef3390612c8d73c10340ebeafb2b6828cc126f78d96f646b06ecf55a0d0ef"
+    },
+    {
+      "path": "shortw/projective-3/addition/add-1986-cc",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/shortw/projective-3/addition/add-1986-cc",
+      "sha256": "7665b48baeb34dbfda6e131fb89fa9e79f53496fb49dd0d1e7fc06b916d1d736",
+      "normalized_sha256": "bc8ef3390612c8d73c10340ebeafb2b6828cc126f78d96f646b06ecf55a0d0ef",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "bc8ef3390612c8d73c10340ebeafb2b6828cc126f78d96f646b06ecf55a0d0ef"
+    },
+    {
+      "path": "shortw/projective/addition/add-1986-cc",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/shortw/projective/addition/add-1986-cc",
+      "sha256": "7665b48baeb34dbfda6e131fb89fa9e79f53496fb49dd0d1e7fc06b916d1d736",
+      "normalized_sha256": "bc8ef3390612c8d73c10340ebeafb2b6828cc126f78d96f646b06ecf55a0d0ef",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "bc8ef3390612c8d73c10340ebeafb2b6828cc126f78d96f646b06ecf55a0d0ef"
+    },
+    {
+      "path": "twistedhessian/projective/addition/add-2009-bkl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/twistedhessian/projective/addition/add-2009-bkl",
+      "sha256": "161edbf405c59da79bb7c95732182a73be08ea74a6a46a5d50719804b0fbbd73",
+      "normalized_sha256": "08c28f59c6099a7e07d7e73b10b5f0f67e688c9c9f27d348d6736db46e896146",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "08c28f59c6099a7e07d7e73b10b5f0f67e688c9c9f27d348d6736db46e896146"
+    },
+    {
+      "path": "twistedhessian/projective/addition/add-2010-h",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/twistedhessian/projective/addition/add-2010-h",
+      "sha256": "315740662b66721fe7bd9bdd756d2a4b549bae71a2486c43ca4786390c190bce",
+      "normalized_sha256": "aa16043e77cfdeb304d400a37d2e4ff06a6b804ea7f8560d0419339b16d6a5c1",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "aa16043e77cfdeb304d400a37d2e4ff06a6b804ea7f8560d0419339b16d6a5c1"
+    },
+    {
+      "path": "twistedhessian/projective/doubling/dbl-2009-bkl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/twistedhessian/projective/doubling/dbl-2009-bkl",
+      "sha256": "f6b589da2c161ca7844e02ccc9766a439a4d9a044161b1e9776c271864f4b315",
+      "normalized_sha256": "3864fec177aee4213a7629e8751f4d8a6957dfa37e2385d29ad3d464cf615c9c",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "3864fec177aee4213a7629e8751f4d8a6957dfa37e2385d29ad3d464cf615c9c"
+    },
+    {
+      "path": "twistedhessian/projective/doubling/dbl-2009-bkl-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/twistedhessian/projective/doubling/dbl-2009-bkl-2",
+      "sha256": "9054eb50b0aaad750156f117f4d431725b105cf9aa6a84031c930ad724d3c634",
+      "normalized_sha256": "a503163a5972ad0a225886b219cb76b5af278235bdefa2f0436c7adffe3f46a5",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "a503163a5972ad0a225886b219cb76b5af278235bdefa2f0436c7adffe3f46a5"
+    },
+    {
+      "path": "twistedhessian/projective/doubling/dbl-2009-bkl-3",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/twistedhessian/projective/doubling/dbl-2009-bkl-3",
+      "sha256": "94881109f63dfb594a9b0f015cdcd6d7667f90638b456541f71849f9439a6b22",
+      "normalized_sha256": "b66ef72ae44d343310a5154cb58ff38be86430439473967fece3b06c45253283",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "b66ef72ae44d343310a5154cb58ff38be86430439473967fece3b06c45253283"
+    },
+    {
+      "path": "twistedhessian/projective/doubling/dbl-2012-c",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/twistedhessian/projective/doubling/dbl-2012-c",
+      "sha256": "060ebc8eb9533dcf1c59e5183990795e1611b2f710d064a611bdbdea1a950236",
+      "normalized_sha256": "c8086b23c079c1bb293b2bfffa236df72935e76a7b0280e50cda93ddbb3f2874",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "c8086b23c079c1bb293b2bfffa236df72935e76a7b0280e50cda93ddbb3f2874"
+    },
+    {
+      "path": "twistedhessian/projective/doubling/dbl-2015-bckl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/twistedhessian/projective/doubling/dbl-2015-bckl",
+      "sha256": "ff36823d4b25f0fe80048b1482785a4ac15a56eb63c6310008e495223fcbd04d",
+      "normalized_sha256": "0bc842f02a803e570308ca053b0c69c567e9b5bcdb25f8ccdb72a1baa7efba31",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "0bc842f02a803e570308ca053b0c69c567e9b5bcdb25f8ccdb72a1baa7efba31"
+    },
+    {
+      "path": "twistedhessian/projective/tripling/tpl-2009-bkl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/twistedhessian/projective/tripling/tpl-2009-bkl",
+      "sha256": "1ba6fb17ad7f19aa4e2fd9fd480c7c0bcd8e81d221b48246cef55cb7d1fd1a85",
+      "normalized_sha256": "9ddaf172aed3f76f9e3b2526bb77ca289e1726100823840faab458f13f965749",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "9ddaf172aed3f76f9e3b2526bb77ca289e1726100823840faab458f13f965749"
+    },
+    {
+      "path": "twistedhessian/projective/tripling/tpl-2015-bckl",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/twistedhessian/projective/tripling/tpl-2015-bckl",
+      "sha256": "a4d2e5d06e555b725a5a7fe3f12e10153f7548b09d1dec7ed806d8153604cbc7",
+      "normalized_sha256": "06320935af896ea424db817cb654177689a3f5639ceba3af2742088f68ea339b",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "06320935af896ea424db817cb654177689a3f5639ceba3af2742088f68ea339b"
+    },
+    {
+      "path": "twistedhessian/projective/tripling/tpl-2015-bckl-2",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/twistedhessian/projective/tripling/tpl-2015-bckl-2",
+      "sha256": "3a55d97d47f3ce8d95e76e2f54a8d17deff25083917e1d751746cf07dfe2c1a1",
+      "normalized_sha256": "7c0505b0736120479f0c5e66acbe8a4d579669003b80f9cc59a5f4b605c7e011",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "7c0505b0736120479f0c5e66acbe8a4d579669003b80f9cc59a5f4b605c7e011"
+    },
+    {
+      "path": "twistedhessian/projective/tripling/tpl-2015-k",
+      "url": "https://www.hyperelliptic.org/EFD/g1p/data/twistedhessian/projective/tripling/tpl-2015-k",
+      "sha256": "f6c9132d2c0ecfbad9aa5c7de0bf5b468501ffebbfff9d8859fa8aaf49d736a0",
+      "normalized_sha256": "33d2977a135db20750108b7e70e3057de4b78b2b571588806fa7867c1214f321",
+      "verification": "finite_field_checked",
+      "operation_code": "compiled_from_metadata",
+      "local_sha256": "33d2977a135db20750108b7e70e3057de4b78b2b571588806fa7867c1214f321"
+    }
+  ]
+}

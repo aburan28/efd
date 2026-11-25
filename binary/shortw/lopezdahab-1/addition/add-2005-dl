@@ -1,0 +1,14 @@
+source 2005 Doche--Lange / Higuchi Takagi
+compute A = X1*Z2
+compute B = X2*Z1
+compute C = A^2
+compute D = B^2
+compute E = A+B
+compute F = C+D
+compute G = Y1*Z2^2
+compute H = Y2*Z1^2
+compute I = G+H
+compute J = I*E
+compute Z3 = F*Z1*Z2
+compute X3 = A*(H+D)+B*(C+G)
+compute Y3 = (A*J+F*G)*F+(J+Z3)*X3

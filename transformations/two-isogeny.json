@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "scope": "Explicit degree-two isogeny for a rational 2-torsion point; separate from birational coordinate maps.",
+  "field": "characteristic > 3",
+  "source_model": "y**2 = x**3 + A*x**2 + B*x",
+  "target_model": "y**2 = x**3 - 2*A*x**2 + (A**2-4*B)*x",
+  "requires": [
+    "B != 0",
+    "A**2-4*B != 0",
+    "A and B in the stated field"
+  ],
+  "forward": {
+    "x": "x+A+B/x",
+    "y": "y*(1-B/x**2)"
+  },
+  "kernel": [
+    "O",
+    "(0,0)"
+  ],
+  "affine_exceptions": [
+    "x=0: kernel point (0,0) maps to O. O maps to O."
+  ],
+  "dual": {
+    "description": "Apply the same recipe to A1=-2*A, B1=A**2-4*B, then divide x by 4 and y by 8. The composition is [2].",
+    "x": "(x-2*A+(A**2-4*B)/x)/4",
+    "y": "y*(1-(A**2-4*B)/x**2)/8"
+  },
+  "ecdlp_transport": "Injective on a subgroup of odd prime order l. The dual followed by inverse(2) mod l recovers points in that subgroup. Not invertible on the full even-order group.",
+  "source_reduction": "For shortw y^2=x^3+a*x+b and a rational cubic root r, translate x_old=x+r: A=3*r, B=3*r^2+a. This step requires no square root; Montgomery normalization additionally needs sqrt(B).",
+  "applicability": {
+    "curve25519": "A=486662, B=1 directly; target is a 2-torsion Weierstrass model, not automatically normalized Montgomery.",
+    "p256": "No rational 2-torsion over F_p, so no base-field degree-two map of this form.",
+    "secp256k1": "Same rational 2-torsion obstruction as P-256."
+  },
+  "reference": "Classical rational 2-isogeny (special case of Velu formulas); algebraic derivation and tests are included, without relying on fetched external implementation code.",
+  "verification": "Symbolic curve identity, dual composition and finite-field homomorphism checks in tests/test_additional_formulas.py."
+}

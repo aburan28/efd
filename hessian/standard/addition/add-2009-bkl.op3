@@ -1,0 +1,15 @@
+Y1X2 = Y1*X2
+Y1Y2 = Y1*Y2
+Z1Y2 = Z1*Y2
+Z1Z2 = Z1*Z2
+X1Z2 = X1*Z2
+X1X2 = X1*X2
+efdtmp0 = Z1Z2*Z1Y2
+efdtmp1 = X1X2*Y1X2
+X3 = efdtmp0-efdtmp1
+efdtmp2 = Y1Y2*Y1X2
+efdtmp3 = Z1Z2*X1Z2
+Y3 = efdtmp2-efdtmp3
+efdtmp4 = X1X2*X1Z2
+efdtmp5 = Y1Y2*Z1Y2
+Z3 = efdtmp4-efdtmp5

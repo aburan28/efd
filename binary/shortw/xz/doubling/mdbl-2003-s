@@ -1,0 +1,4 @@
+source 2003 Stam "On Montgomery-like representations for elliptic curves over GF(2^k)", Section 3.2, plus a1 = 1, plus b8 = a6, plus Z1 = 1, plus common-subexpression elimination
+assume Z1 = 1
+compute Z3 = X1^2
+compute X3 = Z3^2+a6

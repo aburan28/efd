@@ -1,0 +1,9 @@
+source 2009 Hisil--Wong--Carter--Dawson, formula (9), plus substitutions U = XX, V = ZZ, W = R/2, plus Z3 expansion using Z1=1
+assume Z1 = 1
+compute YY1 = Y1^2
+compute X3 = Y1*R1
+compute Z3 = 1-XX1^2
+compute XX3 = X3^2
+compute ZZ3 = Z3^2
+compute R3 = (X3+Z3)^2-XX3-ZZ3
+compute Y3 = 2*YY1^2-a*XX3-ZZ3

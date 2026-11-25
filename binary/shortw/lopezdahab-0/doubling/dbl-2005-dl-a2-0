@@ -1,0 +1,10 @@
+source 2005 Doche--Lange, following Lopez-Dahab
+appliesto lopezdahab-0
+parameter sqrta6
+assume sqrta6^2 = a6
+compute A = X1^2
+compute B = sqrta6*Z1^2
+compute C = X1*Z1
+compute Z3 = C^2
+compute X3 = (A+B)^2
+compute Y3 = (B*C+(Y1+B)*(A+B))^2

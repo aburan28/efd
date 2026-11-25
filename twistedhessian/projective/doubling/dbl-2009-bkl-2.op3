@@ -1,0 +1,13 @@
+A = X1^2
+B = Y1^2
+C = Z1^2
+D = A*X1
+E = B*Y1
+F = C*Z1
+G = a*D
+efdtmp0 = E-F
+X3 = X1*efdtmp0
+efdtmp1 = G-E
+Y3 = Z1*efdtmp1
+efdtmp2 = F-G
+Z3 = Y1*efdtmp2

@@ -1,0 +1,15 @@
+source 2008.02.25 Hisil--Wong--Carter--Dawson, page 6
+compute SC1 = S1*C1
+compute DZ1 = D1*Z1
+compute SC2 = S2*C2
+compute DZ2 = D2*Z2
+compute E = S1*D2
+compute F = C1*Z2
+compute G = D1*S2
+compute H = Z1*C2
+compute J = SC1*DZ2
+compute K = DZ1*SC2
+compute S3 = (H+F)*(E+G)-J-K
+compute C3 = (H+E)*(F-G)-J+K
+compute D3 = (DZ1-a*SC1)*(SC2+DZ2)+a*J-K
+compute Z3 = (H+G)^2-2*K

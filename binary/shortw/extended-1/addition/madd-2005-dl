@@ -1,0 +1,10 @@
+source 2005 Doche--Lange / Al-Daoud et al 2002; modified to compute and use Z^2
+assume Z2 = 1
+compute A = Y1+Y2*ZZ1
+compute B = X1+X2*Z1
+compute C = B*Z1
+compute Z3 = C^2
+compute ZZ3 = Z3^2
+compute D = X2*Z3
+compute X3 = A^2+C*(A+B^2+a2*C)
+compute Y3 = (D+X3)*(A*C+Z3)+(Y2+X2)*ZZ3

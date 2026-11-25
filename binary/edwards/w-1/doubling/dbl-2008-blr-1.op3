@@ -1,0 +1,6 @@
+A = w1^2
+B = A+w1
+efdtmp0 = B^2
+efdtmp1 = d1+efdtmp0
+efdtmp2 = d1/efdtmp1
+w3 = 1+efdtmp2

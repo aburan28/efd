@@ -1,0 +1,30 @@
+name Jacobi intersections
+parameter a
+coordinate s
+coordinate c
+coordinate d
+satisfying s^2+c^2 == 1
+satisfying a*s^2+d^2 == 1
+addition s = (c2*s1*d2+d1*s2*c1)/(c2^2+(d1*s2)^2)
+addition c = (c2*c1-d1*s2*s1*d2)/(c2^2+(d1*s2)^2)
+addition d = (d1*d2-a*s1*c1*s2*c2)/(c2^2+(d1*s2)^2)
+doubling s = (c1*s1*d1+d1*s1*c1)/(c1^2+(d1*s1)^2)
+doubling c = (c1*c1-d1*s1*s1*d1)/(c1^2+(d1*s1)^2)
+doubling d = (d1*d1-a*s1*c1*s1*c1)/(c1^2+(d1*s1)^2)
+negation s = -s1
+negation c = c1
+negation d = d1
+neutral s = 0
+neutral c = 1
+neutral d = 1
+toweierstrass x = (d-1)*(1-a)/(c*a-d+1-a)
+toweierstrass y = s*(1-a)*a/(c*a-d+1-a)
+a0 = 1
+a1 = 0
+a3 = 0
+a2 = 2-a
+a4 = 1-a
+a6 = 0
+fromweierstrass s = -2*y/(((y/x)^2+a)*x)
+fromweierstrass c = 1-2/((y/x)^2+a)-2*(1-a)/(((y/x)^2+a)*x)
+fromweierstrass d = 1-2*a/((y/x)^2+a)

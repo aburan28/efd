@@ -1,0 +1,12 @@
+source 2007 Feng--Wu, second JQN2 doubling formula, plus substitution epsilon=1, plus substitution delta=-a
+appliesto 2xyz
+parameter a2
+assume a2 = 2*a
+compute T1 = (X1*Z1)^2
+compute T2 = Y1^2
+compute S1 = (T2+2*c*T1)^2
+compute U = (X1*Z1+Y1)^2-T1-T2
+compute V = U^2
+compute X3 = U
+compute Y3 = S1-c*V
+compute Z3 = T2-a2*T1-2*X1^4

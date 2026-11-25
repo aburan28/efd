@@ -1,15 +1,29 @@
 # Explicit-Formulas Database
-A (modifed) export of the [Explicit-Formulas Database](https://www.hyperelliptic.org/EFD/) (EFD) which contains
+An expanded export of the [Explicit-Formulas Database](https://www.hyperelliptic.org/EFD/) (EFD) which contains
 the data files and three-operand-code files for the formulas. Credit goes to [Daniel J. Bernstein](https://cr.yp.to/djb.html) and [Tanja Lange](https://www.hyperelliptic.org/tanja/)
 for collecting the formulas and to the formula [authors](https://www.hyperelliptic.org/EFD/bib.html). This repository is an export polished for automated use
 and more documentation.
 
-Currently contains only the prime field curve models:
+The [unified index](database/index.json) contains **639 formula entries, 16
+namespaced model families and 59 coordinate representations**:
 
- - [Short Weierstrass](shortw/)
- - [Montgomery](montgom/)
- - [Edwards](edwards/)
- - [Twisted Edwards](twisted/)
+- 504 prime-field entries, covering all ten large-characteristic EFD families,
+  additional equations, joint arithmetic states, recovery and quotient relations.
+- 135 characteristic-2 entries under [binary/](binary/), covering all three
+  ordinary-binary EFD families. These require extension-field arithmetic.
+- 351 entries with independent finite-field checks recorded; 288 inherited
+  entries retained without a new independent arithmetic check.
+
+See [coverage and verification](docs/coverage-and-verification.md) for exact
+counts, mathematical domains, evidence, and the remaining paper backlog. Counts
+are database entries, not a count of algebraically independent identities.
+
+```bash
+python tools/search_formulas.py --summary
+python tools/search_formulas.py --field prime --source Hamburg --json
+python tools/search_formulas.py --field binary --model shortw --verified
+python tools/validate_database.py
+```
 
 This repository is used as a source of parse-able formulas in the [pyecsca](https://github.com/J08nY/pyecsca)
 toolkit.
@@ -51,7 +65,11 @@ The main differences are:
                          [shortw/projective-1/addition/add-1986-cc.op3](https://www.hyperelliptic.org/EFD/g1p/auto-code/shortw/projective-1/addition/add-1986-cc.op3)
                          which contain lines such as: `error: not sure how to handle P*(-t5)`.
 
-Last update from EFD as of 31.08.2023.
+The original four-family export was updated from EFD on 31.08.2023. The expanded
+prime/binary import and coverage audit are dated 12.11.2026; raw-source hashes and
+exact URLs are in the import manifests. Operation code for newly imported entries
+is regenerated from normalized metadata, including the six formerly broken
+Chudnovsky entries, and checked against independent group arithmetic.
 
 
 ## Format
@@ -132,3 +150,38 @@ The base formula file has the following values:
 
 The three operand file has a simple format with one intermediate value computation per line.
 For input and output coordinate indices, see the notation in the list of types of formulas above.
+
+## Curve transformation atlas
+
+The [transformation atlas](docs/curve-transformations.md) adds a machine-readable
+[catalog](transformations/catalog.json) of conditional model maps, coordinate
+representations, and Curve25519/P-256/secp256k1 cases. It distinguishes full-point
+coordinates, quotients, isogenies and field extensions, and includes a reproducible
+prime-field summation-relation comparison.
+
+[Additional formulas](docs/additional-formulas.md) include RFC 7748 Montgomery
+doubling/ladder variants, x-only short-Weierstrass tripling, and a separately
+cataloged rational 2-isogeny with its dual. New native formulas have both metadata
+and three-operand code files.
+
+```bash
+python tools/curve_map.py --curve curve25519
+python tools/curve_map.py --curve p256 --json
+# SymPy is required for verification and relation profiling:
+python -m unittest discover -s tests -v
+python tools/relation_profile.py --curve curve25519
+```
+
+## Literature and coverage audit
+
+The [research survey](docs/research-formula-gaps.md) identifies 17 paper candidates
+and distinguishes missing model families, joint arithmetic states, quotient
+relations and field restrictions. A reproducible [upstream inventory](research/upstream-efd-inventory.json)
+found 200 absent EFD formula paths in the initial snapshot. All 200 are now
+imported and finite-field checked; the [current audit](research/upstream-efd-current.json)
+has no missing prime-field EFD paths. The paper catalog records partial imports
+separately from remaining candidates.
+
+```bash
+python tools/audit_upstream_efd.py --output research/upstream-efd-current.json
+```

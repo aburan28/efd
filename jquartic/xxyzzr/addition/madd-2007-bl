@@ -1,0 +1,15 @@
+source 2007 Bernstein--Lange
+assume Z2 = 1
+compute E1 = R1+Y1
+compute E2 = R2+Y2
+compute XX1XX2 = XX1*XX2
+compute R1R2 = R1*R2
+compute Y1Y2 = Y1*Y2
+compute F = ZZ1+XX1XX2
+compute G = 2*R1R2
+compute X3 = E1*E2-R1R2-Y1Y2
+compute Y3 = F*(4*Y1Y2+a*G)+((XX1+ZZ1)*(XX2+ZZ2)-F)*G
+compute Z3 = 2*(ZZ1-XX1XX2)
+compute XX3 = X3^2
+compute ZZ3 = Z3^2
+compute R3 = (X3+Z3)^2-XX3-ZZ3

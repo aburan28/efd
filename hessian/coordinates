@@ -1,0 +1,21 @@
+name Hessian curves
+parameter d
+coordinate x
+coordinate y
+satisfying x^3+y^3+1 == 3*d*x*y
+addition x = (y1^2*x2-y2^2*x1)/(x2*y2-x1*y1)
+addition y = (x1^2*y2-x2^2*y1)/(x2*y2-x1*y1)
+doubling x = y1*(1-x1^3)/(x1^3-y1^3)
+doubling y = x1*(y1^3-1)/(x1^3-y1^3)
+negation x = y1
+negation y = x1
+toweierstrass u = 12*(d^3-1)/(d+x+y)-9*d^2
+toweierstrass v = 36*(y-x)*(d^3-1)/(d+x+y)
+a0 = 1
+a1 = 0
+a2 = 0
+a3 = 0
+a4 = -27*d*(d^3+8)
+a6 = 54*(d^6-20*d^3-8)
+fromweierstrass x = (36*(d^3-1)-v)/(6*(u+9*d^2))-d/2
+fromweierstrass y = (v+36*(d^3-1))/(6*(u+9*d^2))-d/2

@@ -1,0 +1,16 @@
+source 2005 Doche--Lange / Higuchi Takagi; modified to compute and use ZZ,XZ
+compute A = X1*Z2
+compute B = X2*Z1
+compute C = A^2
+compute D = B^2
+compute E = A+B
+compute F = C+D
+compute G = Y1*ZZ2
+compute H = Y2*ZZ1
+compute I = G+H
+compute J = I*E
+compute Z3 = F*Z1*Z2
+compute X3 = A*(H+D)+B*(C+G)
+compute Y3 = (A*J+F*G)*F+(J+Z3)*X3
+compute ZZ3 = Z3^2
+compute XZ3 = X3*Z3

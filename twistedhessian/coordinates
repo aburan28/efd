@@ -1,0 +1,22 @@
+name twisted Hessian curves
+parameter a
+parameter d
+coordinate x
+coordinate y
+satisfying a*x^3+y^3+1 == d*x*y
+addition x = (x1-y1^2*x2*y2)/(a*x1*y1*x2^2-y2)
+addition y = (y1*y2^2-a*x1^2*x2)/(a*x1*y1*x2^2-y2)
+doubling x = (x1-y1^3*x1)/(a*y1*x1^3-y1)
+doubling y = (y1^3-a*x1^3)/(a*y1*x1^3-y1)
+negation x = x1/y1
+negation y = 1/y1
+toweierstrass u = (-3/(a-d*d*d/27))*x/(d*x/3-(-y)+1)
+toweierstrass v = (-9/((a-d*d*d/27)*(a-d*d*d/27)))*(-y)/(d*x/3-(-y)+1)
+a0 = 1
+a1 = -3*(d/3)/(a-(d/3)*(d/3)*(d/3))
+a3 = -9/((a-(d/3)*(d/3)*(d/3))*(a-(d/3)*(d/3)*(d/3)))
+a2 = -9*(d/3)*(d/3)/((a-(d/3)*(d/3)*(d/3))*(a-(d/3)*(d/3)*(d/3)))
+a4 = -27*(d/3)/((a-(d/3)*(d/3)*(d/3))*(a-(d/3)*(d/3)*(d/3))*(a-(d/3)*(d/3)*(d/3)))
+a6 = -27/((a-(d/3)*(d/3)*(d/3))*(a-(d/3)*(d/3)*(d/3))*(a-(d/3)*(d/3)*(d/3))*(a-(d/3)*(d/3)*(d/3)))
+fromweierstrass x = 3*(a-(d/3)*(d/3)*(d/3))*u/((a-(d/3)*(d/3)*(d/3))*(a-(d/3)*(d/3)*(d/3))*v-3*(d/3)*u*(a-(d/3)*(d/3)*(d/3))-9)
+fromweierstrass y = -(a-(d/3)*(d/3)*(d/3))*(a-(d/3)*(d/3)*(d/3))*v/((a-(d/3)*(d/3)*(d/3))*(a-(d/3)*(d/3)*(d/3))*v-3*(d/3)*u*(a-(d/3)*(d/3)*(d/3))-9)

@@ -1,0 +1,7 @@
+name Lopez-Dahab coordinates with a2=0
+assume a2 = 0
+variable X
+variable Y
+variable Z
+satisfying x = X/Z
+satisfying y = Y/Z^2

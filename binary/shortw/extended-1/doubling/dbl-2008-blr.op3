@@ -1,0 +1,13 @@
+A = X1^2
+B = Y1^2
+Z3 = ZZ1*A
+ZZ3 = Z3^2
+efdtmp0 = sqrta6*ZZ1
+efdtmp1 = A+efdtmp0
+X3 = efdtmp1^2
+efdtmp2 = B+X3
+efdtmp3 = efdtmp2+Z3
+efdtmp4 = B*efdtmp3
+efdtmp5 = a6*ZZ3
+efdtmp6 = efdtmp4+efdtmp5
+Y3 = efdtmp6+ZZ3

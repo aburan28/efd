@@ -1,0 +1,17 @@
+source 2015 Kohel "The geometry of efficient arithmetic on elliptic curves"
+parameter p_2overd
+assume p_2overd*d = 2
+parameter aoverddd
+assume aoverddd*d^3 = a
+compute R = a*X1*X1^2
+compute V = Y1*Y1^2
+compute S = Z1*Z1^2
+compute T = R+S
+compute N = T*(S+V)*(V+R)
+compute M = (R-S)*(S-V)*(V-R)
+compute C = (T+V)*(T+V)^2
+compute D = aoverddd*C
+compute E = N-8*D
+compute X3 = p_2overd*(C-3*(D+N))
+compute Y3 = E+M
+compute Z3 = E-M

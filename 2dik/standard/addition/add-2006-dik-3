@@ -1,0 +1,15 @@
+source 2007 Bernstein--Lange; derived from 2006 Doche--Icart--Kohel "Efficient scalar multiplication by isogeny decompositions", page 197, middle display, by substitution Z2=1, simplification, projectification, clearing denominators, common-subexpression elimination
+compute A = Y1*ZZ2-Y2*ZZ1
+compute AA = A^2
+compute X2Z1 = X2*Z1
+compute B = X1*Z2-X2Z1
+compute C = B*Z2
+compute E = C*Z1
+compute EE = E^2
+compute F = E*C
+compute D = F*X1
+compute U = AA-a*EE-D-X2Z1*E*B
+compute X3 = 2*U
+compute Y3 = 2*((E+A)^2-EE-AA)*(D-U)-Y1*(2*F)^2
+compute Z3 = 2*EE
+compute ZZ3 = Z3^2

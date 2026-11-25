@@ -1,0 +1,9 @@
+source 2007 Hisil--Carter--Dawson
+assume Z1 = 1
+compute A = X1^2
+compute B = Y1^2
+compute D = A+B
+compute G = (X1+Y1)^2-D
+compute X3 = (2*Y1-G)*(X1+A+1)
+compute Y3 = (G-2*X1)*(Y1+B+1)
+compute Z3 = (X1-Y1)*(G+2*D)

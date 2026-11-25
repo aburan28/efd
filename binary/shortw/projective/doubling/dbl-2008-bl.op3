@@ -1,0 +1,15 @@
+A = X1^2
+efdtmp0 = Y1*Z1
+B = A+efdtmp0
+C = X1*Z1
+BC = B+C
+D = C^2
+efdtmp1 = B*BC
+efdtmp2 = a2*D
+E = efdtmp1+efdtmp2
+X3 = C*E
+efdtmp3 = BC*E
+efdtmp4 = A^2
+efdtmp5 = efdtmp4*C
+Y3 = efdtmp3+efdtmp5
+Z3 = C*D

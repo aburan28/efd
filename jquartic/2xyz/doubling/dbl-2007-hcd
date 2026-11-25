@@ -1,0 +1,18 @@
+source 2007 Hisil--Carter--Dawson
+parameter b
+assume b = 4-4*a^2
+compute T0 = X1*Z1
+compute X3 = T0*Y1
+compute X3 = X3+X3
+compute T0 = T0^2
+compute T1 = 2*a*T0
+compute T2 = Y1^2
+compute Z3 = T2-T1
+compute Y3 = T0^2
+compute Y3 = b*Y3
+compute T0 = T2^2
+compute Y3 = Y3+T0
+compute T0 = X1^2
+compute T0 = T0^2
+compute Z3 = Z3-T0
+compute Z3 = Z3-T0

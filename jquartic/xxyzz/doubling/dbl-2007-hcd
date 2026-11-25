@@ -1,0 +1,10 @@
+source 2007 Hisil--Carter--Dawson
+compute B = XX1-ZZ1
+compute T1 = XX1+ZZ1
+compute C = Y1*T1
+compute X3 = C-Y1*(X1+Z1)^2
+compute Z3 = T1*B
+compute XX3 = X3^2
+compute ZZ3 = Z3^2
+compute T3 = XX3+ZZ3
+compute Y3 = 2*C^2-T3

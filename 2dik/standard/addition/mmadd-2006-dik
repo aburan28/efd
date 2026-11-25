@@ -1,0 +1,15 @@
+source 2006 Doche--Icart--Kohel "Efficient scalar multiplication by isogeny decompositions", page 197, middle display, plus substitution Z2=1
+assume Z1 = 1
+assume Z2 = 1
+compute A = Y1-Y2
+compute B = X1-X2
+compute C = B
+compute Z3 = C^2
+compute D = X1*Z3
+compute E = A^2
+compute F = X2*B*C
+compute X3 = E-a*Z3-D-F
+compute G = Z3^2
+compute H = A*C
+compute Y3 = H*(D-X3)-Y1*G
+compute ZZ3 = G

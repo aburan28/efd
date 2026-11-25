@@ -1,0 +1,14 @@
+source 2007 Feng--Wu, second JQN2 doubling formula, plus epsilon=1, plus delta=-a
+appliesto 2xxyzzr
+compute T1 = (X1*Z1)^2
+compute T2 = Y1^2
+compute S1 = (T2+2*c*T1)^2
+compute U = (X1*Z1+Y1)^2-T1-T2
+compute Q = U^2
+compute X3 = U
+compute Y3 = S1-c*Q
+compute Z3 = T2-2*a*T1-2*X1^4
+compute XX3 = X3^2
+compute ZZ3 = Z3^2
+compute T3 = XX3+ZZ3
+compute R3 = (X3+Z3)^2-T3

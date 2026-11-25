@@ -1,0 +1,29 @@
+source 2024 Farashahi--Fadavi--Sabbaghian, Faster Complete Addition Laws for Montgomery Curves, Theorems 2-3; transfer of general extended Edwards addition via linear maps (33)-(34), https://ches.iacr.org/2024/papers-issue-4/4_111.pdf
+parameter ta
+parameter td
+assume ta*b = a+2
+assume td*b = a-2
+compute X1 = U1+W1
+compute Y1 = V1-S1
+compute T1 = U1-W1
+compute Z1 = V1+S1
+compute X2 = U2+W2
+compute Y2 = V2-S2
+compute T2 = U2-W2
+compute Z2 = V2+S2
+compute A = X1*X2
+compute B = Y1*Y2
+compute C = td*T1*T2
+compute D = Z1*Z2
+compute E = (X1+Y1)*(X2+Y2)-A-B
+compute F = D-C
+compute G = D+C
+compute H = B-ta*A
+compute X3 = E*F
+compute Y3 = G*H
+compute T3 = E*H
+compute Z3 = F*G
+compute U3 = X3+T3
+compute V3 = Z3+Y3
+compute S3 = Z3-Y3
+compute W3 = X3-T3

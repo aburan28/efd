@@ -1,0 +1,14 @@
+A = X1^2
+B = A^2
+C = Z1^2
+D = C^2
+efdtmp0 = D^2
+efdtmp1 = a6*efdtmp0
+X3 = B+efdtmp1
+Z3 = X1*C
+efdtmp2 = B*Z3
+efdtmp3 = Y1*Z1
+efdtmp4 = A+efdtmp3
+efdtmp5 = efdtmp4+Z3
+efdtmp6 = efdtmp5*X3
+Y3 = efdtmp2+efdtmp6

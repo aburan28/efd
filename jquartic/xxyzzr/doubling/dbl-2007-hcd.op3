@@ -1,0 +1,16 @@
+B = XX1-ZZ1
+T1 = XX1+ZZ1
+C = Y1*T1
+efdtmp0 = T1+R1
+efdtmp1 = Y1*efdtmp0
+X3 = C-efdtmp1
+Z3 = T1*B
+XX3 = X3^2
+ZZ3 = Z3^2
+T3 = XX3+ZZ3
+efdtmp2 = X3+Z3
+efdtmp3 = efdtmp2^2
+R3 = efdtmp3-T3
+efdtmp4 = C^2
+efdtmp5 = 2*efdtmp4
+Y3 = efdtmp5-T3

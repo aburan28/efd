@@ -1,0 +1,10 @@
+source 2009 Bernstein--Kohel--Lange
+compute A = X1*Z2
+compute B = Z1*Z2
+compute C = Y1*X2
+compute D = Y1*Y2
+compute E = Z1*Y2
+compute F = a*X1*X2
+compute X3 = A*B-C*D
+compute Y3 = D*E-F*A
+compute Z3 = F*C-B*E

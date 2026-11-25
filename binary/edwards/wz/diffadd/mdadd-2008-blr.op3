@@ -1,0 +1,15 @@
+efdtmp0 = Z2+W2
+C = W2*efdtmp0
+efdtmp1 = Z3+W3
+D = W3*efdtmp1
+E = Z2*Z3
+F = W2*W3
+V = C*D
+efdtmp2 = e*E
+efdtmp3 = f*F
+efdtmp4 = efdtmp2+efdtmp3
+efdtmp5 = efdtmp4^2
+U = V+efdtmp5
+efdtmp6 = W1*U
+W4 = V+efdtmp6
+Z4 = U

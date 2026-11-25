@@ -1,0 +1,10 @@
+source 2008 Bernstein--Lange--Rezaeian Farashahi
+appliesto xy-1
+compute A = X1^2
+compute B = A^2
+compute C = Y1^2
+compute D = C^2
+compute E = A+C
+compute F = 1/(d1+E+B+D)
+compute X3 = (d1*E+A+B)*F
+compute Y3 = X3+1+d1*F

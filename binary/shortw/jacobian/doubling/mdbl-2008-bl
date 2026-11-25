@@ -1,0 +1,7 @@
+source 2008 Bernstein--Lange
+assume Z1 = 1
+compute A = X1^2
+compute B = A^2
+compute X3 = B+a6
+compute Z3 = X1
+compute Y3 = a6*(A+Y1+Z3)+(A+Y1)*B

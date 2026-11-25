@@ -1,0 +1,14 @@
+source 2009 Bernstein--Kohel--Lange
+parameter recipd
+assume d*recipd = 1
+compute U = a*X1*X1^2
+compute V = Y1*Y1^2
+compute W = Z1*Z1^2
+compute A = (U-V)^2
+compute B = (U-W)^2
+compute C = (V-W)^2
+compute D = A+C
+compute E = A+B
+compute X3 = recipd*(U+V+W)*(B+D)
+compute Y3 = 2*U*C-V*(C-E)
+compute Z3 = 2*V*B-U*(B-D)

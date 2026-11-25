@@ -1,0 +1,9 @@
+A = w2^2
+B = A+w2
+C = w3^2
+D = C+w3
+efdtmp0 = B*D
+efdtmp1 = d1+efdtmp0
+efdtmp2 = d1/efdtmp1
+efdtmp3 = 1+efdtmp2
+w4 = efdtmp3+w1

@@ -1,0 +1,4 @@
+source 2002 Billet--Joye "The Jacobi model of an elliptic curve and side-channel analysis", formula (11)
+compute X3 = X1*Z1*Y2+Y1*X2*Z2
+compute Y3 = ((Z1*Z2)^2+(X1*X2)^2)*(Y1*Y2+2*a*X1*X2*Z1*Z2)+2*X1*X2*Z1*Z2*(X1^2*Z2^2+Z1^2*X2^2)
+compute Z3 = (Z1*Z2)^2-(X1*X2)^2

@@ -1,0 +1,4 @@
+name WZ coordinates
+variable W
+variable Z
+satisfying x+y = W/Z

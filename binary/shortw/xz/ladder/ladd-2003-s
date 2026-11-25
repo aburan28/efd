@@ -1,0 +1,5 @@
+source 2003 Stam "On Montgomery-like representations for elliptic curves over GF(2^k)", Section 3.2, plus a1 = 1, plus b8 = a6
+compute X4 = X2^4+a6*Z2^4
+compute Z4 = (X2*Z2)^2
+compute X5 = Z1*(X2^2*X3^2+a6*Z2^2*Z3^2)
+compute Z5 = X1*((X2+Z2)*(X3+Z3)-X2*X3-Z2*Z3)^2

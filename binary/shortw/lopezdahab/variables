@@ -1,0 +1,6 @@
+name Lopez-Dahab coordinates
+variable X
+variable Y
+variable Z
+satisfying x = X/Z
+satisfying y = Y/Z^2

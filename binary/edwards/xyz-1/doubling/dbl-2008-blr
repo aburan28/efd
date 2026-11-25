@@ -1,0 +1,17 @@
+source 2008 Bernstein-–Lange-–Rezaeian Farashahi
+parameter d2d1
+assume d2d1 = d2/d1
+compute A = X1^2
+compute B = A^2
+compute C = Y1^2
+compute D = C^2
+compute E = Z1^2
+compute F = d1*E^2
+compute G = d2d1*(B+D)
+compute H = A*E
+compute I = C*E
+compute J = H+I
+compute K = G+d2*J
+compute Z3 = F+J+G
+compute X3 = K+H+D
+compute Y3 = K+I+B

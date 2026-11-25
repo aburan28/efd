@@ -1,0 +1,13 @@
+A = w2^2
+B = A+w2
+C = w3^2
+D = C+w3
+efdtmp0 = B^2
+efdtmp1 = d1+efdtmp0
+efdtmp2 = d1/efdtmp1
+w4 = 1+efdtmp2
+efdtmp3 = B*D
+efdtmp4 = d1+efdtmp3
+efdtmp5 = d1/efdtmp4
+efdtmp6 = 1+efdtmp5
+w5 = efdtmp6+w1
